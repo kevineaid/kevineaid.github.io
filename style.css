@@ -412,6 +412,9 @@ a:hover {
 	}
 }
 @media screen and (max-width: 768px){
+	.values-slider h3 {
+		padding-left: 35px;
+	}
 	.values-slider .carousel,
 	.values-slider .carousel-inner,
 	.values-slider .carousel-item {
@@ -431,7 +434,7 @@ a:hover {
 .values-slider .carousel-control-prev, 
 .values-slider .carousel-control-next {
 	opacity: 1;
-	width: 10px;
+	width: 30px;
 	height: 60px;
 	margin-top: 75px;
 }
@@ -451,6 +454,7 @@ a:hover {
 	.values-slider .carousel-control-prev, 
 	.values-slider .carousel-control-next { 
 		margin-top: 150px;
+		width: 17px;
 	}
 }
 
