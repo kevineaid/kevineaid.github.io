@@ -79,6 +79,20 @@
     font-weight: normal;
     font-style: normal;
 }
+/* medium */
+@font-face {
+    font-family: 'ProximaNova-Medium';
+    src: url('../fonts/ProximaNova-Medium.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Medium';
+    src: url(../fonts/ProximaNova-Medium.woff) format('woff'), url('../fonts/ProximaNova-Medium.ttf') format('truetype'), url('fonst/ProximaNova-Medium.svg#ProximaNova-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 /* roboto */

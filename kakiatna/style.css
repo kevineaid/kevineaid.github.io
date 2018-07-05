@@ -41,6 +41,9 @@ a:hover {
 .pn-semibold-it {
 	font-family: "ProximaNova-SemiboldIt";
 }
+.pn-medium {
+	font-family: "ProximaNova-Medium";
+}
 .rb-bold {
 	font-family: "Roboto-Bold";
 }
@@ -102,6 +105,7 @@ a:hover {
 }
 .main-nav .navbar-nav .nav-link {
 	padding: 12px 20px;
+	font-family: "ProximaNova-Medium";
 }
 @media screen and (max-width: 1200px){
 	.main-nav .navbar-nav .nav-link {
@@ -421,6 +425,13 @@ a:hover {
 		min-height: 420px;
 	}
 }
+@media screen and (max-width: 390px){
+	.values-slider .carousel,
+	.values-slider .carousel-inner,
+	.values-slider .carousel-item {
+		min-height: 470px;
+	}
+}
 .values-slider .carousel-caption {
 	width: 85%;
 	left: 5%;
@@ -456,7 +467,19 @@ a:hover {
 		margin-top: 150px;
 		width: 17px;
 	}
+	.values-slider .carousel-control-prev {
+		left: -20px;
+	}
 }
+@media screen and (max-width: 600px){
+	.values-slider .carousel-control-prev {
+		left: -10px;
+	}
+	.values-slider .slider-capt {
+		padding-left: 10px;
+	}
+}
+
 
 /* banner */
 .banner {
@@ -474,8 +497,8 @@ a:hover {
 }
 .news h3 {
 	font-size: 40px;
-	color: var(--text-maroon);
 	text-align: center;
+	color: #c5192f;
 }
 .news-header {
 	background: #5c5c5c;
@@ -485,13 +508,15 @@ a:hover {
 	margin-bottom: 25px;
 }
 .news-img {
-	object-fit: cover;
+	max-height: 230px;
+	overflow: hidden;
 }
 .news-img img {
-	width: 100%;
+	max-width: 100%;
 }
 .news-capt {
 	padding: 30px;
+	background: #fff;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.15);
 	color: #41454f;
 	/* roboto bold */
@@ -552,6 +577,7 @@ footer {
 }
 .ctc-detail {
 	padding-left: 30px;
+	opacity: 0.8;
 }
 .ctc-location {
 	background: #b73e36;
@@ -582,6 +608,7 @@ footer {
 .footer-media {
 	/* flex: 0 0 200px; */
 	padding-left: 30px;
+	padding-top: 10px;
 }
 @media screen and (max-width: 1200px) {
 	.footer-media {
@@ -590,17 +617,19 @@ footer {
 }
 .footer-icon {
 	margin-right: 5px;
-	background: #fff;
+	background: #d7d7d7;
+	width: 35px;
+	height: 35px;
+	padding-top: 4px;
 }
 .footer-icon img {
+	width: 15px;
 }
 @media screen and (max-width: 992px) {
 	.footer-media {
 		padding-top: 15px;
 	}
 	.footer-icon {
-		width: 40px;
-		height: 40px;
 		padding-top: 5px;
 	}
 	.footer-icon img {
@@ -672,6 +701,7 @@ footer {
 .term {
 	margin-right: 40px;
 	padding-top: 15px;
+	font-size: 14px;
 }
 @media screen and (max-width: 1200px) {
 	.term {
