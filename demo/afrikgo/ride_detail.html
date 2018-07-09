@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="empty" name="description">
+    <meta content="empty" name="author">
+
+    <title>Ride Detail | Afrikgo</title>
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/bootstrap-slider.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" sizes="25x32" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="25x32" href="images/favicon.ico">
+    
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-default main-navbar">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png"><h1>AFRIK<span>GO</span></h1></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="howitworks.html" class="active">Find a Ride</a></li>                
+                        <li><a href="howitworks.html">Offer a Ride</a></li>  
+                        <li><a href="faq.html">Faq</a></li>                
+                        <li><a href="contact.html">Contact us</a></li>                
+                        <li><a href="signin.html">Sign in</a></li>                
+                        <li><a href="signup.html" class="signup">Sign up</a></li>                
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <section class="find-form ride-form">
+        <div class="container">
+            <h3 class="pagetitle">4 rides available from Accra to Kummasi</h3>
+            <div class="find-form-wrapper">
+                <form action="#" method="" class="wraping">
+                    <div class="group-input input-leaving">
+                        <input type="text" name="" class="field" placeholder="Leaving from..">
+                        <span><img src="images/Icon-Location.png" width="18" height="23" alt="Find a Ride"></span>
+                    </div>  
+                    <div class="group-input switch hidden-xs">
+                        <img src="images/Icon-Switch.png" width="23" height="19" alt="Switch Ride Icon">
+                    </div>
+                    <div class="group-input input-going">
+                        <input type="text" name="" class="field" placeholder="Going to..">
+                        <span><img src="images/Forma.png"></span>
+                    </div> 
+                    <div class="group-input input-date">
+                        <input type="text" name="" class="field" placeholder="Select date">
+                        <span><img src="images/Icon-Date.png"></span>
+                    </div>      
+                    <div class="group-input ride-btn">
+                        <button type="submit" class="field find-btn">find</button>
+                    </div>   
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="front-content ride-content ride-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-md-4 col-lg-4">
+                   
+                    <div class="panel panel-default panel-action rd-panel">
+                        <div class="rdp-header rdp-price">
+                            <div class="price-content">
+                                <h4 class="rdp-title price-caption">Price per seat</h4>
+                                <a class="price-value rdp-collapse" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    $78.<span class="decimal">00</span> <span class="af-icon ico-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class="price-content">
+                                    <p class="price-caption">Contribution to driver</p>
+                                    <p class="price-value">$70.00</p>
+                                </div>
+                                <div class="price-content">
+                                    <p class="price-caption">Booking fees</p>
+                                    <p class="price-value">$8.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rdp-seats">
+                            <h4 class="rdp-title">Passengers on this ride</h4>
+                            <ul class="list-inline seats-passenger">
+                                <li class="on-board">
+                                    <img src="images/user.png" width="70" height="70" alt="Passenger On Board">
+                                </li>
+                                <li>
+                                    <!-- Insert image here -->
+                                </li>
+                                <li>
+                                    <!-- Insert image here -->
+                                </li>
+                            </ul>
+                            <p class="seats-available">2 available seats</p>
+                        </div>
+                        <div class="rdp-form">
+                            <form class="af-form">
+                                <div class="form-group">
+                                    <p class="rdp-form-info">
+                                        <span class="af-icon ico-thunder"></span> 
+                                        Your booking will be approved <span class="text-bold">instantly</span>
+                                    </p>
+                                </div>
+                                <div class="form-group">
+                                    <select class="field">
+                                        <option value="1">1 seat</option>
+                                        <option value="2">2 seat</option>
+                                        <option value="3">3 seat</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="check-content">
+                                        <input type="checkbox" name="terms" id="btncom" value="1">
+                                        <label for="btncom">
+                                            <span></span>
+                                        </label>
+                                        I accept the <a href="terms&condition.html" class="text-blue">T&amp;Cs</a> and <a href="privacy-policy.html" class="text-blue">Privacy Policy</a>.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="book" id="book" class="btn btn-afg btn-blue" value="Book">
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="panel panel-default panel-action rd-panel">
+                        <div class="rdp-header">
+                            <h4 class="rdp-title">About Driver</h4>
+                        </div>
+                        <div class="rdp-lg-content">
+                            <div class="media ride-item">
+                                <div class="media-left">
+                                    <a href="#" class="ride-img">
+                                        <img class="media-object" src="images/no-images.png" alt="No Images Available">
+                                        <span class="af-icon ico-check"></span>
+                                    </a>
+                                </div>
+                                <div class="media-body media-middle">
+                                    <h3 class="content-header">Julie B</h3>
+                                    <p class="content-p">29 y/o</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rdp-mid-content rdp-verified">
+                            <p class="text-blue"><span class="af-icon ico-checkbox"></span> Phone number verified</p>
+                            <p class="text-blue"><span class="af-icon ico-checkbox"></span> Email address verified</p>
+                        </div>
+                        <div class="rdp-min-content rdp-add-info">
+                            <h4 class="text-bold">Car</h4>
+                            <p>Marcedes Classe C</p>
+                            <p>Colour : Black</p>
+                        </div>
+                        <div class="rdp-min-content rdp-add-info">
+                            <h4 class="text-bold">Member activity</h4>
+                            <p>4 rides offered</p>
+                            <p><label class="left">Last online</label><label class="right">: yesterday - 08:45</label></p>
+                            <p><label class="left">Member since</label><label class="right">: Aug 2015</label></p>
+                            <p><a href="#">See public profile</a></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-sm-7 col-md-8 col-lg-8 rd-content">
+                    <!-- Ride Detail Content Header -->
+                    <div class="rdc-header">
+                        <p class="header-content">
+                            Accra <span class="af-icon ico-arrow-right"></span> Kummasi 
+                            <a href="#" class="caption-header" data-toggle="modal" data-target="#myModal">See route</a>
+                        </p>
+                        
+                        <!-- Route Modal -->
+                        <div class="modal fade ride-route" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Accra <span class="af-icon ico-arrow-right"></span> Kummasi</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="route-map">
+                                            <img src="images/route-detail.png" width="945" height="523" alt="Map Route" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Ride Detail Content Schedule -->
+                    <div class="rdc-schedule">
+                        <div class="row schedule-content">
+                            <div class="col-md-3">
+                                <p class="schedule-label">Pick-up point</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p class="schedule-value">
+                                    <span class="af-icon ico-pin"></span>
+                                    <span class="text-blue">28A Wellington Rd, Pinner HA5 4NL, UK</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row schedule-content">
+                            <div class="col-md-3">
+                                <p class="schedule-label">Drop-off point</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p class="schedule-value">
+                                    <span class="af-icon ico-pin"></span>
+                                    <span class="text-blue">University of Salford, Salford</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row schedule-content">
+                            <div class="col-md-3">
+                                <p class="schedule-label">Date</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p class="schedule-value">
+                                    <span class="af-icon ico-calendar"></span>
+                                    July 31, 2017
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row schedule-content">
+                            <div class="col-md-3">
+                                <p class="schedule-label">Details</p>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p class="schedule-value">
+                                            <span class="af-icon ico-full-clock"></span>
+                                            Pick-up right on time
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p class="schedule-value">
+                                            <span class="af-icon ico-briefcase"></span>
+                                            Medium (travel bag)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row schedule-content">
+                            <div class="col-md-offset-3 col-md-9">
+                                <p class="schedule-value">
+                                    <span class="af-icon ico-reload"></span>
+                                    Max. 15 min. detour
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row schedule-content">
+                            <div class="col-md-3">
+                                <p class="schedule-label">Option</p>
+                            </div>
+                            <div class="col-md-9">
+                                <p class="schedule-value">
+                                    <span class="af-icon ico-people-group"></span>
+                                    Max. 2 in the back seats
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ride Detail Content Rider -->
+                    <div class="rdc-rider">
+                        <div class="media ride-item">
+                            <div class="media-left">
+                                <a href="#" class="ride-img">
+                                    <img class="media-object" src="images/no-images.png" alt="No Images Available">
+                                    <span class="af-icon ico-check"></span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="content-header">Julie B</h3>
+                                <p class="content-p">
+                                    Going from london to Manchester . Harrow or Uxbridge pick up . Going to Salford
+                                </p>
+                                <a href="#" class="btn btn-afg btn-blue">Contact The Driver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <h4>using afrikgo</h4>
+                        <ul class="footer-nav">
+                            <li><a href="how-it-works.html">How it works</a></li>
+                            <li><a href="trust&safety.html">Trust &amp; Safety</a></li>
+                            <li><a href="">Experience Levels</a></li>
+                            <li><a href="ratings.html">Ratings</a></li>
+                            <li><a href="ladies-only.html">Ladies only</a></li>
+                            <li><a href="member-agreement.html">Member Agreement</a></li>
+                            <li><a href="insurance.html">Insurance</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <h4>our company</h4>
+                        <ul class="footer-nav our-company">
+                            <li><a href="about-us.html">About us</a></li>
+                            <li><a href="#">Afrikgo Life</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">We're hiring</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <h4>legal</h4>
+                        <ul class="footer-nav">
+                            <li><a href="terms&condition.html">Terms & Condition</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="cookies-policy.html">Cookies Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <h4>get our mobile app</h4>
+                        <a href="#" class="link-app"><img src="images/appstore.png" ></a>
+                        <a href="#" class="link-app"><img src="images/playstore.png" ></a>
+                        <ul class="social-media">
+                            <li><a href=""><img src="images/facebook.png"></a></li>
+                            <li><a href=""><img src="images/twitter.png"></a></li>
+                            <li><a href=""><img src="images/instagram.png"></a></li>
+                            <li><a href=""><img src="images/youtube.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">Copyright © 2017 Afrikgo.com. All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.custom-scrollbar.min.js"></script>
+  <script type="text/javascript" src="js/core.js"></script>
+  <script type="text/javascript" src="js/bootstrap-slider.js"></script>
+  <script type="text/javascript">
+      $("#productps").slider({});
+  </script>
+  <script type="text/javascript">
+      $("#productprice").slider({});
+  </script>
+</body>
+</html>

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="empty" name="description">
+    <meta content="empty" name="author">
+
+    <title>Ride Detail | Afrikgo</title>
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/bootstrap-slider.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="plugins/form-validation/css/formValidation.min.css" />
+    <link rel="stylesheet" href="plugins/form-validation/vendor/jquery.steps/css/jquery.steps.css" />
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" sizes="25x32" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="25x32" href="images/favicon.ico">
+    
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-default main-navbar">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png"><h1>AFRIK<span>GO</span></h1></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="howitworks.html" class="active">Find a Ride</a></li>                
+                        <li><a href="howitworks.html">Offer a Ride</a></li>  
+                        <li><a href="faq.html">Faq</a></li>                
+                        <li><a href="contact.html">Contact us</a></li>                
+                        <li><a href="signin.html">Sign in</a></li>                
+                        <li><a href="signup.html" class="signup">Sign up</a></li>                
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <section class="find-form ride-form offer-form">
+        <div class="container">
+            <h3 class="pagetitle">Offer a ride on your next long journey</h3>
+        </div>
+    </section>
+
+    <section class="front-content offer-ride">
+        <div class="container">
+            <div id="maincontent" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div id="" class="col-lg-12">
+
+                        <form id="multiphase" role="form" class="form-horizontal ride-steps af-form" action="" method="post">
+
+                            <!-- Set Schedule Content -->
+                            <h2>Set Schedule</h2>
+                            <section data-step="0">
+                                <div class="form-container">
+                                    <div class="form-item">
+                                        <h2 class="form-subtitle"><span class="form-number">1</span> Pick Up and Drop Off Points</h2>
+                                        <div class="form-group">
+                                            <input type="text" name="stepspickup" class="field" placeholder="Pickup location">
+                                            <span><img src="images/Icon-Location.png"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="stepsdrop" class="field" placeholder="Drop off location">
+                                            <span><img src="images/Forma.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-container">
+                                    <div class="form-item stop-over">
+                                        <h2 class="form-subtitle has-caption"><span class="form-number">2</span> Stopovers</h2>
+                                        <p class="form-caption">
+                                            Now add your stopover points - offering to pick up and drop off passengers along the way is a 
+                                            sure way to fill your car.
+                                        </p>
+                                        <div class="form-group">
+                                            <input type="text" name="stepscity" class="field" placeholder="Add city on your route">
+                                            <span><img src="images/icon-building.png"></span>
+                                            <a href="#" class="form-link">+ Add more stopover cities</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-container form-last">
+                                    <div class="form-item">
+                                        <h2 class="form-subtitle"><span class="form-number">3</span> Date &amp; Time</h2>
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <input type="text" name="traveldate" class="field" placeholder="Travel date">
+                                                <span><img src="images/Icon-Date.png"></span>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <input type="text" name="traveltime" class="field" placeholder="Travel time">
+                                                <span><img src="images/Icon-Time.png"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <input type="text" name="returndate" class="field" placeholder="Return date">
+                                                <span><img src="images/Icon-Date.png"></span>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <input type="text" name="returntime" class="field" placeholder="Return time">
+                                                <span><img src="images/Icon-Time.png"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="check-content white-check">
+                                                <input type="checkbox" name="terms" id="btncom" value="1">
+                                                <label for="btncom">
+                                                    <span></span>
+                                                </label>
+                                                <span class="check-label">Round Trip</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+
+                            <!-- Ride Detail Content -->
+                            <h2>Ride Details</h2>
+                            <section data-step="1" class="steps-detail">
+
+                                <div class="form-container">
+                                    <div class="form-item">
+
+                                        <h2 class="form-subtitle"><span class="form-number">4</span> Passenger Retribution</h2>
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <p class="form-subtitle"><span class="af-icon ico-pin"></span> Accra - Ashiaman</p>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <div class="form-group field-counter">
+                                                    <div class="counter-field">
+                                                        <span class="fa fa-dollar"></span>
+                                                        <input type="text" name="quant[1]" id="jumlah" class="form-control single-text counter-nomina" placeholder="0" value="0">
+                                                    </div>
+                                                    <div class="counter">
+                                                        <button class="btn btn-default counter-up btn-counter" data-type="plus" data-field="quant[1]"><span class="fa fa-plus"></span></button>
+                                                        <button class="btn btn-default counter-down btn-counter" disabled="disabled" data-type="minus" data-field="quant[1]"><span class="fa fa-minus"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <p class="form-subtitle"><span class="af-icon ico-pin"></span> Ashiaman - Sunyani</p>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <div class="form-group field-counter">
+                                                    <div class="counter-field">
+                                                        <span class="fa fa-dollar"></span>
+                                                        <input type="text" name="quant[2]" id="jumlah" class="form-control single-text counter-nomina" placeholder="0" value="0">
+                                                    </div>
+                                                    <div class="counter">
+                                                        <button class="btn btn-default counter-up btn-counter" data-type="plus" data-field="quant[2]"><span class="fa fa-plus"></span></button>
+                                                        <button class="btn btn-default counter-down btn-counter" disabled="disabled" data-type="minus" data-field="quant[2]"><span class="fa fa-minus"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <p class="form-subtitle"><span class="af-icon ico-pin"></span> Sunyani - Kummasi</p>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <div class="form-group field-counter">
+                                                    <div class="counter-field">
+                                                        <span class="fa fa-dollar"></span>
+                                                        <input type="text" name="quant[3]" id="jumlah" class="form-control single-text counter-nomina" placeholder="0" value="0">
+                                                    </div>
+                                                    <div class="counter">
+                                                        <button class="btn btn-default counter-up btn-counter" data-type="plus" data-field="quant[3]"><span class="fa fa-plus"></span></button>
+                                                        <button class="btn btn-default counter-down btn-counter" disabled="disabled" data-type="minus" data-field="quant[3]"><span class="fa fa-minus"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr class="steps-separator">
+
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <p class="form-subtitle"><span class="af-icon ico-pin"></span> Accra - Kummasi</p>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <div class="form-group field-counter">
+                                                    <div class="counter-field">
+                                                        <span class="fa fa-dollar"></span>
+                                                        <input type="text" name="quant[4]" id="jumlah" class="form-control single-text counter-nomina" placeholder="0" value="0">
+                                                    </div>
+                                                    <div class="counter">
+                                                        <button class="btn btn-default counter-up btn-counter" data-type="plus" data-field="quant[4]"><span class="fa fa-plus"></span></button>
+                                                        <button class="btn btn-default counter-down btn-counter" disabled="disabled" data-type="minus" data-field="quant[4]"><span class="fa fa-minus"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-container">
+                                    <div class="form-item">
+
+                                        <h2 class="form-subtitle"><span class="form-number">5</span> Seats</h2>
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <p class="form-subtitle"><span class="af-icon ico-seat"></span> Number of seats</p>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <div class="form-group field-counter">
+                                                    <div class="counter-field">
+                                                        <input type="text" name="quant[5]" id="jumlah" class="form-control single-text counter-nomina" placeholder="0" value="0">
+                                                    </div>
+                                                    <div class="counter">
+                                                        <button class="btn btn-default counter-up btn-counter" data-type="plus" data-field="quant[5]"><span class="fa fa-plus"></span></button>
+                                                        <button class="btn btn-default counter-down btn-counter" disabled="disabled" data-type="minus" data-field="quant[5]"><span class="fa fa-minus"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="check-content white-check">
+                                                <input type="checkbox" name="terms" id="btncount" value="1">
+                                                <label for="btncount">
+                                                    <span></span>
+                                                </label>
+                                                <span class="check-label">Max. 2 in the back seats</span>
+                                                <p class="add-label">Guarantee max. 2 people in the back of the car (preferred by passengers)</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-container form-last or-detail">
+                                    <div class="form-item">
+
+                                        <h2 class="form-subtitle"><span class="form-number">6</span> Ride Details</h2>
+                                        <div class="form-group">
+                                            <textarea name="ridedesc" id="jumlah" class="field" placeholder="Please add further details about your ride - it'll save you from replying to lots of messages from passengers."></textarea>
+                                        </div>
+
+                                        <p class="form-caption">
+                                            Please don't add your contact details here. Interested passengers will get your phone number individually.
+                                            <a href="#" class="form-link">(See our guidelines)</a>
+                                        </p>
+
+                                        <div class="form-group">
+                                            <div class="field select-field">
+                                                <select>
+                                                    <option value="0">Max Luggage</option>
+                                                </select>
+                                                <span class="af-icon ico-down-blue"></span>
+                                            </div>
+                                            <span><img src="images/icon-briefcase-small.png"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="field select-field">
+                                                <select>
+                                                    <option value="0">Pickup Flexibility</option>
+                                                </select>
+                                                <span class="af-icon ico-down-blue"></span>
+                                            </div>
+                                            <span><img src="images/icon-briefcase-small.png"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="field select-field">
+                                                <select>
+                                                    <option value="0">Possible Detour</option>
+                                                </select>
+                                                <span class="af-icon ico-down-blue"></span>
+                                            </div>
+                                            <span><img src="images/icon-briefcase-small.png"></span>
+                                        </div>
+
+                                        <div class="form-group or-terms">
+                                            <div class="check-content white-check">
+                                                <input type="checkbox" name="terms" id="btnaccept" value="1">
+                                                <label for="btnaccept">
+                                                    <span></span>
+                                                </label>
+                                                <p class="check-label">I accept the T&amp;Cs and Privacy Policy, and certify that I hold a driving license and have valid car insurance.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </section>
+
+                            <h2>Finish</h2>
+                            <section data-step="2" class="steps-finish">
+                                <div class="form-container">
+
+                                    <div class="form-item finish-top">
+                                        <h2 class="form-subtitle">Already A Member?</h2>
+                                        <div class="form-group">
+                                            <input type="text" name="stepuser" class="field" placeholder="Username">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="stepuser" class="field" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" name="steplogin" id="steplogin" class="btn btn-afg btn-blue" value="log in">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <div class="check-content">
+                                                    <input type="checkbox" name="terms" id="btnremember" value="1">
+                                                    <label for="btnremember">
+                                                        <span></span>
+                                                    </label>
+                                                    <span class="add-label">Remember Me</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <a href="#" class="form-link">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-item finish-bottom">
+                                        <h2 class="form-subtitle">Not a member yet?</h2>
+                                        <div class="form-group top-subtitle">
+                                            <p class="form-caption">Create your account now</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-left col-xs-6">
+                                                <input type="text" name="firstname" id="firstname" class="field" placeholder="First name">
+                                            </div>
+                                            <div class="form-right col-xs-6">
+                                                <input type="text" name="lastname" id="firstname" class="field" placeholder="Last name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="memberemail" class="field" placeholder="Email address">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="datebirth" id="datebirth" class="field" placeholder="Date of Birth">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="check-content white-check">
+                                                <input type="radio" name="gender" id="btnmale" value="1">
+                                                <label for="btnmale">
+                                                    <span></span>
+                                                </label>
+                                                <span class="add-label">Male</span>
+                                            </div>
+                                            <div class="check-content white-check">
+                                                <input type="radio" name="gender" id="btnfemale" value="1">
+                                                <label for="btnfemale">
+                                                    <span></span>
+                                                </label>
+                                                <span class="add-label">Female</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="memberpass" id="memberpass" class="field" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="memberepass" id="memberepass" class="field" placeholder="Confirm Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" name="steplogin" id="steplogin" class="btn btn-afg btn-blue" value="sign up">
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="form-caption">
+                                                By signing up, you agree to our terms of service and privacy policy.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </section>
+                            <!-- end of wizard-->
+                        </form>
+
+                        <!-- end of form-->
+                    </div>
+                </div>
+                <!-- end of row-->
+
+                <div class="modal fade" id="welcomeModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h1 class="modal-title text-center">Add new last name</h1>
+                            </div>
+                            <div class="modal-body">
+                                <form method="POST" name="add_lastname">
+                                    <input type="text" name="add_lastname" id="add_lastname" class="form-control" placeholder="Enter your last name here" value="">
+                                    <p class="">The first alphabet of the last name <strong>MUST</strong> be in upper case.</p>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                                <input name="addlastname" type="submit" value="Add" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row hidden-print">
+                <div id="footer" class="col-lg-12"></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <h4>using afrikgo</h4>
+                        <ul class="footer-nav">
+                            <li><a href="how-it-works.html">How it works</a></li>
+                            <li><a href="trust&safety.html">Trust &amp; Safety</a></li>
+                            <li><a href="">Experience Levels</a></li>
+                            <li><a href="ratings.html">Ratings</a></li>
+                            <li><a href="ladies-only.html">Ladies only</a></li>
+                            <li><a href="member-agreement.html">Member Agreement</a></li>
+                            <li><a href="insurance.html">Insurance</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <h4>our company</h4>
+                        <ul class="footer-nav our-company">
+                            <li><a href="about-us.html">About us</a></li>
+                            <li><a href="#">Afrikgo Life</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">We're hiring</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <h4>legal</h4>
+                        <ul class="footer-nav">
+                            <li><a href="terms&condition.html">Terms & Condition</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="cookies-policy.html">Cookies Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <h4>get our mobile app</h4>
+                        <a href="#" class="link-app"><img src="images/appstore.png" ></a>
+                        <a href="#" class="link-app"><img src="images/playstore.png" ></a>
+                        <ul class="social-media">
+                            <li><a href=""><img src="images/facebook.png"></a></li>
+                            <li><a href=""><img src="images/twitter.png"></a></li>
+                            <li><a href=""><img src="images/instagram.png"></a></li>
+                            <li><a href=""><img src="images/youtube.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">Copyright © 2017 Afrikgo.com. All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <!-- Steps Content with Validation -->
+    <script src="plugins/form-validation/js/formValidation.min.js"></script>
+    <script src="plugins/form-validation/js/framework/bootstrap.min.js"></script>
+    <script src="plugins/form-validation/vendor/jquery.steps/js/jquery.steps.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function adjustIframeHeight() {
+                var $body   = $('body'),
+                    $iframe = $body.data('iframe.fv');
+                if ($iframe) {
+                    // Adjust the height of iframe
+                    $iframe.height($body.height());
+                }
+            }
+            $("#multiphase").steps({
+                headerTag: "h2",
+                bodyTag: "section",
+                saveState: true,
+                transitionEffect: $.fn.steps.transitionEffect.slideLeft,
+                transitionEffectSpeed: 500,
+                enableFinishButton: false,
+                enablePreviousButton: false,
+                labels: {
+                    next: "Continue"
+                },
+                onStepChanged: function(e, currentIndex, priorIndex) {
+                        // You don't need to care about it
+                        // It is for the specific demo
+                        adjustIframeHeight();
+                    },
+                    // Triggered when clicking the Previous/Next buttons
+                    onStepChanging: function(e, currentIndex, newIndex) {
+                        var fv         = $('#multiphase').data('formValidation'), // FormValidation instance
+                            // The current step container
+                            $container = $('#multiphase').find('section[data-step="' + currentIndex +'"]');
+
+                        // Validate the container
+                        fv.validateContainer($container);
+
+                        var isValidStep = fv.isValidContainer($container);
+                        if (isValidStep === false || isValidStep === null) {
+                            // Do not jump to the next step
+                            return false;
+                        }
+
+                        return true;
+                    },
+                    // Triggered when clicking the Finish button
+                    onFinishing: function(e, currentIndex) {
+                        var fv         = $('#multiphase').data('formValidation'),
+                            $container = $('#multiphase').find('section[data-step="' + currentIndex +'"]');
+
+                        // Validate the last step container
+                        fv.validateContainer($container);
+
+                        var isValidStep = fv.isValidContainer($container);
+                        if (isValidStep === false || isValidStep === null) {
+                            return false;
+                        }
+
+                        return true;
+                    },
+                    onFinished: function(e, currentIndex) {
+                        // Uncomment the following line to submit the form using the defaultSubmit() method
+                        //$('#multiphase').formValidation('defaultSubmit');
+
+                        // For testing purpose
+                        $('#welcomeModal').modal("show");
+                    }
+                }).formValidation({
+                excluded: ':disabled',
+                message: 'This value is not valid',
+                container: 'tooltip',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    //Pick-up location validation  
+                    stepspickup: {
+                        container: 'popover',
+                        validators: {
+                            notEmpty: {
+                                message: 'Please insert pickup location'
+                            }
+                        }
+                    },
+                    //Drop-off location validation
+                    stepsdrop: {
+                        container: 'popover',
+                        validators: {
+                            notEmpty: {
+                                message: 'Please insert drop-off location'
+                            }
+                        }
+                    },
+                    
+                    // Stop over City
+                    stepscity: {
+                        container: 'popover',
+                        validators: {
+                            notEmpty: {
+                                message: 'Please specify the city for stopover'
+                            }
+                        }
+                    },
+                    //first name validation
+                    traveldate: {
+                        container: 'popover',
+                        validators: {
+                            notEmpty: {
+                                message: 'Fill the blank date travel!'
+                            }
+                        }
+                    },
+                    // Validation for Reference details starts
+                    //School reference name
+                    traveltime: {
+                        container: 'popover',
+                        validators: {
+                            notEmpty: {
+                                message: 'Fill the blank time travel!'
+                            }
+                        }
+                    },
+                    //School reference phone
+                    returndate: {
+                        container: 'popover',
+                        validators: {
+                            notEmpty: {
+                                message: 'Please fill the return date field'
+                            }
+                        }
+                    },
+                    returntime: {
+                        container: 'popover',
+                        validators: {
+                            notEmpty: {
+                                message: 'Please fill the return time field'
+                            }
+                        }
+                    }
+                }
+
+            })
+
+        });
+    </script>
+    
+    <!-- Textfield Plus Minus -->
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $('.btn-counter').click(function(e){
+                e.preventDefault();
+
+                var fieldName = $(this).attr('data-field');
+                var type      = $(this).attr('data-type');
+                var input = $("input[name='"+fieldName+"']");
+                var currentVal = parseInt(input.val());
+                if (!isNaN(currentVal)) {
+                    if(type == 'minus') {
+                        var minValue = parseInt(input.attr('min')); 
+                        if(!minValue) minValue = 0;
+                        if(currentVal > minValue) {
+                            input.val(currentVal - 1).change();
+                        } 
+                        if(parseInt(input.val()) == minValue) {
+                            $(this).attr('disabled', true);
+                        }
+
+                    } else if(type == 'plus') {
+                        var maxValue = parseInt(input.attr('max'));
+                        if(!maxValue) maxValue = 9999999999999;
+                        if(currentVal < maxValue) {
+                            input.val(currentVal + 1).change();
+                        }
+                        if(parseInt(input.val()) == maxValue) {
+                            $(this).attr('disabled', true);
+                        }
+
+                    }
+                } else {
+                    input.val(0);
+                }
+            });
+            $('.counter-nomina').focusin(function(){
+               $(this).data('oldValue', $(this).val());
+            });
+            $('.counter-nomina').change(function() {
+
+                var minValue =  parseInt($(this).attr('min'));
+                var maxValue =  parseInt($(this).attr('max'));
+                if(!minValue) minValue = 0;
+                if(!maxValue) maxValue = 9999999999999;
+                var valueCurrent = parseInt($(this).val());
+
+                var name = $(this).attr('name');
+                if(valueCurrent >= minValue) {
+                    $(".btn-counter[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+                } else {
+                    alert('Sorry, the minimum value was reached');
+                    $(this).val($(this).data('oldValue'));
+                }
+                if(valueCurrent <= maxValue) {
+                    $(".btn-counter[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+                } else {
+                    alert('Sorry, the maximum value was reached');
+                    $(this).val($(this).data('oldValue'));
+                }
+
+
+            });
+            $(".counter-nomina").keydown(function (e) {
+                    // Allow: backspace, delete, tab, escape, enter and .
+                    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+                         // Allow: Ctrl+A
+                        (e.keyCode == 65 && e.ctrlKey === true) || 
+                         // Allow: home, end, left, right
+                        (e.keyCode >= 35 && e.keyCode <= 39)) {
+                             // let it happen, don't do anything
+                             return;
+                    }
+                    // Ensure that it is a number and stop the keypress
+                    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                        e.preventDefault();
+                    }
+            });
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $('a[href*="#previous"]').each(function() {
+            alert("Contains #previous");
+        });
+    </script>
+    
+</body>
+</html>
