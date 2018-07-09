@@ -281,6 +281,26 @@ a.item:hover .porto-caption {
 
 
 /* responsive */
+@media screen and (max-width: 641px) {
+  .hero {
+    height: 100vh;
+  }
+  .hero-detail {
+   padding-top: 25%; 
+  }
+  .hero h1 {
+    font-size: 26px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero-detail .intro {
+    font-size: 36px;
+    padding: 0 20px;
+  }
+  .hero-detail .skill {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 480px) {
   .hero {
     height: 100vh;
