@@ -159,11 +159,6 @@ body {
   z-index: 9;
   text-align: center;
 }
-@media screen and (max-width: 768px ) {
-  .hero-detail {
-    padding-top: 150px;
-  }
-}
 .hero-detail h1 {
   font-family: "Proxima_Nova";
   letter-spacing: 2px;
@@ -282,4 +277,27 @@ a.item:hover .porto-caption {
   margin-bottom: 50px;
   font-size: 20px;
   font-family: "Proxima_Nova";
+}
+
+
+/* responsive */
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 100vh;
+  }
+  .hero-detail {
+   padding-top: 30%; 
+  }
+  .hero h1 {
+    font-size: 26px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero-detail .intro {
+    font-size: 36px;
+    padding: 0 20px;
+  }
+  .hero-detail .skill {
+    font-size: 18px;
+  }
 }
