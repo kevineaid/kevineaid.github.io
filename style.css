@@ -140,17 +140,30 @@ body {
   background: rgba(0,0,0,0.85);
 }
 
-
+#curve {
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  z-index: 10;
+}
+#curve path {
+  fill: #fff;
+}
 .hero {
+  position: relative;
   background: url('img/Bannerx1.jpg') no-repeat;
   background-size: 100% 100%;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh + 70px) ;
   color: #fff;
 }
 @media screen and (max-width: 960px) {
   .hero {
     background-size: cover;
+    height: calc(100vh + 40px) ;
+  }
+  #curve {
+    bottom: 0;
   }
 }
 .hero-detail {
