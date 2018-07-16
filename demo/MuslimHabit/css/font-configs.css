@@ -1,0 +1,75 @@
+/* Font Config */
+/* FaktPro */
+
+/* normal */
+@font-face {
+    font-family: 'FaktPro-Normal';
+    src: url('../fonts/FaktPro-Normal.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FaktPro-Normal';
+    src: url(../fonts/FaktPro-Normal.woff) format('woff'), url('../fonts/FaktPro-Normal.ttf') format('truetype'), url('fonst/FaktPro-Normal.svg#FaktPro-Normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* medium */
+@font-face {
+    font-family: 'FaktPro-Medium';
+    src: url('../fonts/FaktPro-Medium.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FaktPro-Medium';
+    src: url(../fonts/FaktPro-Medium.woff) format('woff'), url('../fonts/FaktPro-Medium.ttf') format('truetype'), url('fonst/FaktPro-Medium.svg#FaktPro-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* semibold */
+@font-face {
+    font-family: 'FaktPro-SemiBold';
+    src: url('../fonts/FaktPro-SemiBold.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FaktPro-SemiBold';
+    src: url(../fonts/FaktPro-SemiBold.woff) format('woff'), url('../fonts/FaktPro-SemiBold.ttf') format('truetype'), url('fonst/FaktPro-SemiBold.svg#FaktPro-SemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* semibold */
+@font-face {
+    font-family: 'FaktPro-SemiBold';
+    src: url('../fonts/FaktPro-SemiBold.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FaktPro-SemiBold';
+    src: url(../fonts/FaktPro-SemiBold.woff) format('woff'), url('../fonts/FaktPro-SemiBold.ttf') format('truetype'), url('fonst/FaktPro-SemiBold.svg#FaktPro-SemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* blond */
+@font-face {
+    font-family: 'FaktPro-Blond';
+    src: url('../fonts/FaktPro-Blond.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FaktPro-Blond';
+    src: url(../fonts/FaktPro-Blond.woff) format('woff'), url('../fonts/FaktPro-Blond.ttf') format('truetype'), url('fonst/FaktPro-Blond.svg#FaktPro-Blond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
