@@ -144,13 +144,24 @@ body .topbar+.main-container, body .topbar+main {
 
 
 
-/* index2 */
-.jobs-card .media,
-.main-sidebar .media {
+/* category page */
+.category-list {
+
+}
+.category-list .card-title {
+	font-size: 19px;
+}
+.category-list p span {
+	display: inline-block;
+	margin-right: 10px;
+}
+.category-list p a {
+	color: #444;
+}
+.category-list p a:hover {
 	color: #48b0f7;
 }
-
-.jobs-card .media-inverse,
-.main-sidebar .media-inverse {
-	color: #fff;
+.category-list-pagination {
+	width: 255px;
+	margin: 0 auto;
 }
