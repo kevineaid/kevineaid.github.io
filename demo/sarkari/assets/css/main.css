@@ -1,0 +1,156 @@
+.font-montserrat {
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+	background-color: #fcfcfc	;
+}
+
+/* navbar */
+.main-topbar {
+	position: relative;
+}
+.main-header {
+	height: auto;
+	padding: 30px 0 !important;
+}
+.ads {
+	height: 90px;
+	width: 720px;
+	background: #eee;
+	float: right;
+}
+@media screen and (min-width: 992px){
+	.topbar-brand {
+		display: none;
+	}
+}
+@media screen and (max-width: 992px){ 
+	.ads {
+		width:100%;
+		max-width:100%;
+	}
+}
+
+.main-logo {
+}
+.ads-wrap {
+	position: relative;
+}
+
+
+body .topbar+.main-container, body .topbar+main {
+	padding-top: 0;
+}
+.topbar .menu-item:hover>.menu-link, .topbar .menu-item.active>.menu-link {
+	border-top-color: #48b0f7;
+}
+
+.page-title {
+	width: 90%;
+	font-weight: 400;
+}
+.page-title strong {
+	font-weight: 700;
+	font-size: 40px;
+}
+.page-title small {
+	font-weight: 400;
+	color: #fff;
+}
+
+
+/* featured job */
+.featured-job {
+	padding-top: 30px;
+}
+.featured-job .row {
+	margin: 0 -15px;
+}
+.featured-job p {
+	font-size: 16px;
+}
+.featured-job p a {
+	color: #444;
+}
+.featured-job p a:hover {
+	color: #48b0f7;
+}
+.inline-featured {
+	margin-bottom: 40px;
+}
+.inline-featured .nav-link {
+	white-space: normal;
+}
+.inline-featured a span {
+	font-size: 18px;
+	font-weight: 600;
+	color: #333;
+}
+.inline-featured a span:hover {
+	color: #48b0f7;
+}
+
+
+/* custom-masonry */
+@media screen and (max-width: 992px){
+	.custom-masonry-1 {
+		column-count: 1;
+	}	
+}
+
+
+
+/* Sidebar */
+.main-sidebar a {
+	color: #3a3a3a; 
+	font-weight: 600;
+}
+.main-sidebar a:hover {
+	color: #48b0f7; 
+}
+.main-sidebar ul > li {
+	padding: 10px 0;
+}
+.main-sidebar .publisher-btn {
+	margin-left: -10px;
+}
+/* End Sidebar */
+
+/* content */
+.jobs-card {
+	margin-bottom: 0px;
+}
+.jobs-card a {
+	color: #3a3a3a; 
+	font-weight: 600;
+}
+.jobs-card a:hover {
+	color: #48b0f7; 
+}
+.jobs-card ul > li {
+	padding: 7px 0;
+	position: relative;
+	padding-right: 25px;
+}
+.jobs-card ul > li > a {
+}
+.jobs-card span {
+	margin: auto;
+  	position: absolute;
+  	top: 0;  bottom: 0; right: 0;
+  	height: 25px;
+}
+
+
+
+/* index2 */
+.jobs-card .media,
+.main-sidebar .media {
+	color: #48b0f7;
+}
+
+.jobs-card .media-inverse,
+.main-sidebar .media-inverse {
+	color: #fff;
+}
