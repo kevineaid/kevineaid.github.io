@@ -295,10 +295,12 @@ body .topbar+.main-container, body .topbar+main {
 	font-weight: 700;
 	transform: translateX(7px);
 }
-.card-title {
+.main-content-wrap .card-title,
+.main-sidebar .card-title  {
 	padding: 10px 15px;
 }
-.card-body {
+.main-content-wrap .card-body,
+.main-sidebar .card-body {
 	padding: 15px 20px;
 }
 
