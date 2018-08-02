@@ -139,6 +139,10 @@ body .topbar+.main-container, body .topbar+main {
 	.grid-featured .card {
 		min-height: auto;
 	}
+	.grid-featured p a {
+		font-size: 14px;
+		font-weight:500;
+	}
 }
 
 
@@ -174,6 +178,18 @@ body .topbar+.main-container, body .topbar+main {
 	}	
 	.masonry-grid.gap-3 {
 		column-gap: 10px;
+	}
+}
+@media screen and (max-width: 576px){
+	.masonry-grid .card-title {
+		padding: 10px 5px;
+		font-size: 15px;
+	}
+	.masonry-grid .card-body {
+		padding: 5px;
+	}
+	.jobs-card ul > li > a {
+		font-size: 14px;
 	}
 }
 
