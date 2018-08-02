@@ -165,11 +165,16 @@ body .topbar+.main-container, body .topbar+main {
 }
 
 
+
 /* custom-masonry */
+
 @media screen and (max-width: 992px){
 	.custom-masonry-1 {
 		column-count: 1;
 	}	
+	.masonry-grid.gap-3 {
+		column-gap: 10px;
+	}
 }
 
 
@@ -227,7 +232,14 @@ body .topbar+.main-container, body .topbar+main {
   	top: 0;  bottom: 0; right: 0;
   	height: 25px;
 }
-
+@media screen and (max-width: 576px){
+	.jobs-card ul > li {
+		padding-right: 0;
+	}
+	.jobs-card ul > li i {
+		display: none;
+	}
+}
 
 
 /* category page */
