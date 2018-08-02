@@ -139,6 +139,10 @@ body .topbar+.main-container, body .topbar+main {
 	.grid-featured .card {
 		min-height: auto;
 	}
+	.grid-featured .card-body {
+		height: 65px;
+		padding: 10px;
+	}
 	.grid-featured p a {
 		font-size: 14px;
 		font-weight:500;
@@ -249,7 +253,7 @@ body .topbar+.main-container, body .topbar+main {
 }
 .jobs-card ul > li > a {
 }
-.jobs-card span {
+.jobs-card li > span {
 	margin: auto;
   	position: absolute;
   	top: 0;  bottom: 0; right: 0;
@@ -262,6 +266,40 @@ body .topbar+.main-container, body .topbar+main {
 	.jobs-card ul > li i {
 		display: none;
 	}
+}
+
+.list-job {
+	padding-left: 0;
+}
+.list-job li {
+	list-style: none;
+}
+@media screen and (max-width: 576px){
+	.list-job {
+		padding-left: 15px;
+		text-indent: -4px
+	}
+	.list-job li {
+		list-style: inherit;
+	}
+	.list-job li a {
+		text-decoration: underline; 
+	}
+}
+.list-job li a span.new {
+	color: red;
+	position: relative;
+	bottom: 4px;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 700;
+	transform: translateX(7px);
+}
+.card-title {
+	padding: 10px 15px;
+}
+.card-body {
+	padding: 15px 20px;
 }
 
 
