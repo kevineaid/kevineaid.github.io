@@ -134,7 +134,7 @@ body .topbar+.main-container, body .topbar+main {
 }
 @media screen and (max-width:576px) {
 	.grid-featured {
-		padding: 0 15px;
+		padding: 0 5px;
 	}
 	.grid-featured .card {
 		min-height: auto;
@@ -191,7 +191,14 @@ body .topbar+.main-container, body .topbar+main {
 	.jobs-card ul > li > a {
 		font-size: 14px;
 	}
+	.pad-5 {
+		padding: 0 5px !important;
+	}
+	.masonry-grid.gap-3 {
+		column-gap: 5px;
+	}
 }
+
 
 
 
