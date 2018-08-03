@@ -3,7 +3,7 @@
 }
 
 body {
-	background-color: #fcfcfc	;
+	background-color: #fbfbfb	;
 	font-family: Roboto, sans-serif;
 }
 
@@ -149,6 +149,78 @@ body .topbar+.main-container, body .topbar+main {
 	}
 }
 
+/* subscription */
+.subscription {
+	margin-top: 35px;
+}
+.subscription .card {
+	margin-bottom: 0;
+}
+.subscription p {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-top: 0;
+	font-size: 20px;
+	font-weight: 700;
+}
+.subscription .form-inline {
+	align-content: stretch;
+}
+.subscription .form-inline p {
+	flex-grow: 2;
+}
+.subscription .form-control {
+	width: 250px;
+}
+
+.subscription button {
+	width: 200px;
+}
+@media screen and (max-width: 1200px){
+	.subscription .form-group {
+		width: 200px;
+	}
+}
+@media screen and (max-width: 992px){
+	.subscription .form-inline p {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 768px){
+	.subscription .form-inline p { 
+		text-align: center;
+	}
+	.subscription .form-inline {
+		flex-direction: column;
+	}
+	.subscription .form-group {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+	.subscription .form-control {
+		width: 100%;
+	}
+}
+.subscription button {
+	width: 150px;
+}
+@media screen and (max-width: 768px){
+	.subscription button {
+		width: 100%;
+	}
+}
+.social .card-body {
+	text-align: center;
+	font-weight: 700;
+}
+.social img {
+	max-width: 64px;
+}
+.social .col-12 {
+	margin-bottom: 20px;
+}
 
 
 .state-list {
@@ -169,7 +241,6 @@ body .topbar+.main-container, body .topbar+main {
 .state-list li button:hover {
 	background: #48b0f7;
 	color: #fff;
-	position: 
 }
 
 
@@ -253,11 +324,14 @@ body .topbar+.main-container, body .topbar+main {
 }
 .jobs-card ul > li > a {
 }
-.jobs-card li > span {
+.jobs-card li > span.dlfile {
 	margin: auto;
   	position: absolute;
   	top: 0;  bottom: 0; right: 0;
   	height: 25px;
+}
+.jobs-card li > span.dot {
+	display: inline-block;
 }
 @media screen and (max-width: 576px){
 	.jobs-card ul > li {
@@ -273,17 +347,27 @@ body .topbar+.main-container, body .topbar+main {
 }
 .list-job li {
 	list-style: none;
+	font-weight: 700;
+}
+.list-job li sup {
+	font-size: 12px;
+	color: red;
+}
+.list-job li a {
+	font-weight: 700;
 }
 @media screen and (max-width: 576px){
 	.list-job {
-		padding-left: 15px;
+		padding-left: 0px;
 		text-indent: -4px
 	}
 	.list-job li {
-		list-style: inherit;
+		line-height: 22px;
+		
 	}
 	.list-job li a {
 		text-decoration: underline; 
+		font-weight: 700;
 	}
 }
 .list-job li a span.new {
@@ -297,7 +381,7 @@ body .topbar+.main-container, body .topbar+main {
 }
 .main-content-wrap .card-title,
 .main-sidebar .card-title  {
-	padding: 10px 15px;
+	padding: 5px 15px;
 }
 .main-content-wrap .card-body,
 .main-sidebar .card-body {
