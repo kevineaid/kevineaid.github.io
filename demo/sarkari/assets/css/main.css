@@ -7,6 +7,9 @@ body {
 	font-family: Roboto, sans-serif;
 }
 
+.card {
+	margin-bottom: 10px;
+}
 /* navbar */
 .main-topbar {
 	position: relative;
@@ -38,7 +41,7 @@ body {
 .main-logo {
 }
 .page-ads {
-	padding: 30px 0;
+	padding: 5px 0;
 }
 .ads-item {
 	margin: 0 auto;
@@ -76,9 +79,10 @@ body .topbar+.main-container, body .topbar+main {
 	font-size: 16px;
 }
 .inline-featured {
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 	overflow-x: hidden;
 }
+
 .inline-featured .list-inline {
 	-webkit-animation: moving-featured 25s infinite  linear; /* Safari 4.0 - 8.0 */
     animation: moving-featured 25s infinite linear;
@@ -123,13 +127,17 @@ body .topbar+.main-container, body .topbar+main {
 }
 .grid-featured .card{
 	margin-bottom: 2px;
+	min-height: 70px;
+}
+.grid-featured .card-body {
+	padding: 10px;
 }
 .grid-featured p a {
 	color: #fff;
 }
 @media screen and (max-width: 992px) {
 	.grid-featured .card {
-		min-height: 88px;
+		min-height: 70px;
 	}
 }
 @media screen and (max-width:576px) {
@@ -214,12 +222,35 @@ body .topbar+.main-container, body .topbar+main {
 .social .card-body {
 	text-align: center;
 	font-weight: 700;
+	border-top: 1px solid #f0f0f0;
 }
 .social img {
 	max-width: 64px;
 }
 .social .col-12 {
-	margin-bottom: 20px;
+	padding: 10px;
+}
+.social .col-12:first-child {
+	padding: 10px 40px;
+	font-size: 16px;
+}
+.social .list-social {
+	padding-top: 20px;
+}
+.social .btn {
+	width: 50px;
+	height: 50px;
+	margin:5px 20px;
+	border-radius: 4px;
+}
+@media screen and (max-width: 576px) {
+	.social .btn {
+		margin: 5px 7.5px;
+	}
+}
+.social .fa {
+	font-size: 26px;
+	padding-top: 5px;
 }
 
 
@@ -379,6 +410,13 @@ body .topbar+.main-container, body .topbar+main {
 	font-weight: 700;
 	transform: translateX(7px);
 }
+
+
+/* main-content */
+.main-content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 .main-content-wrap .card-title,
 .main-sidebar .card-title  {
 	padding: 5px 15px;
@@ -430,12 +468,24 @@ body .topbar+.main-container, body .topbar+main {
 .single-content .flex-justified .card {
 	margin-bottom: 0;
 }
+.single-content .flex-justified > * {
+	margin: 0;
+}
+@media screen and (max-width: 400px){
+	.single-content .flex-justified {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.single-content .flex-justified .card {
+		width: 100%;
+	}
+}
 .single-content .post-name {
 	font-weight: 700;
 	font-size: 16px;
 }
 .single-content .btn-multiline {
-	padding: 15px;
+	padding: 10px;
 	width: 100%;
 	font-size: 17px;
 	font-weight: 400;
@@ -480,4 +530,62 @@ body .topbar+.main-container, body .topbar+main {
 .single-box table td a {
 	color: #48b0f7;
 	text-decoration: underline;
+}
+
+
+
+.syllabus-category .lookup {
+	justify-content: flex-end;
+}
+.syllabus-category .card:first-child {
+	box-shadow: none;
+}
+.syllabus-category hr {
+	margin:5px;
+}
+.syllabus-category  .lookup input{
+	width: 300px;
+	padding: 20px;
+}
+.syllabus-category  .lookup .btn {
+	line-height: inherit;
+	padding: 10px;
+	height: 42px;
+}
+@media screen and (max-width: 768px){
+	.syllabus-category  form{
+		width: 100%;
+	}
+	.syllabus-category  .lookup input{
+		width: 70%;
+	}
+	.syllabus-category  .lookup button{
+		width: 30%;
+	}
+}
+@media screen and (max-width: 360px){
+	.syllabus-category  .lookup{
+		flex-direction: column;
+	}
+	.syllabus-category  .lookup input{
+		width:100%;
+		margin-bottom: 10px;
+	}
+	.syllabus-category  .lookup button{
+		width: 100%;
+	}
+}
+.syllabus-category ul li {
+	display: inline-block;
+	margin: 0 4px;
+}
+.syllabus-category .multiple-links {
+	margin-bottom: 0;
+}
+.syllabus-category .multiple-links button {
+	margin: 5px 0px;
+}
+.syllabus-category .multiple-links ul {
+	padding-left: 0;
+	margin-bottom: 5px;
 }
