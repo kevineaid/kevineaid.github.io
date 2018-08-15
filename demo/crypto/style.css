@@ -250,7 +250,7 @@ div#sticker-sticky-wrapper {
 }
 
 .sticky-wrapper.is-sticky .header-top {
-     padding: 20px 0px 9px 0px;
+    padding: 20px 0px 9px 0px;
     position: absolute;
     top: 0;
     left: 0;
@@ -259,6 +259,21 @@ div#sticker-sticky-wrapper {
     background: #0B164E;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
+}
+.sticky-wrapper.is-sticky .main-logo{
+/*    background-color: #2e386d;*/
+    background-color: #3a4890;
+    padding: 10px 12px 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: inline-block;
+}
+@media screen and (max-width: 767px){
+    .sticky-wrapper.is-sticky .main-logo{
+        margin-bottom: 0;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
 
 

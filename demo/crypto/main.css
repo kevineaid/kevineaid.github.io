@@ -4,8 +4,14 @@
 .t-align-center {
 	text-align: center;
 }
+.t-left {
+	text-align: left;
+}
 .pb-300px {
 	padding-bottom: 300px !important;
+}
+.pt-150px {
+	padding-top: 150px !important;
 }
 .pt-100px {
 	padding-top: 100px !important;
@@ -90,6 +96,63 @@
 }
 /* end */
 
+
+
+
+/* Signup Modal */
+.signup-modal {
+	margin-top: 100px;
+	width: 400px;
+}
+.signup-modal .modal-title {
+	text-align: center;
+}
+.signup-tabs {
+	padding-left: 0;
+	z-index: 10;
+	position: relative;
+}
+.signup-tabs li {
+	display: inline-block;
+	list-style: none;
+
+}
+.signup-tabs li a {
+	padding: 10px 65px;
+	border-bottom: 2px solid #eee;
+}
+.signup-tabs li.active a {
+	border-bottom: 2px solid rgb(122,4,255);
+}
+.signup-modal .tab-content {
+	position: relative;
+	z-index: 10;
+}
+.signup-modal form {
+	padding: 30px 10px;
+}
+.signup-modal input {
+	border-radius: 50px;
+	padding: 10px 20px;
+	height: 40px;
+}
+.signup-modal .btn-signup-modal{
+	background: #304ffe;
+	color: #fff;
+	border-radius: 50px;
+	padding: 10px 20px;
+	height: 45px;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	font-weight: 600;
+}
+.signup-modal .bg-img {
+	position: absolute;
+	right: 0;
+	top: -40px;
+	z-index: 0;
+}
 /* section bg */
 #work_area {
 	position: relative;
@@ -268,7 +331,21 @@
 
 /* logo */
 .main-logo img{
+	width: 210px;
 	width: 60px;
+}
+.sticky-wrapper.is-sticky .main-logo{
+/*    background-color: #2e386d;*/
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: inline-block;
+}
+@media screen and (max-width: 767px){
+    .main-logo img{
+        width: 110px;
+    }
 }
 /* end */
 
