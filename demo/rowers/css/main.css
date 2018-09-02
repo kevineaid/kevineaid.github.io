@@ -1,0 +1,54 @@
+
+
+.modal-container:before {
+	background: rgba(0,0,0,0.1);
+	
+}
+
+.modal-container .modal-content:not(.height--natural) {
+	width: 380px;
+	left: initial;
+	right: 0;
+	transform: translateX(0) translateY(0);
+	max-width: 380px;
+	top: initial;
+	bottom: 0;
+}
+@media screen and (max-width: 992px){
+	.modal-container .modal-content:not(.height--natural) {
+		max-width: 300px;
+	}
+	.modal-content .row {
+		margin: 0;
+	}
+	.modal-container .modal-content:not(.height--natural) .boxed:not(:last-child) {
+		margin-bottom: 0;
+	}
+}
+
+.bar--md.visible-xs img {
+	width: 140px;
+	max-height: initial;
+	transform: translateY(-5px);
+}
+.bar-1.hidden-xs img {
+	width: 180px;
+	max-height: initial;
+	transform: translateY(-10px);
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+	.bar__module {
+		margin-bottom: 0 !important;
+	}
+}
+
+.background-image-holder,
+.background-image-holder.background--top {
+	background-size: 100% !important;
+	background-position: 0 -200px !important;
+}
+
+.imagebg:not(.image--light) h1 {
+	font-weight: 600;
+}
