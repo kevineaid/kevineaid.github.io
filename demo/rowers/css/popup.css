@@ -22,7 +22,7 @@ body{
   right: 0px;
   right: -300px;
   transition: all ease 0.3s;
-  z-index: 1;
+  z-index: 9999;
   /* background: yellow; */
 }
 #pop-up.active{
