@@ -61,7 +61,7 @@
                             <div class="bar__module">
                                 <ul class="menu-horizontal text-right">
                                     <li>
-                                        <a href="#">Home</a>
+                                        <a href="index.html">Home</a>
                                     </li>
                                     <li>
                                         <a href="product.html">Product</a>
@@ -74,13 +74,6 @@
                                     </li>
                                     <li>
                                         <a href="#">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a class="btn btn--sm btn-disabled type--uppercase" href="#">
-                                            <span class="btn__text">
-                                                Action
-                                            </span>
-                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -154,8 +147,8 @@
                         <div class="col-md-6 col-lg-4 col-12 text-center">
                             <div class="slider" data-arrows="true">
                                 <ul class="slides">
-                                    <li><img alt="Image" src="img/product_image1.png" /></li>
-                                    <li><img alt="Image" src="img/product_image1.png" /></li>
+                                    <li><img alt="Image" src="img/product_image_1.png" /></li>
+                                    <li><img alt="Image" src="img/product_image_2.png" /></li>
                                 </ul>
                             </div>
 
@@ -182,7 +175,6 @@
                     <div class="row">
                         <div class="col-lg-5 col-md-12">
                             <div class="progress-horizontal progress-horizontal--sm">
-                                <h2>example bar meter</h2>
                                 <p class="progress-horizontal__label h5" style="margin-bottom:10px;">ITO, Delhi<span style="margin-left: 10px;font-size: 12px;background: #cc0033;color: #fff;padding: 0px 6px;font-weight: 700;border-radius: 2px;float:right;">Unhealthy</span></p>
                                 <div class="progress-horizontal__bar" data-value="0" ><div class="progress-horizontal__progress" style="width:65%;background:#cc0033;"></div></div>
                                 <p class="progress-horizontal__label h5">Air Pollution Index : <span style="margin-left: 10px;font-size: 13px;background: #cc0033;color: #fff;padding: 3px 6px;font-weight: 700;border-radius: 2px;">191</span> </p>
@@ -195,7 +187,7 @@
                                 <p class="progress-horizontal__label h5">Air Pollution Index : <span style="margin-left: 10px;font-size: 13px;background: #009966;color: #fff;padding: 3px 6px;font-weight: 700;border-radius: 2px;">40</span> </p>
 
                             </div>
-                            <table class="border--round table--alternate-row">
+                            <!-- <table class="border--round table--alternate-row">
                                 <thead>
                                     <tr>
                                         <th>City</th>
@@ -203,9 +195,9 @@
                                     </tr>
                                 </thead>
                                 <tbody id="aqi" class="type--bold">
-
+                            
                                 </tbody>
-                            </table>
+                            </table> -->
                             <p>*this data updated every one hour</p>
                         </div>
                         <div class="col-lg-7 col-md-12">
@@ -565,7 +557,7 @@
             <i class="stack-interface stack-up-open-big"></i>
         </a>
         <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/flickity.min.js"></script><!--
+        <script src="js/flickity.min.js"></script>
         <script src="js/easypiechart.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/typed.min.js"></script>
@@ -577,10 +569,16 @@
         <script src="js/jquery.steps.min.js"></script>
         <script src="js/countdown.min.js"></script>
         <script src="js/twitterfetcher.min.js"></script>
-        <script src="js/spectragram.min.js"></script> -->
+        <script src="js/spectragram.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/waqi.api.js"></script>
-        <script type="text/javascript" src="js/popup.js"></script>
+        <script>
+            function togglePop() {
+                console.log("fak");
+                document.getElementById("pop-up").classList.toggle('active');
+            }
+
+        </script>
     </body>
 </html>
