@@ -192,10 +192,18 @@ header:after {
   top: -100px;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1280px){
   #main-bg-header img {
     width: auto;
+    max-width: 1400px;
+    top: 0px;
+  }
+}
+@media screen and (max-width: 480px){
+  #main-bg-header img {
+    width:auto;
     max-width: 900px;
+    margin-left: -40%;
   }
 }
 

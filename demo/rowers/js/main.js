@@ -34,7 +34,7 @@ $(document).ready(function(){
         .fadeIn(1000)
         .end()
         .appendTo('#textslide');
-    },  1000);
+    },  5000);
 
 
 });
