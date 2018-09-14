@@ -275,3 +275,11 @@ header:after {
 .feature-7.h-100px {
   height: 80px;
 }
+
+.top-filter {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+.top-filter .feature-7 {
+  margin-bottom: 0;
+}
