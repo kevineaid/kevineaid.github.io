@@ -34,6 +34,12 @@ section#headline {
 	}
 }
 
+
+.bar.bar-1,
+.bar.bar--md {
+  padding: 10px 0;
+}
+
 .bar--md.visible-xs img {
 	width: 140px;
 	max-height: initial;
@@ -42,7 +48,7 @@ section#headline {
 .bar-1.hidden-xs img {
 	width: 180px;
 	max-height: initial;
-	transform: translateY(-10px);
+	transform: translateY(-5px);
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -183,6 +189,7 @@ header:after {
   left:0;
   width: 100%;
   max-width: 100%;
+  top: -100px;
 }
 
 @media screen and (max-width: 480px){
@@ -379,12 +386,13 @@ header:after {
 .top-filter {
   border-top: 1px solid #ddd;
   padding: 10px;
+  padding-bottom: 0;
 }
 .top-filter .feature-7 {
   margin-bottom: 0;
 }
 .top-filter .block {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 
