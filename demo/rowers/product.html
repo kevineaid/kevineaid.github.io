@@ -25,7 +25,7 @@
 
         <a id="start"></a>
         <div class="nav-container ">
-            <div class="bar bar--md visible-xs">
+            <div class="bar bar--md visible-xs bar--mobile-sticky" data-scroll-class="50px:pos-fixed">
                 <div class="container">
                     <div class="row">
                         <div class="col-3 col-md-2">
@@ -45,7 +45,7 @@
                 <!--end of container-->
             </div>
             <!--end bar-->
-            <nav id="menu1" class="bar bar-1 hidden-xs">
+            <nav id="menu1" class="bar bar-1 hidden-xs bar--mobile-sticky" data-scroll-class="50px:pos-fixed">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-3 hidden-xs">
@@ -133,7 +133,7 @@
             </div>
 
 
-        <section class="space--sm product-list top-filter">
+        <section class="product-list top-filter">
             <div class="container">
                 <div class="row portfolioFilter bg--dark">
                     <div class="col-md-2 col-6 offset-md-1">
@@ -182,12 +182,11 @@
                         </a>
                     </div>
                 </div>
-                <hr>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="text-center">Select Category</h2>
+                        <h2 class="text-center mt-1">Select Category</h2>
                         <div class="portfolioFilter clearfix">
-                            <div class="row" style="margin-bottom: 30px;">
+                            <div class="row main-cat" style="margin-bottom: 30px;">
                                 <div class="col-md-4 col-6">
                                     <a href="#" class="block" data-filter="*">
                                         <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
@@ -219,7 +218,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="row" style="margin-bottom: 30px;">
+                            <div class="row hide-toggle" style="margin-bottom: 30px;">
                                 <div class="col-md-3 col-6">
                                     <a href="#" class="block text-center" data-filter="*">
                                         <div class="feature boxed boxed--border border--round p-3">

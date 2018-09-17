@@ -520,3 +520,12 @@ header:after {
 .mailicon:hover .popemail{
   opacity: 1;
 }
+
+
+.nav-xs-stick {
+  position: fixed;
+}
+
+.mhide {
+  
+}
