@@ -29,9 +29,10 @@ $(document).ready(function(){
 
     setInterval(function() { 
       $('#textslide > div:first')
-        .fadeOut(1000)
+        .removeClass('active')
         .next()
         .fadeIn(1000)
+        .addClass('active')
         .end()
         .appendTo('#textslide');
     },  5000);
