@@ -402,7 +402,9 @@ header:after {
 .top-filter .block {
   margin-bottom: 10px;
 }
-
+.top-filter .portfolioFilter .bg--dark {
+  background: #141414;
+}
 
 #textslide { 
     margin: 50px auto; 
@@ -484,9 +486,11 @@ header:after {
 
 .product-icon {
 
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .product-icon img {
-  max-width: 60px;
+  max-width: 70px;
 }
 
 .btn.no-border {
@@ -528,4 +532,18 @@ header:after {
 
 .mhide {
   
+}
+
+.presence .btn {
+  margin: 0 10px;
+  margin-left: 0 !important;
+}
+
+.about-tabs {
+  border:none;
+}
+.about-tabs li {
+  border: 1px solid #aaa;
+  border-right: 1px solid #aaa !important;
+  margin: 0 10px;
 }
