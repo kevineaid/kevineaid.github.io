@@ -488,9 +488,12 @@ header:after {
 
   padding-top: 15px;
   padding-bottom: 15px;
+  text-transform: uppercase;  
 }
 .product-icon img {
   max-width: 70px;
+  margin-bottom: 0;
+  display: block;
 }
 
 .btn.no-border {
