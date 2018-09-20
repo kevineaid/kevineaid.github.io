@@ -525,3 +525,53 @@ header:after {
   border-right: 1px solid #aaa !important;
   margin: 0 10px;
 }
+
+.contact-banner {
+  
+}
+
+.text-white .menu-horizontal > li > a, 
+.text-white .menu-horizontal > li > span {
+  color: #fff !important;
+}
+.text-white .menu-horizontal > li:not(:hover) > a,
+.text-white .menu-horizontal > li:not(:hover) > span {
+  opacity: 1;
+}
+
+
+
+.contact-wrapper {
+  position: relative;
+  margin-top: -300px;
+  background: #fff;
+  z-index: 2;
+  max-width: 70%;
+
+}
+.contact-detail {
+  background: #fafafa;
+  padding: 50px 25px;
+}
+.contact-detail  p {
+  font-size: 13px;
+  font-weight: 600;
+
+}
+.contact-form {
+  padding: 50px 25px;
+  background: #f26824;
+}
+.contact-form-item {
+  padding: 5px;
+}
+
+.contact-form-item input,
+.contact-form-item textarea {
+  background: rgba(255,255,255, 0.1);
+  color: #fff;
+  font-size: 13px;
+  padding: 12px 15px;
+  border-radius: 2px;
+}
+
