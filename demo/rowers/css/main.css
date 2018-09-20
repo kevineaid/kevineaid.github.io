@@ -539,7 +539,25 @@ header:after {
   opacity: 1;
 }
 
+.pos-fixed .menu-horizontal.text-white > li > a, 
+.pos-fixed .menu-horizontal.text-white > li > span {
+  color: #4a4a4a !important;
+}
+.menu-horizontal.text-white > li > a, 
+.menu-horizontal.text-white > li > span {
+  color: #fff !important;
+  opacity: 1;
+}
 
+.pos-fixed .menu-horizontal .btn__text.text-white , 
+.pos-fixed .menu-horizontal .btn__text.text-white  {
+  color: #4a4a4a !important;
+}
+
+.header-btn {
+  border-radius: 2px;
+  padding: 0px 10px;
+}
 
 .contact-wrapper {
   position: relative;
@@ -547,11 +565,10 @@ header:after {
   background: #fff;
   z-index: 2;
   max-width: 70%;
-
 }
 .contact-detail {
   background: #fafafa;
-  padding: 50px 25px;
+  padding: 30px 25px;
 }
 .contact-detail  p {
   font-size: 13px;
@@ -559,11 +576,12 @@ header:after {
 
 }
 .contact-form {
-  padding: 50px 25px;
+  padding: 30px 25px;
   background: #f26824;
 }
 .contact-form-item {
   padding: 5px;
+  margin-bottom: 10px;
 }
 
 .contact-form-item input,
