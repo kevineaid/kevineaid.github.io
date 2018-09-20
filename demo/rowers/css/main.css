@@ -593,3 +593,11 @@ header:after {
   border-radius: 2px;
 }
 
+
+.btn-c-presence {
+  border-radius: 3px;
+  background: #f26824;
+  padding: 3px 0;
+  font-size: 13px;
+  border:none;
+}
