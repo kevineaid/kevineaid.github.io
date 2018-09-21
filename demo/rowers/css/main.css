@@ -649,3 +649,11 @@ header:after {
   max-height: initial;
   width: 120px;
 }
+
+.faq-wrap .tabs li.active .tab__title span {
+  color: #f26824;
+}
+
+.faq-wrap .tabs li:hover .tab__title span {
+  color: #f26824;
+}
