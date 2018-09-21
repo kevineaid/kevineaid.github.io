@@ -225,6 +225,7 @@ header:after {
 
 #headline {
   height: calc(100vh - 105px);
+  height: 100vh;
 }
 
 #headline .d-flex {
@@ -549,6 +550,32 @@ header:after {
   opacity: 1;
 }
 
+
+
+.pos-fixed .menu-horizontal.text-white > li > a, 
+.pos-fixed .menu-horizontal.text-white > li > span {
+  color: #4a4a4a !important;
+  font-size: 13.5px;
+  text-transform: uppercase;
+}
+.menu-horizontal.text-white > li > a, 
+.menu-horizontal.text-white > li > span {
+  color: #fff !important;
+  opacity: 1;
+  font-size: 13.5px;
+  text-transform: uppercase;
+}
+
+.pos-fixed .menu-horizontal.text-white > li > a:hover, 
+.pos-fixed .menu-horizontal.text-white > li > span:hover {
+  color: #f26824 !important;
+}
+.menu-horizontal.text-white > li > a:hover , 
+.menu-horizontal.text-white > li > span:hover {
+  color: #f26824 !important;
+  opacity: 1;
+}
+
 .pos-fixed .menu-horizontal .btn__text.text-white , 
 .pos-fixed .menu-horizontal .btn__text.text-white  {
   color: #4a4a4a !important;
@@ -596,8 +623,30 @@ header:after {
 
 .btn-c-presence {
   border-radius: 3px;
-  background: #f26824;
+  
+  background: #aaa;
   padding: 3px 0;
   font-size: 13px;
   border:none;
+}
+.btn-c-presence:hover {
+  background: #f26824;
+}
+
+.bar.main-bar {
+  padding: 10px 0;
+  padding-bottom: 20px;
+}
+
+.main-bar .logo {
+  width: 120px;
+  max-height: initial;
+}
+
+.main-footer {
+  padding: 25px 0 ;
+}
+.main-footer .logo {
+  max-height: initial;
+  width: 120px;
 }
