@@ -404,7 +404,7 @@ header:after {
 }
 .icon-bar {
   position: fixed;
-  bottom: 90px;
+  bottom: 150px;
   right: 0;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -643,7 +643,7 @@ header:after {
 }
 
 .main-footer {
-  padding: 25px 0 ;
+  padding: 20px 0 ;
 }
 .main-footer .logo {
   max-height: initial;
