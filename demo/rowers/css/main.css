@@ -274,27 +274,26 @@ header:after {
 #pop-up{
   /* width: auto; */
   height: auto;
-  bottom: 0;
   position: fixed;
-  right: 0px;
-  right: -300px;
-  transition: all ease 0.3s;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  
   z-index: 9999;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
   /* background: yellow; */
 }
-#pop-up.active{
-  right: 0px;
-}
 .pop-up-wrap {
-  position: relative;
+
 }
-#pop-up .trigger-pop{
+.trigger-pop{
   width: auto;
-  position: absolute;
-  top: 80px;
-  left: -124px;
+  position: fixed;
+  width: 210px;
   color: white;
-  float: left;
+  bottom: 100px;
+  right: 0;
+  right: -85px;
   background:   #f26824;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -305,7 +304,7 @@ header:after {
   cursor: pointer;
   transform: rotate(-90deg);
 }
-#pop-up .trigger-pop h3{
+.trigger-pop h3{
   font-size: 16px;
   color: white;
   font-weight: 600;
@@ -316,7 +315,7 @@ header:after {
   width: 300px;
   height: 100%;
   background: white;
-  float: right;
+
   padding: 15px 12px;
   padding-bottom: 5px;
   border-top-right-radius: 5px;
@@ -405,7 +404,7 @@ header:after {
 }
 .icon-bar {
   position: fixed;
-  top: 26.75%;
+  bottom: 90px;
   right: 0;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -430,7 +429,7 @@ header:after {
 }
 
 .icon-bar a:hover {
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,1);
 }
 
 .facebook {
@@ -496,7 +495,7 @@ header:after {
   color: #f26824;
   transform: translateY(-50%);
   font-size: 15px;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,1);
   font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
   transition: all .3s ease;
 }
@@ -624,7 +623,7 @@ header:after {
 .btn-c-presence {
   border-radius: 3px;
   
-  background: #aaa;
+  background: #eee;
   padding: 3px 0;
   font-size: 13px;
   border:none;

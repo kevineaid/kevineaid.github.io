@@ -44,4 +44,11 @@ $(document).ready(function(){
         $('.hide-toggle').hide();
         $('.hide-toggle').fadeIn(300);
     });
+
+    $('#pop-up').hide();
+    $('#trigger-popup').click(function() {
+        $('#pop-up').fadeToggle(400);
+    });
 });
+
+
