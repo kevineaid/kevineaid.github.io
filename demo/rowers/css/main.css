@@ -370,6 +370,7 @@ header:after {
   border-top: 1px solid #ddd;
   padding: 10px;
   padding-bottom: 0;
+  padding-top: 65px;
 }
 .top-filter .feature-7 {
   margin-bottom: 0;
@@ -379,6 +380,9 @@ header:after {
 }
 .top-filter .portfolioFilter .bg--dark {
   background: #141414;
+}
+.top-filter .portfolioFilter.row {
+  border-top: 1px solid #ddd;
 }
 
 #textslide { 
@@ -530,26 +534,10 @@ header:after {
   
 }
 
-.text-white .menu-horizontal > li > a, 
-.text-white .menu-horizontal > li > span {
-  color: #fff !important;
-}
-.text-white .menu-horizontal > li:not(:hover) > a,
-.text-white .menu-horizontal > li:not(:hover) > span {
-  opacity: 1;
-}
-
 .pos-fixed .menu-horizontal.text-white > li > a, 
 .pos-fixed .menu-horizontal.text-white > li > span {
   color: #4a4a4a !important;
 }
-.menu-horizontal.text-white > li > a, 
-.menu-horizontal.text-white > li > span {
-  color: #fff !important;
-  opacity: 1;
-}
-
-
 
 .pos-fixed .menu-horizontal.text-white > li > a, 
 .pos-fixed .menu-horizontal.text-white > li > span {
@@ -559,7 +547,7 @@ header:after {
 }
 .menu-horizontal.text-white > li > a, 
 .menu-horizontal.text-white > li > span {
-  color: #fff !important;
+  color: #fff ;
   opacity: 1;
   font-size: 13.5px;
   text-transform: uppercase;
@@ -578,6 +566,21 @@ header:after {
 .pos-fixed .menu-horizontal .btn__text.text-white , 
 .pos-fixed .menu-horizontal .btn__text.text-white  {
   color: #4a4a4a !important;
+}
+
+.menu-horizontal.text-white > li > a:hover , 
+.menu-horizontal.text-white > li > span:hover {
+  color: #f26824 !important;
+  opacity: 1;
+}
+.bar-nobg .menu-horizontal.text-white > li > a{
+  color: #3a3a3a;
+}
+.bar-nobg .menu-horizontal.text-white > li > span {
+  color: #3a3a3a !important;
+}
+.bar-nobg .menu-horizontal.text-white > li span.btn__text.text-white {
+  color: #3a3a3a !important;
 }
 
 .header-btn {
@@ -660,4 +663,21 @@ header:after {
 
 .slogan {
   font-size: 11px !important;
+}
+
+.btn-about-tab {
+  border-radius: 3px;
+  padding: 5px 20px !important;
+}
+
+
+.btn-about-tab.active {
+  border: 1px solid #f26824
+}
+.btn-about-tab:hover span{
+  color: #f26824 !important;
+}
+.btn-about-tab.active span{
+  color: #f26824 !important;
+  ;
 }
