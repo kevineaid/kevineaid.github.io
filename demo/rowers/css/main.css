@@ -380,6 +380,7 @@ header:after {
 }
 .top-filter .portfolioFilter .bg--dark {
   background: #141414;
+  background: #fda523;
 }
 .top-filter .portfolioFilter.row {
   border-top: 1px solid #ddd;
@@ -718,4 +719,8 @@ header:after {
 }
 .btn--orange .btn__text {
   color: #fff;
+}
+
+.img-wrap {
+  height: 400px;
 }
