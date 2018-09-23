@@ -672,7 +672,7 @@ header:after {
 
 
 .btn-about-tab.active {
-  border: 1px solid #f26824
+  border: 1px solid #f26824;
 }
 .btn-about-tab:hover span{
   color: #f26824 !important;
@@ -680,4 +680,42 @@ header:after {
 .btn-about-tab.active span{
   color: #f26824 !important;
   ;
+}
+
+
+
+
+.product--tile img {
+  width: 80%;
+}
+.product-capt p a {
+  color: #f26824;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+.product-capt .price {
+  font-size: 30px;
+
+  font-weight: 700;
+}
+.product-capt a h3{
+  font-weight: 700;
+}
+.product-capt a:hover{
+  text-decoration: none;
+  
+}
+.product-capt a:hover h3{
+  color: #f26824;
+}
+.product-capt p {
+  font-size: 17px;
+}
+
+.btn--orange {
+  background: #f26824;
+}
+.btn--orange .btn__text {
+  color: #fff;
 }

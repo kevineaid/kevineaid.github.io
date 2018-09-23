@@ -40,9 +40,11 @@ $(document).ready(function(){
 
     $('.hide-toggle').hide();
 
-    $('.main-cat .block').click(function(){
-        $('.hide-toggle').hide();
+    $('.main-cat .air-filter').click(function(){
         $('.hide-toggle').fadeIn(300);
+    });
+    $('.main-cat .all-filter').click(function(){
+        $('.hide-toggle').fadeOut(300);
     });
 
     $('#pop-up').hide();

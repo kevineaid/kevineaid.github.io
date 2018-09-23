@@ -186,25 +186,15 @@
                         <div class="col-12">
 
                          <div class="portfolioFilter clearfix">
-                            <div class="row main-cat" style="margin-bottom: 30px;">
-                                <div class="col-md-4 offset-md-1 col-6">
-                                    <a href="#" class="block" data-filter="*">
-                                        <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
-                                            <div class="background-image-holder" style="background: url(&quot;img/blog-1.jpg&quot;); opacity: 1;">
-                                                <img alt="background" src="img/cowork-11.jpg">
-                                            </div>
-                                            <h3 class="pos-vertical-center type--bold">All Products</h3>
-                                        </div>
+                            <div class="row main-cat pt-3" style="margin-bottom: 10px;">
+                                <div class="col-md-4 offset-md-3 col-6">
+                                    <a href="#" class="block all-filter" data-filter="*">
+                                        <img src="img/icon/allproduct.png" alt="" style="max-width: 130px;">
                                     </a>
                                 </div>
                                 <div class="col-md-3 col-6">
-                                    <a href="#" class="block" data-filter=".airp">
-                                        <div class="feature feature-7 boxed text-center imagebg h-100px" data-overlay="3">
-                                            <div class="background-image-holder" style="background: url(&quot;img/cowork-1.jpg&quot;); opacity: 1;">
-                                                <img alt="background" src="img/cowork-10.jpg">
-                                            </div>
-                                            <h3 class="pos-vertical-center type--bold">Air Purifier</h3>
-                                        </div>
+                                    <a href="#" class="block air-filter" data-filter="*">
+                                        <img src="img/icon/air.png" alt="" style="max-width: 130px;">
                                     </a>
                                 </div><!-- 
                                 <div class="col-md-4 col-6">
@@ -218,16 +208,16 @@
                                     </a>
                                 </div> -->
                             </div>
-                            <div class="row hide-toggle" style="margin-bottom: 30px;">
+                            <div class="row hide-toggle mb-0" >
                                 <div class="col-md-2 offset-md-1 col-6">
-                                    <a href="#" class="block text-center" data-filter="*">
+                                    <a href="#" class="block text-center" data-filter=".home">
                                         <div class="feature boxed boxed--border border--round p-3">
                                             <h4 class="color--dark type--bold">Home</h4>
                                         </div>
                                     </a>
                                 </div>
                                  <div class="col-md-2 col-6">
-                                    <a href="#" class="block text-center" data-filter="*">
+                                    <a href="#" class="block text-center" data-filter=".office">
                                         <div class="feature boxed boxed--border border--round p-3">
                                             <h4 class="color--dark type--bold">Office</h4>
                                         </div>
@@ -265,96 +255,64 @@
                 <div class="container">
                 <div class="row">
                     <div class="col-lg-12 ">
-                        <div class="masonry__container row masonry--active portfolioContainer" style="position: relative;">
-                            <div class="masonry__item col-md-4" style="position: absolute; left: 0px; top: 0px;"></div>
-                            <div class="masonry__item col-md-4 solar" data-masonry-filter="Audio" style="position: absolute; left: 0px; top: 0px;">
-                                <div class="product">
-                                    <a href="detail.html">
-                                        <img alt="Image" src="img/product_image_1.png">
-                                    </a>
-                                    <a class="block" href="detail.html">
-                                        <div>
-                                            <h5>DALI Xensor 2</h5>
-                                            <span> Desktop Speaker</span>
+                        <div class="masonry masonry--tiles">
+                                <div class="masonry__container row masonry--active  portfolioContainer" style="position: relative; height: 3040.35px;">
+                                    <div class="masonry__item col-md-6" style="position: absolute; left: 0px; top: 0px;"></div>
+                                    <div class="masonry__item col-md-6 home" data-masonry-filter="home" style="position: absolute; left: 0px; top: 0px;">
+                                        <div class="product product--tile bg--secondary text-center">
+                                            <!-- <span class="label">Sale</span> -->
+                                            <a href="#">
+                                                <img alt="Image" src="img/product_image_1.png">
+                                            </a>
+                                            <div class="product-capt text-left">
+                                                <a href="detail.html"><h3 class="mb-3 text-uppercase">Product Name Here!</h3></a>
+                                                <p class="mb-3">Little description about product. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt beatae esse velit ipsa sunt incidunt aut voluptas. <span><a href="detail.html">Know More</a></span> </p>
+                                                <p class="price mb-3">
+                                                    &#8377 269
+                                                </p>
+                                                <a class="btn btn--lg btn--orange" href="detail.html">
+                                                    <span class="btn__text">Buy Now</span>
+                                                </a>
+                                                <a class="btn btn--lg btn--orange" href="detail.html">
+                                                    <span class="btn__text">Compare</span>
+                                                </a>
+
+
+                                            </div>
+
                                         </div>
-                                        <div>
-                                            <span class="h4 inline-block">$269</span>
+                                    </div>
+                                    <!--end item-->
+                                    <div class="masonry__item col-md-6 office" data-masonry-filter="home" style="position: absolute; left: 0px; top: 0px;">
+                                        <div class="product product--tile bg--secondary text-center">
+                                            <!-- <span class="label">Sale</span> -->
+                                            <a href="#">
+                                                <img alt="Image" src="img/product_image_2.png">
+                                            </a>
+                                            <div class="product-capt  text-left">
+                                                <a href="detail.html"><h3 class="mb-3 text-uppercase">Product Name Here!</h3></a>
+                                                <p class="mb-3">Little description about product. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt beatae esse velit ipsa sunt incidunt aut voluptas. <span><a href="detail.html">Know More</a></span> </p>
+                                                <p class="price mb-3">
+                                                    &#8377 269
+                                                </p>
+                                                <a class="btn btn--lg btn--orange" href="detail.html">
+                                                    <span class="btn__text">Buy Now</span>
+                                                </a>
+                                                <a class="btn btn--lg btn--orange" href="detail.html">
+                                                    <span class="btn__text">Compare</span>
+                                                </a>
+
+
+                                            </div>
+
                                         </div>
-                                    </a>
+                                    </div>
+                                    <!--end item-->
+                                    <!--end item-->
                                 </div>
+                                <!--end masonry container-->
                             </div>
-                            <!--end item-->
-                            
-                            <div class="masonry__item col-md-4 airp" data-masonry-filter="Computing" style="position: absolute; left: 760px; top: 0px;">
-                                <div class="product">
-                                    <a href="detail.html">
-                                        <img alt="Image" src="img/product_image_2.png">
-                                    </a>
-                                    <a class="block" href="detail.html">
-                                        <div>
-                                            <h5>Microsoft Surface</h5>
-                                            <span> 256GB Core i7</span>
-                                        </div>
-                                        <div>
-                                            <span class="h4 inline-block">$1399</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--end item-->
-                            <div class="masonry__item col-md-4 solar" data-masonry-filter="Computing" style="position: absolute; left: 0px; top: 374px;">
-                                <div class="product">
-                                    <a href="detail.html">
-                                        <img alt="Image" src="img/product_image_1.png">
-                                    </a>
-                                    <a class="block" href="detail.html">
-                                        <div>
-                                            <h5>Samsung Ativ</h5>
-                                            <span> 256GB Core i5</span>
-                                        </div>
-                                        <div>
-                                            <span class="h4 inline-block">$1099</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--end item-->
-                            <div class="masonry__item col-md-4 airp" data-masonry-filter="Audio" style="position: absolute; left: 760px; top: 374px;">
-                                <div class="product">
-                                    <a href="detail.html">
-                                        <img alt="Image" src="img/product_image_1.png">
-                                    </a>
-                                    <a class="block" href="detail.html">
-                                        <div>
-                                            <h5>Audison TMA-4</h5>
-                                            <span> Bluetooth Headphones</span>
-                                        </div>
-                                        <div>
-                                            <span class="h4 inline-block">$279</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--end item-->
-                            <div class="masonry__item col-md-4 solar" data-masonry-filter="Audio" style="position: absolute; left: 380px; top: 0px;">
-                                <div class="product">
-                                    <a href="detail.html">
-                                        <img alt="Image" src="img/product_image_2.png">
-                                    </a>
-                                    <a class="block" href="detail.html">
-                                        <div>
-                                            <h5>Tivoli M1</h5>
-                                            <span> Digital Radio</span>
-                                        </div>
-                                        <div>
-                                            <span class="h4 inline-block type--strikethrough">$479</span>
-                                            <span class="h4 inline-block">$399</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--end item-->
-                        </div> 
+
                     </div>
                 </div>
             </div>
