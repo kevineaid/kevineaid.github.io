@@ -728,3 +728,47 @@ header:after {
 .img-wrap {
   height: 400px;
 }
+
+
+
+.custom-tabs .nav-tabs .nav-item, 
+.custom-tabs .nav-tabs .nav-item{
+  background: #fff;
+  width: 33.3%;
+  text-align: center;
+}
+.custom-tabs .nav-tabs .nav-link, 
+.custom-tabs .nav-tabs .nav-link{
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: none;
+  padding: 12px 0;
+  font-size: 16px;
+  color: #4a4a4a;
+  font-weight: 700;
+}
+.custom-tabs .nav-tabs .nav-link.active {
+  background: #f3f3f3;
+}
+
+.tab-wrap {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 30px;
+  font-size: 15px;
+}
+.tab-wrap strong {
+  font-weight: 700;
+  font-size: 17px;
+}
+.tab-wrap p {
+  margin-bottom: 20px;
+}
+
+.related-product-img {
+
+}
+.related-product .product img {
+  max-width: 140px;
+}
