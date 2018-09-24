@@ -378,7 +378,7 @@ header:after {
 .top-filter .block {
   margin-bottom: 10px;
 }
-.top-filter .portfolioFilter .bg--dark {
+.top-filter .bg--dark {
   background: #141414;
   background: #fda523;
 }
@@ -717,7 +717,11 @@ header:after {
 .btn--orange {
   background: #f26824;
 }
-.btn--orange .btn__text {
+.btn--gray {
+  background: #aaa;
+}
+.btn--orange .btn__text,
+.btn--gray .btn__text {
   color: #fff;
 }
 
