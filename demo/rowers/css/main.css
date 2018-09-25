@@ -793,3 +793,7 @@ header:after {
 .accordion li .accordion__title, .accordion li .accordion__content, .accordion li .accordion__content * {
   font-size: 16px;
 }
+
+ul.ctm-accordion {
+  min-height: initial !important;
+} 
