@@ -303,6 +303,7 @@ header:after {
   padding-left: 20px;
   cursor: pointer;
   transform: rotate(-90deg);
+  z-index: 100;
 }
 .trigger-pop h3{
   font-size: 16px;
@@ -772,4 +773,23 @@ header:after {
 .related-product .product img {
   max-width: 160px;
   height: 160px;
+}
+
+
+.slide:not([class*='col-']) > img:only-child {
+  max-width: 100%;
+  width: auto;
+  height: 300px;
+}
+
+.slider .slides .flickity-slider > li:not([class*='col-']) {
+  text-align: center;
+}
+
+.main-detail-prduct p{
+  font-size: 18px;
+}
+
+.accordion li .accordion__title, .accordion li .accordion__content, .accordion li .accordion__content * {
+  font-size: 16px;
 }
