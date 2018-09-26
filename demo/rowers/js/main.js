@@ -38,29 +38,59 @@ $(document).ready(function(){
     },  5000);
 
     //monitor
-    $("#mon_01").ezPlus();
-    $("#mon_02").ezPlus();
-    $("#mon_03").ezPlus();
+    $("#mon_01").ezPlus({
+    scrollZoom: true
+});
+    $("#mon_02").ezPlus({
+    scrollZoom: true
+});
+    $("#mon_03").ezPlus({
+    scrollZoom: true
+});
 
     //gavi 
-    $("#gavi_01").ezPlus();
-    $("#gavi_02").ezPlus();
-    $("#gavi_03").ezPlus();
+    $("#gavi_01").ezPlus({
+    scrollZoom: true
+});
+    $("#gavi_02").ezPlus({
+    scrollZoom: true
+});
+    $("#gavi_03").ezPlus({
+    scrollZoom: true
+});
 
     //car
-    $("#car_01").ezPlus();
-    $("#car_02").ezPlus();
-    $("#car_03").ezPlus();
+    $("#car_01").ezPlus({
+    scrollZoom: true
+});
+    $("#car_02").ezPlus({
+    scrollZoom: true
+});
+    $("#car_03").ezPlus({
+    scrollZoom: true
+});
 
     //kinnaur
-    $("#kin_01").ezPlus();
-    $("#kin_02").ezPlus();
-    $("#kin_03").ezPlus();
+    $("#kin_01").ezPlus({
+    scrollZoom: true
+});
+    $("#kin_02").ezPlus({
+    scrollZoom: true
+});
+    $("#kin_03").ezPlus({
+    scrollZoom: true
+});
 
     //mask
-    $("#mask_01").ezPlus();
-    $("#mask_02").ezPlus();
-    $("#mask_03").ezPlus();
+    $("#mask_01").ezPlus({
+    scrollZoom: true
+});
+    $("#mask_02").ezPlus({
+    scrollZoom: true
+});
+    $("#mask_03").ezPlus({
+    scrollZoom: true
+});
 
 
 
