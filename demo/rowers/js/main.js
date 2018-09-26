@@ -47,9 +47,9 @@ $(document).ready(function(){
         $('.hide-toggle').fadeOut(300);
     });
 
-    $('#pop-up').hide();
     $('#trigger-popup').click(function() {
-        $('#pop-up').fadeToggle(400);
+        $('#pop-up').toggleClass('active');
+        $('.trigger-pop').toggleClass('active');
     });
 
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);

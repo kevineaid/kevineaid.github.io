@@ -232,13 +232,14 @@ header:after {
 	height: 3	00px;
 }
 #headline .heading {
-	margin-top: 100px;
+	
 	color: #000;
 	display: inline-block;
 	background: rgba(255,255,255,0.7);
 	padding: 5px 10px;
 }
 #headline .subheading {
+  margin-top: 200px;
 	width: 440px;
 	color: #fff;
 	padding: 10px;
@@ -275,13 +276,16 @@ header:after {
   /* width: auto; */
   height: auto;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  
+  bottom: 0;
+  right: 0;
+  right: -300px;
   z-index: 9999;
-  box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
   /* background: yellow; */
+  transition: all .4s ease;
+}
+#pop-up.active {
+  right: 0;
 }
 .pop-up-wrap {
 
@@ -291,9 +295,9 @@ header:after {
   position: fixed;
   width: 210px;
   color: white;
-  bottom: 100px;
+  bottom: 292.5px;
   right: 0;
-  right: -85px;
+  right: -82.5px;
   background:   #f26824;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -304,6 +308,10 @@ header:after {
   cursor: pointer;
   transform: rotate(-90deg);
   z-index: 100;
+  transition: all .4s ease;
+}
+.trigger-pop.active {
+  right: 217.5px;
 }
 .trigger-pop h3{
   font-size: 16px;
@@ -410,7 +418,7 @@ header:after {
 }
 .icon-bar {
   position: fixed;
-  bottom: 150px;
+  bottom: 330px;
   right: 0;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -675,6 +683,7 @@ header:after {
 
 .btn-about-tab.active {
   border: 1px solid #f26824;
+  border-right: 1px solid #f26824 !important;
 }
 .btn-about-tab:hover span{
   color: #f26824 !important;
@@ -779,7 +788,8 @@ header:after {
 .slide:not([class*='col-']) > img:only-child {
   max-width: 100%;
   width: auto;
-  height: 300px;
+  padding: 0 40px;
+  height: auto;
 }
 
 .slider .slides .flickity-slider > li:not([class*='col-']) {
