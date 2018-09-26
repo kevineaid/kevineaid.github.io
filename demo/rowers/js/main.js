@@ -37,6 +37,38 @@ $(document).ready(function(){
         .appendTo('#textslide');
     },  5000);
 
+    //monitor
+    $("#mon_01").ezPlus();
+    $("#mon_02").ezPlus();
+    $("#mon_03").ezPlus();
+
+    //gavi 
+    $("#gavi_01").ezPlus();
+    $("#gavi_02").ezPlus();
+    $("#gavi_03").ezPlus();
+
+    //car
+    $("#car_01").ezPlus();
+    $("#car_02").ezPlus();
+    $("#car_03").ezPlus();
+
+    //kinnaur
+    $("#kin_01").ezPlus();
+    $("#kin_02").ezPlus();
+    $("#kin_03").ezPlus();
+
+    //mask
+    $("#mask_01").ezPlus();
+    $("#mask_02").ezPlus();
+    $("#mask_03").ezPlus();
+
+
+
+
+
+
+
+
 
     $('.hide-toggle').hide();
 
