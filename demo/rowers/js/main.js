@@ -94,7 +94,7 @@ $(document).ready(function(){
 
 
 
-
+    $(".nav-container").css("min-height", "initial");
 
 
 

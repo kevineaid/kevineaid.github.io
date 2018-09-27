@@ -148,7 +148,7 @@ section#headline {
   position:fixed;
   width:450px;
   margin:0 auto;
-  margin-top: -105px;
+  /* margin-top: -105px; */
   width: 100%;
   z-index: -9999;
 }
@@ -379,7 +379,7 @@ header:after {
   border-top: 1px solid #ddd;
   padding: 10px;
   padding-bottom: 0;
-  padding-top: 65px;
+  
 }
 .top-filter .feature-7 {
   margin-bottom: 0;
@@ -600,7 +600,7 @@ header:after {
 
 .contact-wrapper {
   position: relative;
-  margin-top: -300px;
+  margin-top: -200px;
   background: #fff;
   z-index: 2;
   max-width: 70%;
@@ -807,3 +807,40 @@ header:after {
 ul.ctm-accordion {
   min-height: initial !important;
 } 
+
+
+@media screen and (max-width: 991.9px){
+  .nav-hidden {
+    display: none;
+  }
+}
+
+.menu-horizontal > li:not(:hover) > a, 
+.menu-horizontal > li:not(:hover) > span{
+  opacity: .9;
+}
+
+.menu-horizontal > li.active > a, 
+.menu-horizontal > li.active > span {
+  color: #f26824;
+  font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f26824;
+}
+
+
+#main-bg-header.bg-noanime img{
+  animation: none;
+}
+.banner-h40 {
+  height: 40vh;
+  background: transparent;
+}
+.banner-h50 {
+  height: 50vh;
+  background: transparent;
+}
+.banner-h60 {
+  height: 60vh;
+  background: transparent;
+}
