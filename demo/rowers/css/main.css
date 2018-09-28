@@ -422,8 +422,8 @@ header:after {
 }
 .icon-bar {
   position: fixed;
-  bottom: 330px;
-  right: 0;
+  bottom: 130px;
+  left: 0;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -507,7 +507,7 @@ header:after {
   position: absolute;
 
   opacity: 0;
-  left: -145px;
+  right: -145px;
   top: 50%;
   padding: 14px 14px;
   color: #f26824;
@@ -851,6 +851,7 @@ ul.ctm-accordion {
 
 .thecontent p {
   margin-bottom: 5px;
+  text-align: justify;
 }
 .thecontent p.lead {
   margin-bottom: 5px;
