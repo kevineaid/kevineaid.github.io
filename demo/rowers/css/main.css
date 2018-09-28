@@ -166,6 +166,9 @@ header:after {
   max-width: 100%;
   top: -100px;
 }
+#main-bg-header.bg-noanime img {
+  top: 0px;
+}
 
 @media screen and (max-width: 1280px){
   #main-bg-header img {
