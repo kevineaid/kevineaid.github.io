@@ -845,3 +845,7 @@ ul.ctm-accordion {
   height: 60vh;
   background: transparent;
 }
+
+.thecontent p {
+  margin-bottom: 10px;
+}
