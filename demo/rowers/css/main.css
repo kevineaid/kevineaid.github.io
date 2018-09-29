@@ -422,11 +422,8 @@ header:after {
 }
 .icon-bar {
   position: fixed;
-  bottom: 130px;
+  bottom: 205px;
   left: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   z-index: 9999;
 }
 
@@ -975,9 +972,26 @@ ul.ctm-accordion {
   .img-wrap {
     height: auto;
   }
+
+  .icon-bar a {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 767.8px){
+  #headline {
+    height: 60vh;
+  }
+  #headline .item {
+    width: 100%;
+  }
+  .subheading {
+    font-size: 18px !important;
+    margin-top: 0 !important;
+    line-height: 26px !important;
+    width: 80% !important;
+  }
   .contact-wrapper {
     max-width: 100%;
   }
@@ -990,7 +1004,7 @@ ul.ctm-accordion {
     margin: 0 auto;
   }
   .icon-bar a {
-    padding: 8px;
+    padding: 8.5px;
   }
   .mailicon .popemail {
     padding: 8px 8px;
@@ -1015,6 +1029,14 @@ ul.ctm-accordion {
 
   footer .slogan {
     margin-top: -10px !important;
+  }
+
+  .icon-bar a {
+    
+  }
+
+  .icon-bar i {
+    font-size: 16px;
   }
 
 }
