@@ -25,7 +25,11 @@ $( document ).ready(function() {
 
 function fetchAqi(){
 	for (var i = 0 ; i < cities.length; i++) {
-		$('#aqi').append('<tr><td>'+cityName[i]+'</td><td>'+colorize(cityAqi[i])+'</td></tr>');
+		if (cityAqi[i] == 'undefined') {
+			$('#aqi').append('<tr><td><span class="fa fa-map-marker-alt" style="opacity: 0.3;"></span>&nbsp; '+cityName[i]+'</td><td>pending</td></tr>');
+		}else {
+			$('#aqi').append('<tr><td><span class="fa fa-map-marker-alt" style="opacity: 0.3;"></span>&nbsp; '+cityName[i]+'</td><td>'+colorize(cityAqi[i])+'</td></tr>');
+		}
 	}
 }
 function showStation(station) {
@@ -40,28 +44,28 @@ function showStation(station) {
 function colorize(aqi) {
 	var x;
 	if (aqi >=0 ) {
-		x = '<span style="background:#f5f5f5;font-size: 16px;color:#009966;padding: 5px 10px;font-weight:700;border-radius:2px;margin-right:5px;">'
+		x = '<span class="fa fa-stream" style="opacity: 0.3;"></span>&nbsp; <span style="background:#f5f5f5;font-size: 16px;color:#009966;padding: 5px 10px;font-weight:700;border-radius:2px;margin-right:5px;">'
 		+aqi+
 		'</span><span style="background:#009966;color:#fff;padding: 5px 10px;font-weight:700;border-radius:2px;">'
 		+'Good'+
 		'</span>';
 	}
 	if (aqi >=51 ) {
-		x = '<span style="background:#f5f5f5;font-size: 16px;color:#4a4a4a;padding: 5px 10px;font-weight:700;border-radius:2px;margin-right:5px;">'
+		x = '<span class="fa fa-stream" style="opacity: 0.3;"></span>&nbsp; <span style="background:#f5f5f5;font-size: 16px;color:#4a4a4a;padding: 5px 10px;font-weight:700;border-radius:2px;margin-right:5px;">'
 		+aqi+
 		'</span><span style="background:#ffde33;color:#000000;padding: 5px 10px;font-weight:700;border-radius:2px;">'
 		+'Moderate'+
 		'</span>';
 	}
 	if (aqi >=101 ) {
-		x = '<span style="background:#f5f5f5;font-size: 16px;color:#ff9933;padding: 5px 10px;font-weight:700;border-radius:2px;margin-right:5px;">'
+		x = '<span class="fa fa-stream" style="opacity: 0.3;"></span>&nbsp; <span style="background:#f5f5f5;font-size: 16px;color:#ff9933;padding: 5px 10px;font-weight:700;border-radius:2px;margin-right:5px;">'
 		+aqi+
 		'</span><span style="background:#ff9933;color:#000000;padding: 5px 10px;font-weight:700;border-radius:2px;">'
 		+'Partly Unhealthy'+
 		'</span>';
 	}
 	if (aqi >=151 ) {
-		x = '<span style="background:#f5f5f5;font-size: 16px;color:#cc0033;padding: 5px 10px;font-weight:700;border-radius:2px;margin-right:5px;">'
+		x = '<span class="fa fa-stream" style="opacity: 0.3;"></span>&nbsp; <span style="background:#f5f5f5;font-size: 16px;color:#cc0033;padding: 5px 10px;font-weight:700;border-radius:2px;margin-right:5px;">'
 		+aqi+
 		'</span><span style="background:#cc0033;color:#fff;padding: 5px 10px;font-weight:700;border-radius:2px;">'
 		+'Unhealthy'+
@@ -75,7 +79,7 @@ function colorize(aqi) {
 		'</span>';
 	}
 	if (aqi >=301 ) {
-		x = '<span style="background:#f5f5f5;font-size: 16px;color:#7e0023;padding: 5px 10px;font-weight:700;border-radius:2px;margin-right:5px;">'
+		x = '<span class="fa fa-stream" style="opacity: 0.3;"></span>&nbsp; <span style="background:#f5f5f5;font-size: 16px;color:#7e0023;padding: 5px 10px;font-weight:700;border-radius:2px;margin-right:5px;">'
 		+aqi+
 		'</span><span style="background:#7e0023;color:#fff;padding: 5px 10px;font-weight:700;border-radius:2px;">'
 		+'Hazardous'+

@@ -857,3 +857,32 @@ ul.ctm-accordion {
   margin-bottom: 5px;
   margin-top: 15px;
 }
+
+.index-class {
+  font-weight:  600;
+}
+.index-class td span {
+  color:#fff;
+  padding: 5px 10px;
+  font-weight:700;
+  border-radius:4px;
+  margin-right: 5px;
+}
+
+@media all and (max-width: 991.8px) {
+  .bar.bar--mobile-sticky[data-scroll-class*='fixed'].pos-fixed {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+  }
+
+  .bar.bar--mobile-sticky[data-scroll-class*='fixed'] + .bar.pos-fixed {
+    top: 3.71428571em;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+
+  }
+}
