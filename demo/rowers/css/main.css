@@ -425,6 +425,7 @@ header:after {
   bottom: 205px;
   left: 0;
   z-index: 9999;
+  z-index: 100;
 }
 
 .icon-bar a {
@@ -939,6 +940,11 @@ span.vacancy-title {
   opacity: 0.8;
   font-weight: 600;
 }
+
+.bar .menu-horizontal.text-right {
+  text-align: center !important;
+}
+
 @media screen and (max-width: 991.9px){
   .section-btn-download a {
     display: inline-block;
@@ -960,8 +966,8 @@ span.vacancy-title {
   .menu-horizontal > li.active > span {
     border-bottom: none;
   }
-  .menu-horizontal > li:not(:hover) > a{
-    padding: 5px 0;
+  .menu-horizontal > li {
+    padding: 3px 0;
   }
   .tabs li:not(:last-child) {
     border-bottom: 1px solid #aaa;
