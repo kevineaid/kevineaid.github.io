@@ -1090,6 +1090,12 @@ span.vacancy-title {
 }
 
 @media screen and (max-width: 575.8px){
+  .no-ml-xs {
+    margin-left: 0 !important;
+  }
+  .no-mr-xs {
+    margin-right: 0 !important;
+  }
   .contact-wrapper {
     max-width: 100%;
     flex-direction: column;
