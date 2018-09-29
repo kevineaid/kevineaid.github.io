@@ -1123,4 +1123,10 @@ span.vacancy-title {
   .presence .btn {
     margin-right: 5px !important;
   }
+  .about-tabs li {
+    margin: 0 3px;
+  }
+  .btn-about-tab {
+    padding: 5px 10px !important;
+  }
 }
