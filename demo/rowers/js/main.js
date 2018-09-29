@@ -124,4 +124,13 @@ $(document).ready(function(){
         }
 });
 
-
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
+    if (scroll > 10) {
+        $('.main-container').css('padding-top', '65px');
+    }
+    else {
+        $('.main-container').css('padding-top', '0px');
+    }
+});

@@ -869,6 +869,13 @@ ul.ctm-accordion {
   margin-right: 5px;
 }
 
+
+
+.download-section {
+  padding-bottom: 200px !important;
+}
+
+
 @media all and (max-width: 991.8px) {
   .bar.bar--mobile-sticky[data-scroll-class*='fixed'].pos-fixed {
     position: fixed;
@@ -884,6 +891,10 @@ ul.ctm-accordion {
     background: #fff;
     z-index: 999;
 
+  }
+
+  .download-section {
+    padding-bottom: 140px !important;
   }
 }
 
@@ -994,6 +1005,16 @@ ul.ctm-accordion {
   .trigger-pop h3 {
     text-align: center;
 
+  }
+
+  footer .social-list {
+    margin: 0 !important; 
+    margin-top: 10px !important;
+    margin-bottom: -20px !important;
+  }
+
+  footer .slogan {
+    margin-top: -10px !important;
   }
 
 }
