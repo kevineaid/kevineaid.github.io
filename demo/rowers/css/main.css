@@ -918,6 +918,11 @@ ul.ctm-accordion {
 .bacteria .feature-7 {
   height: 80px;
 }
+
+.faq-wrap .accordion__title,
+.faq-wrap .accordion__content {
+  text-align: justify;
+}
 @media screen and (max-width: 991.9px){
   .section-btn-download a {
     display: inline-block;
@@ -1042,6 +1047,10 @@ ul.ctm-accordion {
   .trigger-pop h3 {
     text-align: center;
 
+  }
+
+  .accordion li.active .accordion__content {
+    max-height: 1000px !important;
   }
 
   footer .social-list {
