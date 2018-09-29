@@ -944,9 +944,9 @@ span.vacancy-title {
   opacity: 0.8;
   font-weight: 600;
 }
-
-.bar .menu-horizontal.text-right {
-  text-align: center !important;
+.menu-horizontal > li > a, 
+  .menu-horizontal > li > span{
+  font-weight: 700 !important;   
 }
 
 @media screen and (max-width: 991.9px){
@@ -972,6 +972,8 @@ span.vacancy-title {
   }
   .menu-horizontal > li {
     padding: 3px 0;
+    display: inline-block;
+    margin: 0 10px;
   }
   .tabs li:not(:last-child) {
     border-bottom: 1px solid #aaa;
@@ -1104,6 +1106,12 @@ span.vacancy-title {
 }
 
 @media screen and (max-width: 575.8px){
+  .menu-horizontal > li { 
+    display: block !important;
+    width: 85px !important; 
+    margin: 0 auto !important ;
+    text-align: left;
+  }
   .no-ml-xs {
     margin-left: 0 !important;
   }
