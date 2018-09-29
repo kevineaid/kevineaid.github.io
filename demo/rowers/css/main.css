@@ -1,3 +1,6 @@
+body {
+  overflow-x: visible;
+}
 section {
 	background: #fff;
 }
@@ -1024,9 +1027,13 @@ span.vacancy-title {
   }
   .subheading {
     font-size: 18px !important;
+    margin: 0 auto !important;
     margin-top: 0 !important;
     line-height: 26px !important;
     width: 80% !important;
+  }
+  #textslide {
+    min-width: 0;
   }
   
   .contact-wrapper {
@@ -1102,7 +1109,13 @@ span.vacancy-title {
   .no-mr-xs {
     margin-right: 0 !important;
   }
-  .contact-wrapper {
+  .pl-5-xs {
+    padding-left: 25px !important;
+  }
+  .pr-5-xs {
+    padding-right: 25px !important;
+  }
+  .ontact-wrapper {
     max-width: 100%;
     flex-direction: column;
   }
