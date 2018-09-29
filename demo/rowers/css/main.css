@@ -920,9 +920,10 @@ ul.ctm-accordion {
 }
 @media screen and (max-width: 991.9px){
   .section-btn-download a {
-    display: block;
-    width: 145px;
-    margin-left: auto !important;
+    display: inline-block;
+    width: auto;
+    padding: 5px 15px;
+    margin-left: 10px;
     margin-bottom: 5px !important;
   }
   .section-btn .btn {
@@ -977,6 +978,14 @@ ul.ctm-accordion {
     font-size: 16px;
     padding: 10px;
   }
+
+  .main-detail-prduct .btn {
+    display: block;
+    width: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 767.8px){
@@ -992,10 +1001,24 @@ ul.ctm-accordion {
     line-height: 26px !important;
     width: 80% !important;
   }
+  
   .contact-wrapper {
     max-width: 100%;
   }
   .product-icon {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+    width: 100px;
+  }
+  .product-icon:first-child{
+    margin-left: inherit;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .product-icon:last-child{
+    margin-right: inherit;
+    margin: 0 auto;
     margin-bottom: 10px;
   }
   .all-filter img,
