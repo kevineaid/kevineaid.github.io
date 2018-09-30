@@ -235,8 +235,13 @@ header:after {
 }
 
 #headline .d-flex {
-	height: 3	00px;
 }
+
+#headline .item {
+  max-width: 500px;
+  width: 100%;
+}
+
 #headline .heading {
 	
 	color: #000;
@@ -245,14 +250,15 @@ header:after {
 	padding: 5px 10px;
 }
 #headline .subheading {
-  margin-top: 100px;
-	width: 500px;
+  margin-top: 50px;
 	color: #2a2a2a;
 	padding: 10px;
 	font-size: 26px;
   line-height: 36px;
   font-weight: 700;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.2);
+  text-align: right;
+  font-weight: 600;
 }
 .dropdown-description{
 	width: 100%;
