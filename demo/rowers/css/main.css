@@ -958,6 +958,96 @@ span.vacancy-title {
   font-weight: 700 !important;   
 }
 
+
+.aqi-level {
+  padding-left: 10px;
+}
+.aqi-level li {
+  font-size: 15px;
+  color: #2a2a2a;
+  font-weight: 600;
+  position: relative;
+}
+.aqi-text {
+  display: inline-block;
+  position: relative;
+}
+
+.aqi-capt {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  min-width: 280px;
+  max-width: 400px;
+  width: 100%;
+  padding: 5px 10px;
+  z-index: 9999;
+  background: rgba(255,255,255,0.95);
+  border: 2px solid #eee;
+   display: none;
+}
+
+.aqi-color:hover,
+.aqi-text:hover{
+  cursor: pointer;
+}
+
+.aqi-color:hover+.aqi-text .aqi-capt,
+.aqi-text:hover .aqi-capt {
+  display: block;
+}
+.aqi-color {
+  height: 16px;
+  width: 16px;
+  background: #aaa;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.aqi-good {
+  background: #009966;
+}
+.aqi-moder {
+  background: #ffde33;
+}
+.aqi-p-unh {
+  background: #ff9933;
+}
+.aqi-unhea {
+  background: #cc0033;
+}
+.aqi-v-unh {
+  background: #660099;
+}
+.aqi-hazar {
+  background: #7e0023;
+}
+
+.aqi-capt.aqi-good {
+  border: 2px solid #009966;
+  background: #fff;
+}
+.aqi-capt.aqi-moder {
+  border: 2px solid #ffde33;
+  background: #fff;
+}
+.aqi-capt.aqi-p-unh {
+  border: 2px solid #ff9933;
+  background: #fff;
+}
+.aqi-capt.aqi-unhea {
+  border: 2px solid #cc0033;
+  background: #fff;
+}
+.aqi-capt.aqi-v-unh {
+  border: 2px solid #660099;
+  background: #fff;
+}
+.aqi-capt.aqi-hazar {
+  border: 2px solid #7e0023;
+  background: #fff;
+}
+
 @media screen and (max-width: 991.9px){
   .section-btn-download a {
     display: inline-block;
