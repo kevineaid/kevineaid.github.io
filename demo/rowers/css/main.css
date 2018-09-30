@@ -1211,6 +1211,10 @@ span.vacancy-title {
     margin: 0 auto !important ;
     text-align: left;
   }
+  .all-filter img,
+  .air-filter img {
+    width: 100px;
+  }
   .no-ml-xs {
     margin-left: 0 !important;
   }
