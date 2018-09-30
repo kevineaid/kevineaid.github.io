@@ -506,8 +506,7 @@ header:after {
 }
 .mailicon .popemail {
   position: absolute;
-
-  opacity: 0;
+  opacity: 1;
   right: -145px;
   top: 50%;
   padding: 14px 14px;
@@ -517,9 +516,13 @@ header:after {
   background: rgba(255,255,255,1);
   font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
   transition: all .3s ease;
+  display: none;
 }
 .mailicon:hover .popemail{
-  opacity: 1;
+  display: block;
+}
+.popemail:hover {
+  display: block;
 }
 
 
@@ -1068,7 +1071,7 @@ span.vacancy-title {
   }
   .mailicon .popemail {
     padding: 8px 8px;
-    right: -140px;
+    right: -130px;
   }
   .trigger-pop {
     padding: 5px 0;
