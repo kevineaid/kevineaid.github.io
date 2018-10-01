@@ -739,6 +739,9 @@ header:after {
   font-size: 17px;
 }
 
+.text-orange {
+  color: #f26824;
+}
 .btn--orange {
   background: #f26824;
 }
