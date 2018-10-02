@@ -41,6 +41,40 @@ function showStation(station) {
 	});
 }
 
+
+var city = $("#city option:selected").val();
+var scity = city;
+$("#city").change(function(){
+    city = $("#city option:selected").val();
+    scity = city;
+});
+function getAQI(){
+	$.getJSON("https://api.waqi.info/feed/@"+scity+"/?token=1b394c2768e78fcad42f4845dc3180f97dc19812",function(result){
+		
+		
+		console.log(result.data.city.name);
+		console.log(result.data.aqi);
+
+		var percent = (result.data.aqi / 500) * 100;
+		$("#meter").css('width', percent+'%');
+		$("#meter").css('background', '#660099');
+		$("#aqiv").html(result.data.aqi);
+		if (result.data.aqi > 200) {
+			$("#l-aqi").html("Very Unhealthy");
+		}
+		else {
+			$("#l-aqi").html(" ");
+		}
+		
+		if (result.data.aqi == null || result.data.aqi == '-') {
+			$("#aqiv").html("currently unavailable");
+			$("#meter").css('width', '0%');
+			$("#meter").css('background', 'white');
+		}
+	});
+}
+
+
 function colorize(aqi) {
 	var x;
 	if (aqi >=0 ) {

@@ -219,7 +219,7 @@
                                 <p class="progress-horizontal__label h5">Air Pollution Index : <span style="margin-left: 10px;font-size: 13px;background: #009966;color: #fff;padding: 3px 6px;font-weight: 700;border-radius: 2px;">40</span> </p>
                         
                             </div> -->
-                             <table class="border--round table--alternate-row">
+                             <!-- <table class="border--round table--alternate-row">
                                 <thead>
                                     <tr >
                                         <th style="background: #f26824;color: #fff; border-top-left-radius: 5px;"> <i class="fa fa-map-marked-alt"></i> &nbsp;CITY</th>
@@ -227,9 +227,35 @@
                                     </tr>
                                 </thead>
                                 <tbody id="aqi" class="type--bold">
-                            
+                                                         
                                 </tbody>
-                            </table>
+                                                         </table> -->
+
+                            <div class="pollution-meter">
+                                <div class="row mb-3">
+                                    <div class="col-5">
+                                        <select name="city" id="city">
+                                            <option value="3715">Delhi</option>
+                                            <option value="6972">Lucknow</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <button class="btn btn--checkaqi" onclick="getAQI()">Check AQI</button>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" id="meter" style="width: 80%; background: red;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="row pt-2">
+                                    <div class="col-6">
+                                        <h5>AQI : <span id="aqiv">-</span></h5>        
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <h5 class="label-aqi" id="l-aqi">Danger</h5>
+                                    </div>
+                                </div>
+                                
+                            </div>
                             <p>*this data updated every 30 minutesr</p>
                         </div>
                         <div class="col-lg-5 col-md-12">

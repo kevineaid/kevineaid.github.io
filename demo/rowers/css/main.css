@@ -13,6 +13,10 @@ section#headline {
 
 
 
+.btn--checkaqi {
+  padding: 10px 20px !important;
+}
+
 .bar.bar-1,
 .bar.bar--md {
   padding: 10px 0;
