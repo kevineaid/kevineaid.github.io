@@ -57,15 +57,24 @@ function getAQI(){
 
 		var percent = (result.data.aqi / 500) * 100;
 		$("#meter").css('width', percent+'%');
-		$("#meter").css('background', '#660099');
+		
 		$("#aqiv").html(result.data.aqi);
-		if (result.data.aqi > 200) {
+		var color = "#fff";
+		if (result.data.aqi >= 200) {
 			$("#l-aqi").html("Very Unhealthy");
+			color = "#660099";
+		}
+		else if (result.data.aqi >= 101) {
+			$("#l-aqi").html("partially unhealthy");
+		}
+		else if (result.data.aqi >= 0) {
+			color = "#ffde33";
+			$("#l-aqi").html("Moderate");
 		}
 		else {
 			$("#l-aqi").html(" ");
 		}
-		
+		$("#meter").css('background', color);
 		if (result.data.aqi == null || result.data.aqi == '-') {
 			$("#aqiv").html("currently unavailable");
 			$("#meter").css('width', '0%');

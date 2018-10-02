@@ -12,6 +12,9 @@ section#headline {
 }
 
 
+#meter {
+  transition: all .7s ease !important;
+}
 
 .btn--checkaqi {
   padding: 10px 20px !important;
