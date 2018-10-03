@@ -1,0 +1,1488 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="msapplication-TileColor" content="#0061da">
+	<meta name="theme-color" content="#1643a3">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<!-- Title -->
+	<title>KLAST – Bootstrap 4 HTML5 Admin Dashboard Responsive Template</title>
+	<link rel="stylesheet" href="assets/fonts/fonts/font-awesome.min.css">
+
+	<!-- Font Family-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
+
+	<!-- Dashboard Css -->
+	<link href="assets/css/dashboard.css" rel="stylesheet" />
+
+	<!-- Time picker Plugin -->
+	<link href="assets/plugins/time-picker/jquery.timepicker.css" rel="stylesheet" />
+	<!-- forn-wizard css-->
+	<link href="./assets/plugins/forn-wizard/css/material-bootstrap-wizard.css" rel="stylesheet" />
+	<link href="./assets/plugins/forn-wizard/css/demo.css" rel="stylesheet" />
+	
+	<!-- file Uploads -->
+    <link href="assets/plugins/fileuploads/css/dropify.min.css" rel="stylesheet" type="text/css" />
+	<!-- select2 Plugin -->
+	<link href="assets/plugins/select2/select2.min.css" rel="stylesheet" />
+
+	<!-- WYSIWYG Editor css -->
+	<link href="./assets/plugins/wysiwyag/richtext.css" rel="stylesheet" />
+
+	<!-- Date Picker Plugin -->
+	<link href="assets/plugins/date-picker/spectrum.css" rel="stylesheet" />
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	  $( function() {
+	    $( "#datepicker" ).datepicker();
+	  } );
+	</script>
+
+	<!-- c3.js Charts Plugin -->
+	<link href="assets/plugins/charts-c3/c3-chart.css" rel="stylesheet" />
+
+	<!-- Morris.js Charts Plugin -->
+	<link href="./assets/plugins/morris/morris.css" rel="stylesheet" />
+
+	<!-- Custom scroll bar css-->
+	<link href="assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+	<!-- Sidemenu Css -->
+	<link href="./assets/plugins/toggle-sidebar/css/sidemenu.css" rel="stylesheet">
+
+	<!---Font icons-->
+	<link href="assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
+
+	<!-- BPD Css -->
+	<link href="assets/css/bpd.css" rel="stylesheet" />
+</head>
+
+<body class="app sidebar-mini rtl">
+	<div id="global-loader"></div>
+	<div class="page">
+		<div class="page-main">
+			<!-- Navbar-->
+			<header class="app-header header">
+
+				<!-- Sidebar toggle button-->
+				<!-- Navbar Right Menu-->
+				<div class="container-fluid">
+					<div class="d-flex">
+						<a class="header-brand" href="index.html">
+							<img alt="vobilet logo" class="header-brand-img" src="assets/images/logo.svg">
+						</a>
+
+						<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar" href="#"></a>
+						<div class=" ">
+							<form class="input-icon mt-1 ">
+								<div class="input-icon-addon">
+									<i class="fe fe-search"></i>
+								</div>
+								<input type="search" class="form-control header-search" placeholder="Search&hellip;" tabindex="1">
+							</form>
+						</div>
+						<div class="d-flex order-lg-2 ml-auto">
+
+							<div class="dropdown d-none d-md-flex">
+								<a class="nav-link icon" data-toggle="dropdown">
+									<i class="fa fa-user-o"></i>
+									<span class="nav-unread bg-green"></span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/male/4.jpg)"></span>
+										<div>
+											<strong>Madeleine Scott</strong> Sent you add request
+											<div class="small text-muted">
+												view profile
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/female/14.jpg)"></span>
+										<div>
+											<strong>rebica</strong> Suggestions for you
+											<div class="small text-muted">
+												view profile
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/male/1.jpg)"></span>
+										<div>
+											<strong>Devid robott</strong> sent you add request
+											<div class="small text-muted">
+												view profile
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-center text-muted-dark" href="#">View all contact list</a>
+								</div>
+							</div>
+							<div class="dropdown d-none d-md-flex">
+								<a class="nav-link icon" data-toggle="dropdown">
+									<i class="fa fa-bell-o"></i>
+									<span class="nav-unread bg-danger"></span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<div class="notifyimg">
+											<i class="fa fa-thumbs-o-up"></i>
+										</div>
+										<div>
+											<strong>Someone likes our posts.</strong>
+											<div class="small text-muted">
+												3 hours ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<div class="notifyimg">
+											<i class="fa fa-commenting-o"></i>
+										</div>
+										<div>
+											<strong>3 New Comments</strong>
+											<div class="small text-muted">
+												5 hour ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<div class="notifyimg">
+											<i class="fa fa-cogs"></i>
+										</div>
+										<div>
+											<strong>Server Rebooted.</strong>
+											<div class="small text-muted">
+												45 mintues ago
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-center text-muted-dark" href="#">View all Notification</a>
+								</div>
+							</div>
+							<div class="dropdown d-none d-md-flex">
+								<a class="nav-link icon" data-toggle="dropdown">
+									<i class="fa fa-envelope-o"></i>
+									<span class=" nav-unread badge badge-info badge-pill">2</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item text-center text-dark" href="#">2 New Messages</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/male/41.jpg)"></span>
+										<div>
+											<strong>Madeleine</strong> Hey! there I' am available....
+											<div class="small text-muted">
+												3 hours ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/female/1.jpg)"></span>
+										<div>
+											<strong>Anthony</strong> New product Launching...
+											<div class="small text-muted">
+												5 hour ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/female/18.jpg)"></span>
+										<div>
+											<strong>Olivia</strong> New Schedule Realease......
+											<div class="small text-muted">
+												45 mintues ago
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-center text-muted-dark" href="#">See all Messages</a>
+								</div>
+							</div>
+							<div class="dropdown">
+								<a class="nav-link pr-0 leading-none d-flex" data-toggle="dropdown" href="#">
+									<span class="avatar avatar-md brround" style="background-image: url(assets/images/faces/female/25.jpg)"></span>
+									<span class="ml-2 d-none d-lg-block">
+										<span class="text-white">info@kaitiaki.co.nz</span>
+									</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item" href="#">
+										<i class="dropdown-icon mdi mdi-account-outline"></i> Profile</a>
+									<a class="dropdown-item" href="#">
+										<i class="dropdown-icon mdi mdi-settings"></i> Settings</a>
+									<a class="dropdown-item" href="#">
+										<span class="float-right">
+											<span class="badge badge-primary">6</span>
+										</span>
+										<i class="dropdown-icon mdi mdi-message-outline"></i> Inbox</a>
+									<a class="dropdown-item" href="#">
+										<i class="dropdown-icon mdi mdi-comment-check-outline"></i> Message</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">
+										<i class="dropdown-icon mdi mdi-compass-outline"></i> Need help?</a>
+									<a class="dropdown-item" href="login.html">
+										<i class="dropdown-icon mdi mdi-logout-variant"></i> Sign out</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Sidebar menu-->
+			<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+			<aside class="app-sidebar ">
+				<div class="app-sidebar__user">
+					<div class="dropdown">
+						<a class="nav-link p-0 leading-none d-flex" data-toggle="dropdown" href="#">
+							<span class="avatar avatar-md brround" style="background-image: url(assets/images/faces/female/25.jpg)"></span>
+							<span class="ml-2 ">
+								<span class="text-dark app-sidebar__user-name font-weight-semibold">info@kaitiaki.co.nz</span>
+								<br>
+								<span class="text-muted app-sidebar__user-name text-sm"> Admin</span>
+							</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+							<a class="dropdown-item" href="#">
+								<i class="dropdown-icon mdi mdi-account-outline"></i> Profile</a>
+							<a class="dropdown-item" href="#">
+								<i class="dropdown-icon mdi mdi-settings"></i> Settings</a>
+							<a class="dropdown-item" href="#">
+								<span class="float-right">
+									<span class="badge badge-primary">6</span>
+								</span>
+								<i class="dropdown-icon mdi mdi-message-outline"></i> Inbox</a>
+							<a class="dropdown-item" href="#">
+								<i class="dropdown-icon mdi mdi-comment-check-outline"></i> Message</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<i class="dropdown-icon mdi mdi-compass-outline"></i> Need help?</a>
+							<a class="dropdown-item" href="login.html">
+								<i class="dropdown-icon mdi mdi-logout-variant"></i> Sign out</a>
+						</div>
+					</div>
+				</div>
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item" href="dashboard.html">
+							<i class="side-menu__icon fa fa-home"></i>Dashboard</a>
+					</li>
+					<li class="slide is-expanded">
+						<a class="side-menu__item  active" data-toggle="slide" href="#">
+							<i class="side-menu__icon fa fa-calendar"></i>
+							<span class="side-menu__label">DEALS</span>
+							<i class="angle fa fa-angle-right"></i>
+						</a>
+						<ul class="slide-menu">
+							<li>
+								<a class="slide-item" href="deals.html">Deals</a>
+							</li>
+							<li>
+								<a class="slide-item" href="add-deals.html">Add new deal</a>
+							</li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="#">
+							<i class="side-menu__icon fa fa-user"></i>
+							<span class="side-menu__label">PROFILE</span>
+							<i class="angle fa fa-angle-right"></i>
+						</a>
+						<ul class="slide-menu">
+							<li>
+								<a class="slide-item" href="profile.html">Profile</a>
+							</li>
+							<li>
+								<a class="slide-item" href="password-update.html">Password Update</a>
+							</li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="#">
+							<i class="side-menu__icon fa fa-gear"></i>
+							<span class="side-menu__label">TERMS</span>
+							<i class="angle fa fa-angle-right"></i>
+						</a>
+						<ul class="slide-menu">
+							<li>
+								<a class="slide-item" href="termsandcondition.html">Terms and Condition</a>
+							</li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="#">
+							<i class="side-menu__icon fa fa-calendar"></i>
+							<span class="side-menu__label">ORDERS</span>
+							<i class="angle fa fa-angle-right"></i>
+						</a>
+						<ul class="slide-menu">
+							<li>
+								<a class="slide-item" href="orders.html">Orders</a>
+							</li>
+							<li>
+								<a class="slide-item" href="vouchers.html">Vouchers</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</aside>
+			<div class="app-content my-3 my-md-5">
+				<div class="side-app">
+					<div class="page-header">
+						<h4 class="page-title">Add New Deals</h4>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<a href="#">Home</a>
+							</li>
+							<li class="breadcrumb-item active" aria-current="page">Add New Deals</li>
+						</ol>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-body p-6">
+
+									<div class="wizard-container">
+										<div class="wizard-card m-0" data-color="red" id="wizardProfile">
+											<form novalidate="novalidate">
+												<div class="wizard-navigation">
+													<ul class="nav nav-pills">
+														<li style="width: 33.3333%;">
+															<a href="#general" data-toggle="tab" class="active show">General</a>
+														</li>
+														<li style="width: 33.3333%;">
+															<a href="#location" data-toggle="tab" class="">Location</a>
+														</li>
+														<li style="width: 33.3333%;">
+															<a href="#description" data-toggle="tab" class="">Description</a>
+														</li>
+														<li style="width: 33.3333%;">
+															<a href="#faq" data-toggle="tab" class="">FAQ</a>
+														</li>
+														<li style="width: 33.3333%;">
+															<a href="#icon" data-toggle="tab" class="">ICON</a>
+														</li>
+														<li style="width: 33.3333%;">
+															<a href="#pricing" data-toggle="tab" class="">Pricing & Duration</a>
+														</li>
+														<li style="width: 33.3333%;">
+															<a href="#lastmnt" data-toggle="tab" class="">LAST MINUTE</a>
+														</li>
+														<li style="width: 33.3333%;">
+															<a href="#calendar" data-toggle="tab" class="">CALENDAR</a>
+														</li>
+<!-- 														<li style="width: 33.3333%;">
+															<a href="#icon" data-toggle="tab" class="">ICON</a>
+														</li> -->
+
+													</ul>
+													<div class="moving-tab" style="width: 388.4px; transform: translate3d(-8px, 0px, 0px); transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;">General</div>
+												</div>
+
+												<div class="tab-content">
+
+													<!-- ========================GENERAL================================= -->
+													<div class="tab-pane" id="general">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="input-group">
+																	<div class="form-group label-floating">
+																		<label class="control-label">Name
+																			<small>(required)</small>
+																		</label>
+																		<input name="name" type="text" class="form-control valid" aria-required="true" aria-invalid="false" required>
+																		<span class="material-input"></span>
+																	</div>
+																</div>
+
+																<div class="input-group">
+																	<div class="form-group label-floating">
+																		<label class="control-label">Subheader
+																			<small>(required)</small>
+																		</label>
+																		<input name="subheader" type="text" class="form-control valid" aria-required="true" aria-invalid="false" required>
+																		<span class="material-input"></span>
+																	</div>
+																</div>
+																<div class="input-group">
+																	<div class="form-group">
+																		<label class="form-label label-floating">Type</label>
+																		<select class="form-control select2 select2-hidden-accessible valid" required aria-required="true" aria-invalid="false" data-placeholder="Choose one (with optgroup)"
+																		 tabindex="-1" aria-hidden="true">
+																			<optgroup label="Type">
+																				<option value="#">Event</option>
+																				<option value="#">Tour</option>
+																			</optgroup>
+																		</select>
+																		<span class="material-input"></span>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<label class="form-label label-floating">Main Category</label>
+																	<select class="form-control select2-show-search select2-hidden-accessible" data-placeholder="Choose one (with searchbox)"
+																	 tabindex="-1" aria-hidden="true">
+																		<optgroup label="Main Category">
+																			<option value="none">Choose Category</option>
+																			<option value="Adventure">Adventure</option>
+																			<option value="Attractions">Attractions</option>
+
+																		</optgroup>
+																	</select>
+																</div>
+																<div class="form-group">
+																	<label class="form-label label-floating">Additional Category</label>
+																	<select class="form-control select2 select2-hidden-accessible" data-placeholder="Choose Category" multiple="" tabindex="-1"
+																	 aria-hidden="true">
+																		<option value="Attractions">
+																			Attractions
+																		</option>
+																		<option value="Snow_tours">
+																			Snow Tours
+																		</option>
+																		<option value="Skydiving">
+																			Skydiving
+																		</option>
+																		<option value="Adrenaline">
+																			Adrenaline
+																		</option>
+																		<option value="Sports">
+																			Sports
+																		</option>
+																	</select>
+																</div>
+
+																<div class="form-group">
+																	<label class="form-label label-floating">Currency</label>
+																	<select class="form-control select2-show-search select2-hidden-accessible" data-placeholder="Choose one (with searchbox)"
+																	 tabindex="-1" aria-hidden="true">
+																		<optgroup label="Currency">
+																			<option value="none">Choose Currency</option>
+																			<option value="USD">USD</option>
+																			<option value="AUD">AUD</option>
+
+																		</optgroup>
+																	</select>
+																</div>
+
+																<div class="input-group">
+																	<div class="form-group label-floating">
+																		<h5 class="mb-0">Status</h5>
+																		<label class="control-label">Current Status</label>
+																		<label class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+																			<span class="custom-control-label">
+																				<strong>Ready for Publishing</strong>
+																			</span>
+																		</label>
+																		<span class="material-input"></span>
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+
+
+													<!-- ========================LOCATION================================= -->
+													<div class="tab-pane" id="location">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="form-group">
+																	<label class="form-label label-floating">Country</label>
+																	<select class="form-control select2-show-search select2-hidden-accessible" data-placeholder="Choose one (with searchbox)"
+																	 tabindex="-1" aria-hidden="true">
+																		<optgroup label="Country">
+																			<option value="none">Choose Country</option>
+																			<option value="australia">Australia</option>
+																			<option value="argentina">Argentina</option>
+																			<option value="new-zealand">New Zealand</option>
+																		</optgroup>
+																	</select>
+																</div>
+																<div class="form-group">
+																	<label class="form-label label-floating">Region</label>
+																	<select class="form-control select2-show-search select2-hidden-accessible" data-placeholder="Choose one (with searchbox)"
+																	 tabindex="-1" aria-hidden="true">
+																		<optgroup label="Region">
+																			<option value="none">Choose Region</option>
+																			<option value="auckland">Auckland</option>
+																			<option value="northland">Northland</option>
+																		</optgroup>
+																	</select>
+																</div>
+																<div class="form-group">
+																	<label class="form-label label-floating">City</label>
+																	<select class="form-control select2-show-search select2-hidden-accessible" data-placeholder="Choose one (with searchbox)"
+																	 tabindex="-1" aria-hidden="true">
+																		<optgroup label="City">
+																			<option value="none">Choose City</option>
+																			<option value="city1">City1</option>
+																			<option value="city2">City2</option>
+																		</optgroup>
+																	</select>
+																</div>
+
+																<div class="form-group">
+																	<label class="form-label label-floating">Additional Cities</label>
+																	<select class="form-control select2 select2-hidden-accessible" data-placeholder="Cities" multiple="" tabindex="-1" aria-hidden="true">
+																		<option value="auckland">
+																			Auckland
+																		</option>
+																		<option value="wellington">
+																			Wellington
+																		</option>
+																	</select>
+																</div>
+
+																<div class="input-group">
+																	<div class="form-group label-floating">
+																		<label class="control-label">Address
+																			<small>(required)</small>
+																		</label>
+																		<input name="address" type="text" class="form-control valid" aria-required="true" aria-invalid="false">
+																		<span class="material-input"></span>
+																		<button type="button" class="btn btn-primary btn-block">Validate</button>
+																	</div>
+																</div>
+																<div class="input-group">
+																	<div class="form-group label-floating">
+																		<label class="control-label">Latitude</label>
+																		<input name="latitude" type="text" class="form-control valid" aria-required="true" aria-invalid="false">
+																		<span class="material-input"></span>
+																	</div>
+																</div>
+																<div class="input-group">
+																	<div class="form-group label-floating">
+																		<label class="control-label">Longitude</label>
+																		<input name="longitude" type="text" class="form-control valid" aria-required="true" aria-invalid="false">
+																		<span class="material-input"></span>
+																	</div>
+																</div>
+
+
+
+															</div>
+														</div>
+													</div>
+
+													<!-- ========================DESCRIPTION================================= -->
+													<div class="tab-pane" id="description">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="card">
+																	<div class="card-header">
+																		<h6 class="mb-0">Highlights</h6>
+																	</div>
+																	<div class="card-body">
+																		<textarea class="content" name="example"></textarea>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12">
+																<div class="card">
+																	<div class="card-header">
+																		<h6 class="mb-0">What's Excluded</h6>
+																	</div>
+																	<div class="card-body">
+																		<textarea class="content" name="example"></textarea>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12">
+																<div class="card">
+																	<div class="card-header">
+																		<h6 class="mb-0">Why do we love this?</h6>
+																	</div>
+																	<div class="card-body">
+																		<textarea class="content" name="example"></textarea>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12">
+																<div class="card">
+																	<div class="card-header">
+																		<h6 class="mb-0">Details</h6>
+																	</div>
+																	<div class="card-body">
+																		<textarea class="content" name="example"></textarea>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12">
+																<div class="card">
+																	<div class="card-header">
+																		<h6 class="mb-0">Terms and Conditions</h6>
+																	</div>
+																	<div class="card-body">
+																		<textarea class="content" name="example"></textarea>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12">
+																<div class="card">
+																	<div class="card-header">
+																		<h6 class="mb-0">Cancellation Policy</h6>
+																	</div>
+																	<div class="card-body">
+																		<textarea class="content" name="example"></textarea>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12">
+																<div class="form-group">
+																	<label class="form-label label-floating">Included Features</label>
+																	<select class="form-control select2 select2-hidden-accessible" data-placeholder="Included Features" multiple="" tabindex="-1"
+																		aria-hidden="true">
+																		<option value="no">
+																			No Matches found
+																		</option>
+																	</select>
+																</div>
+																<div class="form-group">
+																	<label class="form-label label-floating">Excluded Features</label>
+																	<select class="form-control select2 select2-hidden-accessible" data-placeholder="Excluded Features" multiple="" tabindex="-1"
+																		aria-hidden="true">
+																		<option value="no">
+																			No Matches found
+																		</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-sm-12">
+																<div class="card">
+																	<div class="card-header">
+																		<h6 class="mb-0">How to get there?</h6>
+																	</div>
+																	<div class="card-body">
+																		<textarea class="content" name="example"></textarea>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-12">
+																<div class="input-group">
+																	<div class="form-group label-floating">
+																		<label class="control-label">Activity HR
+																		</label>
+																		<input name="activity_hr" type="text" class="form-control valid" aria-required="true" aria-invalid="false" required>
+																		<span class="material-input"></span>
+																	</div>
+																</div>
+																<div class="input-group">
+																	<div class="form-group label-floating">
+																		<label class="custom-control custom-checkbox mb-0">
+																			<input type="checkbox" class="custom-control-input " name="example-checkbox1" value="option1" checked="">
+																			<span class="custom-control-label">
+																				<strong>Hide Pickup on Frontend</strong>
+																			</span>
+																		</label>
+																		<label class="control-label  mt-0"><strong>Deals Pickup</strong></label>
+																		<span class="material-input"></span>
+																		<!-- NEED TO BE ADDED -->
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- ========================FAQ================================= -->
+													<div class="tab-pane" id="faq">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<h3>Faq Elements &nbsp; <button class="btn btn-primary">Add</button></h3>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- ========================ICON================================= -->
+													<div class="tab-pane" id="icon">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<h3>Faq Elements &nbsp; <button class="btn btn-primary">Add</button></h3>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- ========================PRICING================================= -->
+													<div class="tab-pane" id="pricing">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="row">
+																	<div class="col-8">
+																		<div class="form-group">
+																			<label class="form-label">START DATE</label>
+																			<input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">	
+																		</div>
+																		<div class="form-group">
+																			<label class="form-label">END DATE</label>
+																			<input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">	
+																		</div>
+																		<div class="form-group">
+																			<div class="form-group form-group-default ">
+																				<label class="form-label">VOUCHER VALIDITY DAYS</label>
+																				<input type="number" id="backpackerdeals_corebundle_deal_voucherValidityDays" name="backpackerdeals_corebundle_deal[voucherValidityDays]" class="widget-event form-control" value="90" />
+																			</div>
+                                                                        
+                                									
+																		<div class="row">
+																			<div class="col-4">
+																				<div class="form-group">
+																					<label class="form-label">VALUE</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-4">
+																				<div class="form-group">
+																					<label class="form-label">ADULT PRICE</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-4">
+																				<div class="form-group">
+																					<label class="form-label">ADULT LABEL</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="row">
+																			<div class="col-4">
+																				<div class="form-group">
+																					<label class="form-label">CHILD VALUE</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-4">
+																				<div class="form-group">
+																					<label class="form-label">CHILD PRICE</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-4">
+																				<div class="form-group">
+																					<label class="form-label">CHILD LABEL</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="row">
+																			<div class="col-4">
+																				<div class="form-group">
+																					<label class="form-label">FAMILY VALUE</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-4">
+																				<div class="form-group">
+																					<label class="form-label">CHILD PRICE</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																			<div class="col-4">
+																				<div class="form-group">
+																					<label class="form-label">FAMILY LABEL</label>
+																					<input type="text" class="form-control">
+																				</div>
+																			</div>
+																			
+																		</div>
+																		<label class="form-label">EXCLUDED IN PRICE INTO (TEXT DISPLAYED BELLOW THE PRICE)</label>
+																		<input type="text" class="form-control" name="">
+																		<div class="form-group ">
+																			<div class="form-label">DISCOUNT TEMPLATE</div>
+																			<div class="custom-controls-stacked">
+																				<label class="custom-control custom-radio">
+																					<input type="radio" class="custom-control-input" name="example-radios" value="option1" checked>
+																					<span class="custom-control-label">NO DISCOUNT TO DISPLAY</span>
+																				</label>
+																				<label class="custom-control custom-radio">
+																					<input type="radio" class="custom-control-input" name="example-radios" value="option2">
+																					<span class="custom-control-label">21%</span>
+																				</label>
+																				<label class="custom-control custom-radio">
+																					<input type="radio" class="custom-control-input" name="example-radios" value="option2">
+																					<span class="custom-control-label">NZ $20 DISCOUNT</span>
+																				</label>
+																				<label class="custom-control custom-checkbox">
+																					<input type="checkbox" class="custom-control-input" name="example-checkbox3" value="option3" disabled>
+																					<span class="custom-control-label">SUPPLIER TO COLLECT LEVY/TAX</span>
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																	<div class="col-4">
+																			<label >OPERATING START TIME</label>
+																		<div class="wd-100 mg-b-30 for">
+																			<div class="input-group">
+																				<div class="input-group-prepend">
+																					<div class="input-group-text">
+																						<i class="fa fa-clock-o tx-16 lh-0 op-6"></i>
+																					</div>
+																				</div>
+																				<input class="form-control" id="tpBasic" placeholder="Set time" type="text">
+																			</div>
+																		
+																		</div>
+																		<div class="form-group">
+																			<label class="form-label">OPERATING END TIME</label>
+																			<div id="backpackerdeals_corebundle_deal_operatingStartTime" class="widget-event form-inline">
+																				<select id="backpackerdeals_corebundle_deal_operatingStartTime_hour" name="backpackerdeals_corebundle_deal[operatingStartTime][hour]" class="form-control"><option value="0" selected="selected">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option></select>:<select id="backpackerdeals_corebundle_deal_operatingStartTime_minute" name="backpackerdeals_corebundle_deal[operatingStartTime][minute]" class="form-control"><option value="0" selected="selected">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option></select>        
+																			</div>
+
+																	</div>
+																	<label class="custom-control custom-checkbox">
+																		<input type="checkbox" class="custom-control-input" name="example-checkbox3" value="option3" disabled>
+																		<span class="custom-control-label">SUPPLIER TO COLLECT LEVY/TAX</span>
+																	</label>
+																	<hr>					
+																	<div class="custom-controls-stacked">
+																		<label class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" >
+																			<span class="custom-control-label">Booking required</span>
+																		</label>
+																		<label class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option2">
+																			<span class="custom-control-label">Instant confirmation</span>
+																		</label>
+																		<label class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" name="example-checkbox3" value="option3" >
+																			<span class="custom-control-label">Show from prefix</span>
+																		</label>
+																		<label class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" name="example-checkbox4" value="option4"  >
+																			<span class="custom-control-label">Pickup required Checked</span>
+																		</label>
+																	</div>
+																	<div class="form-group">		
+																	<label class="form-label">CLOSE BOOKING</label>
+																		<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
+																				<option value="0" selected="selected">No restrictions</option>
+																				<option value="CO">1 hours</option>
+																				<option value="ID">2 hours</option>
+																				<option value="MT">3 hours</option>
+																		</select>
+																	</div>
+																	<div class="custom-controls-stacked">
+																		<label class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" >
+																			<span class="custom-control-label">OPEN DATED BOOKING</span>
+																		</label>
+																	</div>
+																	<hr>
+																	<div class="row">
+																		<div class="col-sm-12">		
+																			<div class="row">
+																				<div class="col-4">
+																					<div class="form-group">
+																						<label class="custom-control custom-checkbox">
+																							<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" >
+																							<span class="custom-control-label">MONDAY SLOT</span>
+																						</label>
+																					</div>
+																				</div>
+																				<div class="col-4">
+																					<div class="form-group">
+																						<label class="custom-control custom-checkbox">
+																							<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" >
+																							<span class="custom-control-label">TUESDAY SLOT</span>
+																						</label>
+																					</div>
+																				</div>
+																				<div class="col-4">
+																					<div class="form-group">
+																						<label class="custom-control custom-checkbox">
+																							<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" >
+																							<span class="custom-control-label">WEDNESDAY SLOT</span>
+																						</label>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="row">
+																				<div class="col-4">
+																					<div class="form-group">
+																						<label class="custom-control custom-checkbox">
+																							<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" >
+																								<span class="custom-control-label">THURSDAY SLOT</span>
+																						</label>
+																					</div>
+																				</div>
+																				<div class="col-4">
+																					<div class="form-group">
+																						<label class="custom-control custom-checkbox">
+																							<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" >
+																							<span class="custom-control-label">FRIDAY SLOT</span>
+																						</label>
+																					</div>
+																				</div>
+																				<div class="col-4">
+																					<div class="form-group">
+																						<label class="custom-control custom-checkbox">
+																							<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" >
+																							<span class="custom-control-label">SATURDAY SLOT</span>
+																						</label>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="row">
+																				<div class="col-4">
+																					<div class="form-group">
+																						<label class="custom-control custom-checkbox">
+																							<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" >
+																								<span class="custom-control-label">SUNDAY SLOT</span>
+																						</label>
+																					</div>
+																				</div>			
+																			</div>	
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													</div>
+													<!-- ========================LAST MINUTE================================= -->
+													<div class="tab-pane" id="lastmnt">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="row">
+																	<div class="col-sm-12">
+																		<div class="btn-list text-center">
+																			<a href="#" class="btn btn-success">Create new last minute offer</a>
+																		</div>
+																		<br>
+																		<div class="row">
+																			<div class="col-sm-12">
+																				<div class="row">
+																					<div class="col-4">
+																						<h1>Offer Configuration</h1>
+																						<div class="form-group">
+																							<label class="form-label"> TYPE</label>
+																							<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
+																								<optgroup label="Mountain Time Zone">
+																									<option value="AZ">LAST MINUTE</option>
+																									<option value="CO">TOP DEAL</option>
+																								</optgroup>
+																							</select>
+																						</div>
+																						<h5>Deal start & end dates (booking period)</h5>
+																						<div class="form-group">
+																							<label class="form-label">Visibility start</label>
+																						</div>
+																						<div class="form-label">Checkboxes</div>
+																							<div class="custom-controls-stacked">
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+																									<span class="custom-control-label">Show countdown timer</span>
+																								</label>
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option1">
+																									<span class="custom-control-label">Travel date limitation</span>
+																								</label>
+																							</div>	
+																					</div>
+																					<div class="col-sm-8">
+																						<h1>Deal details - Select Slots</h1>
+																						<div class="table-responsive">
+																							<table class="table card-table table-vcenter text-nowrap">
+																				                <thead>
+																				                <tr>
+																				                    <td>Slots</td>
+																				                    <td colspan="3">
+																				                        Current Pricing
+																				                    </td>
+																				                    <td colspan="3">
+																				                        Deal Pricing
+																				                    </td>
+																				                </tr>
+																				                <tr>
+																				                    <td>
+																				                        <div class="checkbox">
+																				                            <input type="checkbox" class="lm_select_all" id="lm_select_all306" >
+																				                            <label for="lm_select_all306">Select all</label>
+																				                        </div>
+
+																				                    </td>
+																				                    <td>Adult (Adult)</td>
+																				                    <td>Child (Children)</td>
+																				                    <td>Family (Family)</td>
+																				                    <td>Adult (Adult)</td>
+																				                    <td>Child(Children)</td>
+																				                    <td>Family (Family)</td>
+																				                    <td>Spaces</td>
+																				                </tr>
+																				                </thead>
+																				                <tbody>
+																				                                                        <tr>
+																				                        <td style="max-width: 350px;">
+																				                            <div class="checkbox">
+																				                                <input type="checkbox" id="slot_306_134" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][enabled]" value="1" >
+																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_134">09:00AM to 10:00AM</label>
+																				                            </div>
+																				                        </td>
+																				                        <td>75</td>
+																				                        <td>0</td>
+																				                        <td>0</td>
+																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][adult]" value="75" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][child]" value="0" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][family]"  value="0"></td>
+																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][spaces]"  value=""></td>
+																				                    </tr>
+																				                                                        <tr>
+																				                        <td style="max-width: 350px;">
+																				                            <div class="checkbox">
+																				                                <input type="checkbox" id="slot_306_135" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][enabled]" value="1" >
+																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_135">10:30AM to 11:30AM</label>
+																				                            </div>
+																				                        </td>
+																				                        <td>75</td>
+																				                        <td>0</td>
+																				                        <td>0</td>
+																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][adult]" value="75" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][child]" value="0" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][family]"  value="0"></td>
+																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][spaces]"  value=""></td>
+																				                    </tr>
+																				                                                        <tr>
+																				                        <td style="max-width: 350px;">
+																				                            <div class="checkbox">
+																				                                <input type="checkbox" id="slot_306_136" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][enabled]" value="1" >
+																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_136">12:30PM to 01:30PM</label>
+																				                            </div>
+																				                        </td>
+																				                        <td>75</td>
+																				                        <td>0</td>
+																				                        <td>0</td>
+																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][adult]" value="75" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][child]" value="0" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][family]"  value="0"></td>
+																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][spaces]"  value=""></td>
+																				                    </tr>
+																				                                                        <tr>
+																				                        <td style="max-width: 350px;">
+																				                            <div class="checkbox">
+																				                                <input type="checkbox" id="slot_306_137" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][enabled]" value="1" >
+																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_137">02:30PM to 03:30PM</label>
+																				                            </div>
+																				                        </td>
+																				                        <td>75</td>
+																				                        <td>0</td>
+																				                        <td>0</td>
+																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][adult]" value="75" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][child]" value="0" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][family]"  value="0"></td>
+																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][spaces]"  value=""></td>
+																				                    </tr>
+																				                                                        <tr>
+																				                        <td style="max-width: 350px;">
+																				                            <div class="checkbox">
+																				                                <input type="checkbox" id="slot_306_138" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][enabled]" value="1" >
+																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_138">04:30PM to 05:30PM</label>
+																				                            </div>
+																				                        </td>
+																				                        <td>75</td>
+																				                        <td>0</td>
+																				                        <td>0</td>
+																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][adult]" value="75" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][child]" value="0" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][family]"  value="0"></td>
+																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][spaces]"  value=""></td>
+																				                    </tr>
+																				                                                        <tr>
+																				                        <td style="max-width: 350px;">
+																				                            <div class="checkbox">
+																				                                <input type="checkbox" id="slot_306_1929" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][enabled]" value="1" >
+																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1929">08:30AM to 12:00PM</label>
+																				                            </div>
+																				                        </td>
+																				                        <td>75</td>
+																				                        <td>0</td>
+																				                        <td>0</td>
+																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][adult]" value="75" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][child]" value="0" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][family]"  value="0"></td>
+																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][spaces]"  value=""></td>
+																				                    </tr>
+																				                                                        <tr>
+																				                        <td style="max-width: 350px;">
+																				                            <div class="checkbox">
+																				                                <input type="checkbox" id="slot_306_1930" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][enabled]" value="1" >
+																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1930">10:30AM to 02:00PM</label>
+																				                            </div>
+																				                        </td>
+																				                        <td>75</td>
+																				                        <td>0</td>
+																				                        <td>0</td>
+																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][adult]" value="75" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][child]" value="0" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][family]"  value="0"></td>
+																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][spaces]"  value=""></td>
+																				                    </tr>
+																				                                                        <tr>
+																				                        <td style="max-width: 350px;">
+																				                            <div class="checkbox">
+																				                                <input type="checkbox" id="slot_306_1931" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][enabled]" value="1" >
+																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1931">12:30PM to 04:00PM</label>
+																				                            </div>
+																				                        </td>
+																				                        <td>75</td>
+																				                        <td>0</td>
+																				                        <td>0</td>
+																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][adult]" value="75" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][child]" value="0" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][family]"  value="0"></td>
+																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][spaces]"  value=""></td>
+																				                    </tr>
+																				                                                        <tr>
+																				                        <td style="max-width: 350px;">
+																				                            <div class="checkbox">
+																				                                <input type="checkbox" id="slot_306_1932" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][enabled]" value="1" >
+																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1932">02:30PM to 06:00PM</label>
+																				                            </div>
+																				                        </td>
+																				                        <td>75</td>
+																				                        <td>0</td>
+																				                        <td>0</td>
+																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][adult]" value="75" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][child]" value="0" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][family]"  value="0"></td>
+																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][spaces]"  value=""></td>
+																				                    </tr>
+																				                                                        <tr>
+																				                        <td style="max-width: 350px;">
+																				                            <div class="checkbox">
+																				                                <input type="checkbox" id="slot_306_1933" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][enabled]" value="1" >
+																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1933">04:30PM to 08:00PM</label>
+																				                            </div>
+																				                        </td>
+																				                        <td>75</td>
+																				                        <td>0</td>
+																				                        <td>0</td>
+																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][adult]" value="75" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][child]" value="0" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][family]"  value="0"></td>
+																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][spaces]"  value=""></td>
+																				                    </tr>
+																				                                                        <tr>
+																				                        <td style="max-width: 350px;">
+																				                            <div class="checkbox">
+																				                                <input type="checkbox" id="slot_306_1940" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][enabled]" value="1" >
+																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1940">04:30PM to 08:00PM</label>
+																				                            </div>
+																				                        </td>
+																				                        <td>75</td>
+																				                        <td>0</td>
+																				                        <td>0</td>
+																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][adult]" value="75" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][child]" value="0" ></td>
+																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][family]"  value="0"></td>
+																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][spaces]"  value=""></td>
+																				                    </tr>
+																				                </tbody>
+																				            </table>
+																				        </div>
+																					</div>
+																				</div>		
+																			</div>
+																			<div class="custom-controls-stacked mt-5">
+																				<label class="custom-control custom-checkbox">
+																					<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+																					<span class="custom-control-label">| <input type="text" name=""> from Kaitiaki Adventures confirm the deals as above </span> 
+																				</label>
+																				<a href="#" class="btn btn-danger">Delete</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- ========================ICON================================= -->
+													<div class="tab-pane" id="calendar">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="row">
+																	<div class="col-5">
+																		<hr>
+																		<br>
+																		<table class="table card-table table-vcenter text-nowrap table-primary" id="tabTimeSlot" role="grid">
+																			<thead class="bg-primary text-white">
+																				<tr>
+																					<td>Slot Description</td>
+																					<td>Spaces</td>
+																					<td></td>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td>02:30PM to 06:00PM</td>
+																					<td>8</td>
+																					<td>
+																						<a data-id="1932" data-callback="removeSlot" data-href="https://demo3.backpackerdeals.com/merchant/deals/slot/remove/1932"
+																						 class="confirmation-button ajax-url">
+																							<i class="fa fa-trash-o"></i>
+																						</a>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td>04:30PM to 08:00PM</td>
+																					<td>6</td>
+																					<td>
+																						<a data-id="1940" data-callback="removeSlot" data-href="https://demo3.backpackerdeals.com/merchant/deals/slot/remove/1940"
+																						 class="confirmation-button ajax-url">
+																							<i class="fa fa-trash-o"></i>
+																						</a>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td>08:30AM to 12:00PM</td>
+																					<td>8</td>
+																					<td>
+																						<a data-id="1929" data-callback="removeSlot" data-href="https://demo3.backpackerdeals.com/merchant/deals/slot/remove/1929"
+																						 class="confirmation-button ajax-url">
+																							<i class="fa fa-trash-o"></i>
+																						</a>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td>12:30PM to 04:00PM</td>
+																					<td>8</td>
+																					<td>
+																						<a data-id="1931" data-callback="removeSlot" data-href="https://demo3.backpackerdeals.com/merchant/deals/slot/remove/1931"
+																						 class="confirmation-button ajax-url">
+																							<i class="fa fa-trash-o"></i>
+																						</a>
+																					</td>
+																				</tr>
+																		
+																			</tbody>
+																		</table>
+																		<br>
+																		<a href="#" class="btn btn-primary">Primary</a>
+																	</div>
+																	<div class="col-7">
+																		7
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-sm-12">
+																		<table class="table table-hover table-striped table-condensed" id="recurringTable">
+																			<thead>
+																				<tr>
+																					<td>Type</td>
+																					<td>Dates </td>
+																					<td>Slot</td>
+																					<td>Price</td>
+																					<td>Places</td>
+																					<td>Action</td>
+																				</tr>
+																			</thead>
+																			<tbody>
+																			</tbody>
+																		</table>
+																		<br>
+																		<a href="#" class="btn btn-primary">Add new Recurring Price</a>
+																		<br>
+																		<div class="row">
+																			<div class="col-sm-12">
+																				<br>
+																				<div class="row">
+																					<div class="col-4">
+																						<div class="text-wrap">
+																							<a href="">Previous week</a>
+																						</div>
+																					</div>
+																					<div class="col-4">
+																						<div class="text-center">
+																							<input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">	
+																						</div>
+																					</div>
+																					<div class="col-4">
+																						<div class="text-right">
+																							<a href="">Next week</a>
+																						</div>		
+																					</div>
+																				</div>
+																				<div class="table-responsive">
+																					<table class="table card-table table-vcenter text-nowrap">
+																						<thead>
+																							<tr>
+																								<th></th>
+																								<th>a</th>
+																								<th>b</th>
+																								<th>c</th>
+																								<th>d</th>
+																								<th>e</th>
+																								<th>f</th>
+																								<th>g</th>
+																							</tr>
+																						</thead>
+																						<tbody>
+																							<tr>
+																								<th scope="row">1</th>
+																								<td>Joan Powell</td>
+																								<td>Associate Developer</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																							</tr>
+																							<tr>
+																								<th scope="row">2</th>
+																								<td>Joan Powell</td>
+																								<td>Associate Developer</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																							</tr>
+																							<tr>
+																								<th scope="row">3</th>
+																								<td>Joan Powell</td>
+																								<td>Associate Developer</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																							</tr>
+																							<tr>
+																								<th scope="row">4</th>
+																								<td>Joan Powell</td>
+																								<td>Associate Developer</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																								<td>$450,870</td>
+																							</tr>
+																						</tbody>
+																					</table>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												</div>
+												<div class="wizard-footer">
+													<div class="pull-right">
+														<input type="button" class="btn btn-next btn-fill btn-primary btn-wd m-0" name="next" value="Save & Continue" style="">
+														<input type="button" class="btn btn-finish btn-fill btn-success btn-wd m-0" name="finish" value="Finish" style="display: none;">
+													</div>
+
+													<div class="pull-left">
+														<input type="button" class="btn btn-previous btn-fill btn-default btn-wd m-0 disabled" name="previous" value="Previous">
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<!-- wizard container -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	</div>
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top" style="display: inline;">
+		<i class="fa fa-angle-up"></i>
+	</a>
+
+	<!-- Dashboard Js -->
+	<script src="assets/js/vendors/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/vendors/jquery.sparkline.min.js"></script>
+	<script src="assets/js/vendors/selectize.min.js"></script>
+	<script src="assets/js/vendors/jquery.tablesorter.min.js"></script>
+	<script src="assets/js/vendors/circle-progress.min.js"></script>
+	<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!-- Fullside-menu Js-->
+	<script src="assets/plugins/toggle-sidebar/js/sidemenu.js"></script>
+
+	<script src="./assets/plugins/forn-wizard/js/material-bootstrap-wizard.js"></script>
+	<script src="./assets/plugins/forn-wizard/js/jquery.validate.min.js"></script>
+	<script src="./assets/plugins/forn-wizard/js/jquery.bootstrap.js"></script>
+
+	<!--Select2 js -->
+	<script src="assets/plugins/select2/select2.full.min.js"></script>
+
+
+	<!--Morris.js Charts Plugin -->
+	<script src="assets/plugins/am-chart/amcharts.js"></script>
+	<script src="assets/plugins/am-chart/serial.js"></script>
+
+	<!-- Index Scripts -->
+	<script src="assets/js/amcharts.js"></script>
+
+	<!-- Inline js -->
+	<script src="assets/js/select2.js"></script>
+	<!-- file uploads js -->
+        <script src="assets/plugins/fileuploads/js/dropify.min.js"></script>
+
+	<!-- WYSIWYG Editor js -->
+	<script src="./assets/plugins/wysiwyag/jquery.richtext.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="assets/plugins/date-picker/spectrum.js"></script>  
+	<script src="assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="assets/plugins/input-mask/jquery.maskedinput.js"></script>
+
+	<!-- Timepicker js -->
+	<script src="assets/plugins/time-picker/jquery.timepicker.js"></script> 
+	<script src="assets/plugins/time-picker/toggles.min.js"></script> 
+	<!-- Custom scroll bar Js-->
+	<script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!-- Custom Js-->
+	<script src="assets/js/custom.js"></script>
+
+	<!-- WYSIWYG Editor js -->
+	<script>
+		$(function (e) {
+			$('.content').richText();
+			$('.content2').richText();
+		});
+	</script>
+
+
+</body>
+
+</html>

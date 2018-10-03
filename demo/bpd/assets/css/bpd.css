@@ -1,0 +1,31 @@
+.wizard-container .form-control, .wizard-container .form-group .form-control {
+    border-bottom: none;
+    background-image: none;
+    border: 1px solid #d7e7ff;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.wizard-card[data-color="red"] .form-group .form-control {
+    background-image: none;
+    
+}
+
+.wizard-container .form-group {
+    margin-top: 0;
+    border-radius: 2px;
+}
+
+::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: red;
+}
