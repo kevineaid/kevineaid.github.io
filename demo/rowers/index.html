@@ -204,20 +204,20 @@
                        </div>
                    </div>
                     <div class="row">
-                        <div class="col-lg-7 col-md-12"><!-- 
-                            <div class="progress-horizontal progress-horizontal--sm">
+                        <div class="col-lg-7 col-md-12">
+                            <!-- <div class="progress-horizontal progress-horizontal--sm">
                                 <h2>example bar meter</h2>
                                 <p class="progress-horizontal__label h5" style="margin-bottom:10px;">ITO, Delhi<span style="margin-left: 10px;font-size: 12px;background: #cc0033;color: #fff;padding: 0px 6px;font-weight: 700;border-radius: 2px;float:right;">Unhealthy</span></p>
                                 <div class="progress-horizontal__bar" data-value="0" ><div class="progress-horizontal__progress" style="width:65%;background:#cc0033;"></div></div>
                                 <p class="progress-horizontal__label h5">Air Pollution Index : <span style="margin-left: 10px;font-size: 13px;background: #cc0033;color: #fff;padding: 3px 6px;font-weight: 700;border-radius: 2px;">191</span> </p>
-                        
+                                                    
                             </div>
-                        
+                                                    
                             <div class="progress-horizontal progress-horizontal--sm">
                                 <p class="progress-horizontal__label h5" style="margin-bottom:10px;">Talkatora, Lucknow <span style="margin-left: 10px;font-size: 12px;background: #009966;color: #fff;padding: 0px 6px;font-weight: 700;border-radius: 2px;float:right;">Good</span></p>
                                 <div class="progress-horizontal__bar" data-value="0" ><div class="progress-horizontal__progress" style="width:10%;background:#009966;"></div></div>
                                 <p class="progress-horizontal__label h5">Air Pollution Index : <span style="margin-left: 10px;font-size: 13px;background: #009966;color: #fff;padding: 3px 6px;font-weight: 700;border-radius: 2px;">40</span> </p>
-                        
+                                                    
                             </div> -->
                              <!-- <table class="border--round table--alternate-row">
                                 <thead>
@@ -230,7 +230,36 @@
                                                          
                                 </tbody>
                                                          </table> -->
-
+                            <h3>Top Polluted City</h3>
+                            <div class="pollution-meter">
+                                <div class="progress list-city">
+                                  <div class="progress-bar" role="progressbar" id="meter" style="width: 80%; background: red;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <p>
+                                            <span style="float:left ;">ITO, Delhi</span>
+                                            <span style="float:right ;">162, Very Unhealthy</span>
+                                        </p>
+                                  </div>
+                                </div> 
+                                <div class="progress list-city">
+                                  <div class="progress-bar" role="progressbar" id="meter" style="width: 60%; background: #ff9933;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <p>
+                                            <span style="float:left ;">Lucknow</span>
+                                            <span style="float:right ;">102, Moderate</span>
+                                        </p>
+                                  </div>
+                                </div>    
+                                <div class="progress list-city">
+                                  <div class="progress-bar" role="progressbar" id="meter" style="width: 30%; background: #009966;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <p>
+                                            <span style="float:left ;">Bangalore</span>
+                                            <span style="float:right ;">40, Good</span>
+                                        </p>
+                                  </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12">
+                            <h3>Check AQI of City</h3>
                             <div class="pollution-meter">
                                 <div class="row mb-3">
                                     <div class="col-5">
@@ -257,9 +286,7 @@
                                 </div>
                                 
                             </div>
-                            <p>*this data updated every 30 minutesr</p>
-                        </div>
-                        <div class="col-lg-5 col-md-12">
+                            <h3 class="mb-2">AQI Level Indicator</h3>
                             <ul class="aqi-level">
                                 <li>
                                     <span class="aqi-color aqi-good"></span> 

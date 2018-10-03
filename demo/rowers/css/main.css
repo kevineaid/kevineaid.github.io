@@ -19,6 +19,21 @@ section#headline {
 .btn--checkaqi {
   padding: 10px 20px !important;
 }
+.pollution-meter .list-city {
+  height: 35px;
+}
+.list-city {
+  height: 100px;
+  margin-bottom: 5px;
+}
+.list-city p {
+  font-weight: 700;
+  font-size: 15px;
+  padding: 5px 15px;
+}
+.list-city p span:last-child {
+  font-weight: 500;
+}
 
 .bar.bar-1,
 .bar.bar--md {
