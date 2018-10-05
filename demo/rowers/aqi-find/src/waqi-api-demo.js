@@ -51,6 +51,7 @@ function search(keyword, output) {
 
 		result.data.forEach(function(station,i){
 			var tr = $("<tr>");
+			tr.append($("<td>").html(station.uid))
 			tr.append($("<td>").html(station.station.name))
 			tr.append($("<td>").html(colorize(station.aqi)))
 			tr.append($("<td>").html(station.time.stime))
