@@ -131,3 +131,13 @@ function colorize(aqi) {
 	return x;
 
 }
+
+
+
+function fetchNew(){
+	$('#pol-wrap').append('<div class="progress list-city"><div class="progress-bar" role="progressbar"' + 
+		' style="width: 80%; background: red;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> ' + 
+		'<p><span style="float:left ;">ITO, Delhi</span>' +
+		'<span style="float:right ;">162, Very Unhealthy</span> ' +
+		'</p></div></div> ')
+}

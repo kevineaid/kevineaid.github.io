@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://aqicn.org/json-api/demo/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>WAQI API - Javascript Demo</title>
+		<script src="src/jquery-1.7.1.min.js"></script>
+		<script src="src/waqi-api-demo.js"></script>
+
+		<style>
+			table.result {
+				width: 100%;
+				border: 1px solid black;
+				cursor: pointer;
+			}
+			table.result td:nth-child(n+2) {
+				text-align: center;
+			}
+			table.result tr:hover {
+				background-color: yellow;
+			}
+			h2 {
+				margin-bottom: 0;
+			}
+			input {
+				width: 100%;
+				font-size: 20px;
+				font-family: inherit;;
+				margin-bottom: 8px;
+			}
+
+			/* CSS Spinner-  https://github.com/webkul/csspin */
+			.cp-spinner{width:48px;height:48px;display:inline-block;box-sizing:border-box;position:relative}.cp-meter{border-radius:50%;border-top:solid 6px #0fd6ff;border-right:solid 6px #0fd6ff;border-bottom:solid 6px #0fd6ff;border-left:solid 6px #0fd6ff;width:48px;height:48px;display:inline-block;box-sizing:border-box}.cp-meter:before{border-radius:3px;content:" ";width:6px;height:12px;display:inline-block;box-sizing:border-box;background-color:#0fd6ff;position:absolute;top:5px;left:16px;transform-origin:center bottom;animation:cp-meter-animate-before 1s linear infinite}@keyframes cp-meter-animate-before{0%{transform:rotate(-45deg)}100%{transform:rotate(315deg)}}
+
+		</style>
+	</head>
+	<body>
+
+		<h1>Search and Feed Javascript Demo</h1>
+
+		<div style="float:left;width:49%">
+		<h2> Enter the name of station: </h2>
+		<input id="input-station" placeholder="for instance &#39;bangalore&#39;">
+		<br>
+		You can search by the station name, but also by any name refering to the station.<br>
+		For instance, for all stations located in Bulgaria, enter <code>Bulgaria</code>.<br>
+		You can also search by the <i>native</i> name, for instance for Beijing, enter <code>北京</code>.<br>
+		</div>
+
+		<div style="float:right;width:49%">
+		<h2> Enter your token: </h2>
+		<input id="input-token" value="1b394c2768e78fcad42f4845dc3180f97dc19812" placeholder="your token - if not set you will use the demo token">
+		You can get your own free token from the page <a href="http://aqicn.org/data-platform/register/">
+		aqicn.org/data-platform/register</a>. <br>It's free and only requires a valid email to register.
+		<br>
+		</div>
+		<div style="clear: both"></div>
+
+
+		<br>
+
+		<div id="result-search" style="min-height: 300px"></div>
+
+
+		<script>init("#input-token","#input-station","#result-search")</script>
+
+
+
+		<script>
+		try {
+			fetch("waqi-api-demo.js").then(function(r){return r.text()}).then(function(code){
+				var block = $("<pre>").append($("<code>").text(code))
+				$("#code-listing").append(block)
+			})
+		} catch (e) { }
+		</script>
+	
+</body></html>
