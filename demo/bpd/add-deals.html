@@ -391,9 +391,6 @@
 														<li style="width: 33.3333%;">
 															<a href="#booking" data-toggle="tab" class="">BOOKING FIELDS</a>
 														</li>
-														<li style="width: 33.3333%;">
-															<a href="#booking" data-toggle="tab" class="">BOOKING FIELDS</a>
-														</li>
 <!-- 														<li style="width: 33.3333%;">
 															<a href="#icon" data-toggle="tab" class="">ICON</a>
 														</li> -->
@@ -413,7 +410,7 @@
 																		<label class="control-label">Name
 																			<small>(required)</small>
 																		</label>
-																		<input name="name" type="text" class="form-control valid" aria-required="true" aria-invalid="false">
+																		<input name="name" type="text" class="form-control valid" aria-required="true" aria-invalid="false" required>
 																		<span class="material-input"></span>
 																	</div>
 																</div>
@@ -423,7 +420,7 @@
 																		<label class="control-label">Subheader
 																			<small>(required)</small>
 																		</label>
-																		<input name="subheader" type="text" class="form-control valid" aria-required="true" aria-invalid="false">
+																		<input name="subheader" type="text" class="form-control valid" aria-required="true" aria-invalid="false" required>
 																		<span class="material-input"></span>
 																	</div>
 																</div>
@@ -713,12 +710,22 @@
 															<div class="col-sm-12">
 																<div class="row">
 																	<div class="col-sm-12">
-																		<h3>Faq Elements &nbsp; <button class="btn btn-primary">Add</button></h3>
+																		<div class="row">
+																			<div class="col-9">
+																				<h3>Faq Elements &nbsp; <button class="btn btn-primary">Add</button></h3>
+																				<h3><label class="form-label">Faq 1</label></h3>
+																				<div class="form-group">
+																					<label class="form-label">NAME</label>
+																					<input type="text" class="form-control" name="example-text-input" placeholder="What is the minimum age for rafting?">
+																				</div>
+																			</div>
+																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
+													
 
 													<!-- ========================ICON================================= -->
 													<div class="tab-pane" id="icon">
@@ -1410,19 +1417,54 @@
 																					<div class="col-sm-12">
 																						<div class="row">
 																							<div class="col-6">
-																								<label class="form-label">Field 1 <a href="#" class="btn btn-danger">DELETE</a></label>
+																								<label class="form-label">Field 1 </label>
 																								
 																							</div>
 																							<div class="col-6">
-																								
+																								<a href="#" class="btn btn-danger">DELETE</a>
+																							</div>
+																							
+																						</div>
+																						<div class="form-group">
+																							<label class="form-label">FORM KEY</label>
+																							<input type="text" class="form-control" name="example-text-input">
+																						</div>
+																						<div class="form-group">
+																							<label class="form-label">LABEL</label>
+																							<input type="text" class="form-control" name="example-text-input">
+																						</div>
+																						<div class="form-group">
+																							<div class="form-group m-0">
+																								<div class="form-label">Checkboxes</div>
+																								<div class="custom-controls-stacked">
+																									<label class="custom-control custom-checkbox">
+																										<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+																										<span class="custom-control-label">PUBLISHED PER PARTICIPANT</span>
+																									</label>
+																									<label class="custom-control custom-checkbox">
+																										<input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option2">
+																										<span class="custom-control-label">REQUIRED PER PARTICIPANT</span>
+																									</label>
+																									<label class="custom-control custom-checkbox">
+																										<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+																										<span class="custom-control-label">PUBLISHED PER BOOKING</span>
+																									</label>
+																									<label class="custom-control custom-checkbox">
+																										<input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option2">
+																										<span class="custom-control-label">REQUIRED PER BOOKING</span>
+																									</label>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="form-group">
+																							<div class="form-group mb-0">
+																								<label class="form-label">OPTIONS</label>
+																								<textarea rows="5" class="form-control" placeholder="Enter About your description"></textarea>
 																							</div>
 																						</div>
 																					</div>
-																					<div class="row">
-																						<div class="col-sm-12">
-																							<input type="text" class="form-control" name="example-text-input" placeholder="Name">
-																						</div>
-																					</div>
+																					
+																					
 																				</div>
 																			</form>
 																			<!-- <input type="text" class="form-control" name="example-text-input" placeholder="Name"> -->

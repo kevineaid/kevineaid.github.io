@@ -33,3 +33,29 @@
 .header {
     background: #f2784b;
 }
+
+
+.dd-icon {
+    width: 100%;
+}
+.list-item {
+    padding: 10px ;
+    border: 1px solid #aaa;
+    background: #fff;
+}
+.drag-handle {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    padding-left: 11px;
+    padding-top: 8px;
+}
+.drag-handle span {
+    display: block;
+}
+.image-contain {
+    display: inline-block;
+}
+.image-contain img {
+    max-height: 55px;
+}

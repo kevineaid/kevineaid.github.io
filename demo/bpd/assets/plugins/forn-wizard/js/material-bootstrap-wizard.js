@@ -191,7 +191,7 @@ function refreshAnimation($wizard, index){
     index_temp = index;
     vertical_level = 0;
 
-    mobile_device = $(document).width() < 1300 && $total > 3;
+    mobile_device = $(document).width() < 600 && $total > 3;
 
     if(mobile_device){
         move_distance = $wizard.width() / 2;
@@ -214,7 +214,7 @@ function refreshAnimation($wizard, index){
 
     if(mobile_device){
         vertical_level = parseInt(index / 2);
-        vertical_level = vertical_level * 45;
+        vertical_level = vertical_level * 38;
     }
 
     $wizard.find('.moving-tab').css('width', step_width);
