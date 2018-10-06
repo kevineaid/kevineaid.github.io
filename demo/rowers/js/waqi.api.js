@@ -16,55 +16,96 @@ var cities = [
 
 var cityName = [];
 var cityAqi = [];
+var cityObj = [];
 
 $( document ).ready(function() {
-	setTimeout(function() {
-		getAQI('Mundka, Delhi', 10708);
-	}, 100);
-	setTimeout(function() {
-		getAQI('Anand Vihar, Delhi', 3760);
-	}, 300);
-	setTimeout(function() {
-		getAQI('Lalbagh, Lucknow', 8673);
-	}, 600);
-	setTimeout(function() {
-		getAQI('Shivajinagar, Pune', 2553);
-	}, 300);
-	setTimeout(function() {
-		getAQI('Talkatora, Lucknow', 8188);
-	}, 900);
-	setTimeout(function() {
-		getAQI('Kolkata', 7021);
-	}, 900);
-	setTimeout(function() {
-		getAQI('Faridaba', 6971);
-	}, 900);
-	setTimeout(function() {
-		getAQI('DTU, Delhi', 9290);
-	}, 900);
-	setTimeout(function() {
-		getAQI('Dwarka, Delhi', 8181);
-	}, 900);
-	setTimeout(function() {
-		getAQI('Sanjay Plc, Agra', 8186);
-	}, 900);
+	$('.aqiwidget-xxl').css('overflow', 'visible');
+	$('.aqiwidget-xxl').css('height', 'auto');
+	$('.aqi-graph-img').css('max-width', 'none');
+
+
+
+	
+		showStation('Mundka, Delhi', 10708);
+	
+	
+		showStation('Anand Vihar, Delhi', 3760);
+	
+	
+		showStation('Lalbagh, Lucknow', 8673);
+	
+	
+		showStation('Shivajinagar, Pune', 2553);
+	
+	
+		showStation('Talkatora, Lucknow', 8188);
+	
+	
+		showStation('Kolkata', 7021);
+	
+	
+		showStation('Faridaba', 6971);
+	
+	
+		showStation('DTU, Delhi', 9290);
+	
+	
+		showStation('Dwarka, Delhi', 8181);
+	
+	
+		showStation('Sanjay Plc, Agra', 8186);
+	
+
+	/*for (var i = 0 ; i <= cityObj.length; i++) {
+		console.log(cityObj[i].city);
+		console.log(cityObj[i].aqi);
+	}*/
+
+	
+	
+
+
+	setTimeout(function(){
+		console.log(cityName);
+		console.log(cityAqi);
+		console.log(cityObj);
+	}, 2000);
+
+	setTimeout(function(){
+		function compare(a,b) {
+		  if (b.aqi < a.aqi)
+		    return -1;
+		  if (b.aqi > a.aqi)
+		    return 1;
+		  return 0;
+		}
+
+		$('#loading-aqi').fadeOut(300);
+   		cityObj.sort(compare);
+		
+		console.log(cityObj);
+		console.log(cityObj[0].city);
+
+		for (var i = 0; i <= cityObj.length; i++) {
+			getAQI(cityObj[i].city, cityObj[i].aqi);	
+		}
+		
+	}, 3000);
+
+	
 });
 
-function fetchAqi(){
-	for (var i = 0 ; i < cities.length; i++) {
-		if (cityAqi[i] == 'undefined') {
-			$('#aqi').append('<tr><td><span class="fa fa-map-marker-alt" style="opacity: 0.3;"></span>&nbsp; '+cityName[i]+'</td><td>pending</td></tr>');
-		}else {
-			$('#aqi').append('<tr><td><span class="fa fa-map-marker-alt" style="opacity: 0.3;"></span>&nbsp; '+cityName[i]+'</td><td>'+colorize(cityAqi[i])+'</td></tr>');
-		}
-	}
-}
-function showStation(station) {
+function showStation(city, station) {
 	$.getJSON("https://api.waqi.info/feed/@"+station+"/?token=1b394c2768e78fcad42f4845dc3180f97dc19812",function(result){
 		
 		cityName.push(result.data.city.name);
-		console.log(result.data.aqi);
+		//console.log(result.data.city.name);
 		cityAqi.push(result.data.aqi);
+		//console.log(result.data.aqi);
+	 	cityObj.push({
+	        city: city,
+	        aqi: result.data.aqi
+	    });
 	});
 }
 
@@ -75,42 +116,37 @@ $("#city").change(function(){
     city = $("#city option:selected").val();
     scity = city;
 });
-function getAQI(name, xcity){
-	$.getJSON("https://api.waqi.info/feed/@"+xcity+"/?token=1b394c2768e78fcad42f4845dc3180f97dc19812",function(result){
-		
-		
-		console.log(result.data.city.name);
-		console.log(result.data.aqi);
-		var aqi = result.data.aqi;
+function getAQI(name, aqi){
+		var aqi = aqi;
 		var per = (aqi / 400) * 100;
 		var percent = 'calc('+per+'%' + ' + 30px)';
 		var colorz = "#fff";
 		var affect = '';
 		var colorfont = '#fff';
 
-		if (result.data.aqi <= 50) {
+		if (aqi <= 50) {
 			affect = 'Good';
 			//green
 			colorz = "#00b150";
 		}
-		else if (result.data.aqi <=  100) {
+		else if (aqi <=  100) {
 			affect = 'Satisfactory';
 			//light green
 			colorz = "#8fd153";
 		}
-		else if (result.data.aqi <= 200) {
+		else if (aqi <= 200) {
 			affect = 'Moderate';
 			//yellow
 			colorz = "#fffd03";
 			colorfont = '#000';
 		}
-		else if (result.data.aqi <= 300) {
+		else if (aqi <= 300) {
 			affect = 'Poor';
 			//yellow
 			colorz = "#fdc100";
 			colorfont = '#000';
 		}
-		else if (result.data.aqi <= 400) {
+		else if (aqi <= 400) {
 			affect = 'Very Poor';
 			//yellow
 			colorz = "#fe000a";
@@ -122,7 +158,7 @@ function getAQI(name, xcity){
 		}
 
 
-		if (result.data.aqi == null || result.data.aqi == '-') {
+		if (aqi == null || aqi == '-') {
 			$('#top10').append('<div class="progress list-city"> '+
 	  		' <div class="progress-bar" role="progressbar" style="width: '+ 50% +'; background: '+ colorz +'; color: '+ colorfont +';max-width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> ' +
 	        ' <p><span style="float:left ;">'+ name +'</span> ' +
@@ -138,11 +174,9 @@ function getAQI(name, xcity){
 		}
 
 		
-	});
 }
 
 function getAQIN(){
-	console.log(document.URL);
 	city = $("#city option:selected").val();
 	var z = 'https://aqicn.org/?city=Delhi/' + city + '&widgetscript&size=xxl';
 	$('#aqi-wrapper').remove('.aqi-js');
