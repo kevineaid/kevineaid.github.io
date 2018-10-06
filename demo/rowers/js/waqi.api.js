@@ -13,11 +13,6 @@ var cityName = [];
 var cityAqi = [];
 
 $( document ).ready(function() {
-	for (var i = 0; i < cities.length; i++) {
-		console.log(i);
-		console.log(cities[i]);
-		showStation(cities[i]);
-	}
 	setTimeout(function(){
 		fetchAqi()
 	}, 2000);
