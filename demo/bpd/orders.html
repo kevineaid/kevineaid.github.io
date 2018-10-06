@@ -263,7 +263,7 @@
 				</div>
 				<ul class="side-menu">
 					<li class="slide">
-						<a class="side-menu__item active" href="dashboard.html">
+						<a class="side-menu__item" href="dashboard.html">
 							<i class="side-menu__icon fa fa-home"></i>Dashboard</a>
 					</li>
 					<li class="slide">
@@ -309,12 +309,12 @@
 						</ul>
 					</li>
 					<li class="slide">
-						<a class="side-menu__item" data-toggle="slide" href="#">
+						<a class="side-menu__item  active" data-toggle="slide" href="#">
 							<i class="side-menu__icon fa fa-calendar"></i>
 							<span class="side-menu__label">ORDERS</span>
 							<i class="angle fa fa-angle-right"></i>
 						</a>
-						<ul class="slide-menu">
+						<ul class="slide-menu ">
 							<li>
 								<a class="slide-item" href="orders.html">Orders</a>
 							</li>
@@ -582,95 +582,75 @@
 																				 aria-label="Salary: activate to sort column ascending" style="width: 71.4px;">GRAND TOTAL</th>
 																				<th class="wd-25p sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="E-mail: activate to sort column ascending"
 																				 style="width: 229.2px;">COUPON DISCOUNT</th>
-																				 <th class="wd-15p"></th>
-																				<th class="wd-15p"></th>
-																				<th class="wd-20p"></th>
-																				<th class="wd-15p"></th>
-																				<th class="wd-10p"></th>
-																				<th class="wd-25p"></th>
-																				<th class="wd-25p">DETAIL</th>
+																				 <th class="wd-15p">VOUCHER</th>
+																				<th class="wd-20p">BOOKING DATE AND TIME</th>
+																				<th class="wd-20p">CUSTOMER</th>
+																				<th class="wd-15p">PAYMENT METHOD</th>
+																				<th class="wd-10p">STATUS</th>
+																				<th class="wd-25p">ACTIONS</th>
+																				<!-- <th class="wd-25p">DETAIL</th> -->
 																			</tr>
 																		</thead>
 																		<tbody>
 																			<tr role="row" class="odd">
-																				<td class="sorting_1">Adrian</td>
-																				<td>Terry</td>
-																				<td>Marketing Officer</td>
-																				<td>2013/04/21</td>
-																				<td>$543,769</td>
-																				<td>a.terry@datatables.net</td>
-																			</tr>
-																			<tr role="row" class="even">
-																				<td class="sorting_1">Angelica</td>
-																				<td>Ramos</td>
-																				<td>Chief Executive Officer</td>
-																				<td>20017/10/15</td>
-																				<td>$6,234,000</td>
-																				<td>a.ramos@datatables.net</td>
-																			</tr>
-																			<tr role="row" class="odd">
-																				<td class="sorting_1">Bella</td>
-																				<td>Chloe</td>
-																				<td>System Developer</td>
-																				<td>2018/03/12</td>
-																				<td>$654,765</td>
-																				<td>b.Chloe@datatables.net</td>
-																			</tr>
-																			<tr role="row" class="even">
-																				<td class="sorting_1">Brenden</td>
-																				<td>Wagner</td>
-																				<td>Software Engineer</td>
-																				<td>2013/07/14</td>
-																				<td>$206,850</td>
-																				<td>b.wagner@datatables.net</td>
+																				<td>INV016206</td>
+																				<td>2017/07/08 12:56:26 PM</td>
+																				<td>New Zealand White Water Rafting Experience(Kaitiaki Adventures)</td>
+																				<td>2 * Adult NZ $ 75</td>
+																				<td>NZD 150.00(NZD 30.00)</td>
+																				<td>0.00</td>
+																				<td>50C8F43CF7C51B2E81B68E15</td>
+																				<td>2017/09/13 12:30:00 PM</td>
+																				<td>dinesh.kaku@gmail.comDinesh Kaku+6147469585</td>
+																				<td>credit_card</td>
+																				<td>
+																					<BUTTON class="btn btn-success">ORDER PLACED</BUTTON>
+																				</td>
+																				<td>
+																					<button href="#" class="btn btn-info btn-sm mb-10" data-toggle="modal" data-target="#myModal">DETAIL</button> 
+																					<button type="button" class="btn btn-icon btn-sm btn-primary btn-success mb-10"><i class="fa fa-pencil"></i></button>
+																					<button type="button" class="btn btn-icon btn-sm btn-primary btn-danger"><i class="fe fe-trash"></i></button>
+																				</td>
 																			</tr>
 																			<tr role="row" class="odd">
-																				<td class="sorting_1">Bruno</td>
-																				<td>Nash</td>
-																				<td>Software Engineer</td>
-																				<td>2015/05/03</td>
-																				<td>$163,500</td>
-																				<td>b.nash@datatables.net</td>
-																			</tr>
-																			<tr role="row" class="even">
-																				<td class="sorting_1">Cameron</td>
-																				<td>Watson</td>
-																				<td>Sales Support</td>
-																				<td>2013/9/7</td>
-																				<td>$675,876</td>
-																				<td>c.watson@datatables.net</td>
-																			</tr>
-																			<tr role="row" class="odd">
-																				<td class="sorting_1">Connor</td>
-																				<td>Johne</td>
-																				<td>Web Developer</td>
-																				<td>2011/1/25</td>
-																				<td>$92,575</td>
-																				<td>C.johne@datatables.net</td>
-																			</tr>
-																			<tr role="row" class="even">
-																				<td class="sorting_1">Dominic</td>
-																				<td>Hudson</td>
-																				<td>Sales Assistant</td>
-																				<td>2015/10/16</td>
-																				<td>$654,300</td>
-																				<td>d.hudson@datatables.net</td>
+																				<td>INV016206</td>
+																				<td>2017/07/08 12:56:26 PM</td>
+																				<td>New Zealand White Water Rafting Experience(Kaitiaki Adventures)</td>
+																				<td>2 * Adult NZ $ 75</td>
+																				<td>NZD 150.00(NZD 30.00)</td>
+																				<td>0.00</td>
+																				<td>50C8F43CF7C51B2E81B68E15</td>
+																				<td>2017/09/13 12:30:00 PM</td>
+																				<td>dinesh.kaku@gmail.comDinesh Kaku+6147469585</td>
+																				<td>credit_card</td>
+																				<td>
+																					<BUTTON class="btn btn-success">ORDER PLACED</BUTTON>
+																				</td>
+																				<td>
+																						<button href="#" class="btn btn-info btn-sm mb-10" data-toggle="modal" data-target="#myModal">DETAIL</button> 
+																						<button type="button" class="btn btn-icon btn-sm btn-primary btn-success mb-10"><i class="fa fa-pencil"></i></button>
+																						<button type="button" class="btn btn-icon btn-sm btn-primary btn-danger"><i class="fe fe-trash"></i></button>
+																				</td>
 																			</tr>
 																			<tr role="row" class="odd">
-																				<td class="sorting_1">Donna</td>
-																				<td>Bond</td>
-																				<td>Account Manager</td>
-																				<td>2012/02/21</td>
-																				<td>$543,654</td>
-																				<td>d.bond@datatables.net</td>
-																			</tr>
-																			<tr role="row" class="even">
-																				<td class="sorting_1">Evan</td>
-																				<td>Terry</td>
-																				<td>Sales Manager</td>
-																				<td>2013/10/26</td>
-																				<td>$66,340</td>
-																				<td>d.terry@datatables.net</td>
+																				<td>INV016206</td>
+																				<td>2017/07/08 12:56:26 PM</td>
+																				<td>New Zealand White Water Rafting Experience(Kaitiaki Adventures)</td>
+																				<td>2 * Adult NZ $ 75</td>
+																				<td>NZD 150.00(NZD 30.00)</td>
+																				<td>0.00</td>
+																				<td>50C8F43CF7C51B2E81B68E15</td>
+																				<td>2017/09/13 12:30:00 PM</td>
+																				<td>dinesh.kaku@gmail.comDinesh Kaku+6147469585</td>
+																				<td>credit_card</td>
+																				<td>
+																					<BUTTON class="btn btn-success">ORDER PLACED</BUTTON>
+																				</td>
+																				<td>
+																						<button href="#" class="btn btn-info btn-sm mb-10" data-toggle="modal" data-target="#myModal">DETAIL</button> 
+																						<button type="button" class="btn btn-icon btn-sm btn-primary btn-success mb-10"><i class="fa fa-pencil"></i></button>
+																						<button type="button" class="btn btn-icon btn-sm btn-primary btn-danger"><i class="fe fe-trash"></i></button>
+																				</td>
 																			</tr>
 																		</tbody>
 																	</table>
@@ -713,64 +693,6 @@
 												</div>
 												<!-- table-wrapper -->
 											</div>
-											<div class="card">
-												<div class="card-body">
-													<div class="table-responsive">
-														<table id="example" class="table table-striped table-bordered" style="width:100%">
-															<thead>
-																<tr>
-																	<th class="wd-15p">ORDER NO</th>
-																	<th class="wd-15p">ORDER DATE AND TIME</th>
-																	<th class="wd-20p">OFFER</th>
-																	<th class="wd-15p">VOUCHER TYPES</th>
-																	<th class="wd-10p">GRAND TOTAL</th>
-																	<th class="wd-25p">COUPON DISCOUNT</th>
-																	<th class="wd-25p">DETAIL</th>
-
-
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td>INV016206</td>
-																	<td>2017/07/08 12:56:26 PM</td>
-																	<td>New Zealand White Water Rafting Experience(Kaitiaki Adventures)</td>
-																	<td>2 * Adult NZ $ 75</td>
-																	<td>NZD 150.00(NZD 30.00)</td>
-																	<td>0.00</td>
-																	<td>
-																		<a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">DETAIL</a>
-																	</td>
-
-																</tr>
-																<tr>
-																	<td>INV016206</td>
-																	<td>2017/07/08 12:56:26 PM</td>
-																	<td>New Zealand White Water Rafting Experience(Kaitiaki Adventures)</td>
-																	<td>2 * Adult NZ $ 75</td>
-																	<td>NZD 150.00(NZD 30.00)</td>
-																	<td>0.00</td>
-																	<td>
-																		<a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">DETAIL</a>
-																	</td>
-
-																</tr>
-																<tr>
-																	<td>INV016206</td>
-																	<td>2017/07/08 12:56:26 PM</td>
-																	<td>New Zealand White Water Rafting Experience(Kaitiaki Adventures)</td>
-																	<td>2 * Adult NZ $ 75</td>
-																	<td>NZD 150.00(NZD 30.00)</td>
-																	<td>0.00</td>
-																	<td>
-																		<a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">DETAIL</a>
-																	</td>
-
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</div>
 												<div class="modal fade" id="myModal" role="dialog">
 													<div class="modal-dialog">
 														<!-- Modal content-->

@@ -1,3 +1,24 @@
+
+
+
+
+
+
+
+@media (max-width: 991.9px){
+    .app .app-sidebar {
+        left: -230px;
+    }
+
+    .app-content {
+        margin-top: 50px;
+        min-width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
 .wizard-container .form-control, .wizard-container .form-group .form-control {
     border-bottom: none;
     background-image: none;
@@ -34,14 +55,27 @@
     background: #f2784b;
 }
 
+.mb-10 {
+    margin-bottom: 10px;
+}
+.nav-pills {
+    background: rgba(244, 67, 54, 0.025);
+}
 
 .dd-icon {
     width: 100%;
+    max-width: 800px;
+}
+.dd-gallery {
+    max-width: 600px;
 }
 .list-item {
     padding: 10px ;
-    border: 1px solid #aaa;
+    border: 1px solid #ccc;
     background: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 .drag-handle {
     display: inline-block;
@@ -49,13 +83,47 @@
     width: 35px;
     padding-left: 11px;
     padding-top: 8px;
+    margin-right:5px;
 }
 .drag-handle span {
     display: block;
 }
-.image-contain {
+.img-contain {
+    padding: 0 10px;
     display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    width: 100px;
 }
-.image-contain img {
+.img-contain img {
     max-height: 55px;
+    widows: 100%;
+    margin-bottom: 5px;
+}
+.enabled {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.icon-text,
+.icon-helper {
+    padding: 0 10px;
+}
+
+.icon-text .form-control,
+.icon-helper .form-control {
+    width: 100%;
+}
+@media (max-width: 767px){
+    .icon-text,
+    .icon-helper {
+        display: block;
+        padding: 0 10px;
+    }
+
+    .icon-text .form-control,
+    .icon-helper .form-control {
+        width: 100%;
+    }
 }

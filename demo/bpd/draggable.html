@@ -26,7 +26,7 @@
 		<link href="assets/css/dashboard.css" rel="stylesheet" />
 
 		
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nestable2/1.6.0/jquery.nestable.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nestable2/1.6.0/jquery.nestable.min.css">
 		
 
 		<!-- c3.js Charts Plugin -->
@@ -280,36 +280,50 @@
 										<div class="row row-cards">
 											<div class="dd dd-icon">
 												<ol class="dd-list">
-													<li class="dd-item list-item" data-id="1">
+													<li class="dd-item list-item justify-content-between" data-id="1">
 														<div class="dd-handle drag-handle">
 															<i class="fa fa-bars"></i>
 														</div>
 														<div class="img-contain">
-															<img src="" alt="">
+															<img src="assets/images/icon/time.png" alt="">
+															<br>
+															Duration
 														</div>
-														<div class="row">
-															<div class="col-3">
-																
-															</div>
-															<div class="col-4">
-																
-															</div>
-															<div class="col-4"></div>
+														<div class="enabled">
+															<label class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+																<span class="custom-control-label">Enabled</span>
+															</label>
+														</div>
+														<div class="icon-text">
+															<input type="text" class="form-control" name="example-text-input" placeholder="Text">
+														</div>
+														<div class="icon-helper">
+															<input type="text" class="form-control" name="example-text-input" placeholder="Helper Text..">
 														</div>
 													</li>
-													<li class="dd-item" data-id="2">
-														<div class="dd-handle">Item 2</div>
-													</li>
-													<li class="dd-item" data-id="3">
-														<div class="dd-handle">Item 3</div>
-														<ol class="dd-list">
-															<li class="dd-item" data-id="4">
-																<div class="dd-handle">Item 4</div>
-															</li>
-															<li class="dd-item" data-id="5" data-foo="bar">
-																<div class="dd-nodrag">Item 5</div>
-															</li>
-														</ol>
+													<li class="dd-item list-item justify-content-between" data-id="1">
+														<div class="dd-handle drag-handle">
+															<i class="fa fa-bars"></i>
+														</div>
+														<div class="img-contain">
+															<img src="assets/images/icon/time.png" alt="">
+															<br>
+															
+																Start & End Time
+														</div>
+														<div class="enabled">
+															<label class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+																<span class="custom-control-label">Enabled</span>
+															</label>
+														</div>
+														<div class="icon-text">
+															<input type="text" class="form-control" name="example-text-input" placeholder="Text">
+														</div>
+														<div class="icon-helper">
+															<input type="text" class="form-control" name="example-text-input" placeholder="Helper Text..">
+														</div>
 													</li>
 												</ol>
 											</div>
@@ -354,9 +368,9 @@
 		<script src="assets/js/custom.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/nestable2/1.6.0/jquery.nestable.min.js"></script>
-	<script>
-		$('.dd-icon').nestable({ /* config options */ })
-	</script>
+		<script>
+			$('.dd-icon').nestable({ /* config options */ })
+		</script>
 		
 	</body>
 </html>

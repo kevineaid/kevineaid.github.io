@@ -26,6 +26,8 @@
 	<!-- Dashboard Css -->
 	<link href="assets/css/dashboard.css" rel="stylesheet" />
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nestable2/1.6.0/jquery.nestable.min.css">
+
 	<!-- Time picker Plugin -->
 	<link href="assets/plugins/time-picker/jquery.timepicker.css" rel="stylesheet" />
 	<!-- forn-wizard css-->
@@ -39,6 +41,8 @@
 
 	<!-- WYSIWYG Editor css -->
 	<link href="./assets/plugins/wysiwyag/richtext.css" rel="stylesheet" />
+
+
 
 	<!-- Date Picker Plugin -->
 	<link href="assets/plugins/date-picker/spectrum.css" rel="stylesheet" />
@@ -358,38 +362,42 @@
 						<div class="col-md-12">
 							<div class="card">
 								<div class="card-body p-6">
+									
 
 									<div class="wizard-container">
-										<div class="wizard-card m-0" data-color="red" id="wizardProfile">
+										<div class="wizard-card m-0" data-color="red" id="wizardDeals">
 											<form novalidate="novalidate">
 												<div class="wizard-navigation">
 													<ul class="nav nav-pills">
-														<li style="width: 33.3333%;">
+														<li style="width: 10%;">
 															<a href="#general" data-toggle="tab" class="active show">General</a>
 														</li>
-														<li style="width: 33.3333%;">
+														<li style="width: 10%;">
 															<a href="#location" data-toggle="tab" class="">Location</a>
 														</li>
-														<li style="width: 33.3333%;">
+														<li style="width: 10%;">
 															<a href="#description" data-toggle="tab" class="">Description</a>
 														</li>
-														<li style="width: 33.3333%;">
+														<li style="width: 10%;">
 															<a href="#faq" data-toggle="tab" class="">FAQ</a>
 														</li>
-														<li style="width: 33.3333%;">
+														<li style="width: 10%;">
 															<a href="#icon" data-toggle="tab" class="">ICON</a>
 														</li>
-														<li style="width: 33.3333%;">
+														<li style="width: 10%; !important">
+																<a href="#gallery" data-toggle="tab" class="">GALLERY</a>
+															</li>
+														<li style="width: 10%;">
 															<a href="#pricing" data-toggle="tab" class="">Pricing & Duration</a>
 														</li>
-														<li style="width: 33.3333%;">
+														<li style="width: 10%;">
 															<a href="#lastmnt" data-toggle="tab" class="">LAST MINUTE</a>
 														</li>
-														<li style="width: 33.3333%;">
+														<li style="width: 10%;">
 															<a href="#calendar" data-toggle="tab" class="">CALENDAR</a>
 														</li>
-														<li style="width: 33.3333%;">
-															<a href="#booking" data-toggle="tab" class="">BOOKING FIELDS</a>
+														<li style="width: 10%;">
+															<a href="#booking" data-toggle="tab" class="" id="booking-tabs">BOOKING FIELDS</a>
 														</li>
 <!-- 														<li style="width: 33.3333%;">
 															<a href="#icon" data-toggle="tab" class="">ICON</a>
@@ -402,7 +410,7 @@
 												<div class="tab-content">
 
 													<!-- ========================GENERAL================================= -->
-													<div class="tab-pane active show" id="general">
+													<div class="tab-pane" id="general">
 														<div class="row">
 															<div class="col-sm-12">
 																<div class="input-group">
@@ -410,7 +418,7 @@
 																		<label class="control-label">Name
 																			<small>(required)</small>
 																		</label>
-																		<input name="name" type="text" class="form-control valid" aria-required="true" aria-invalid="false" required>
+																		<input name="name" type="text" class="form-control">
 																		<span class="material-input"></span>
 																	</div>
 																</div>
@@ -420,14 +428,14 @@
 																		<label class="control-label">Subheader
 																			<small>(required)</small>
 																		</label>
-																		<input name="subheader" type="text" class="form-control valid" aria-required="true" aria-invalid="false" required>
+																		<input name="subheader" type="text" class="form-control">
 																		<span class="material-input"></span>
 																	</div>
 																</div>
 																<div class="input-group">
 																	<div class="form-group">
 																		<label class="form-label label-floating">Type</label>
-																		<select class="form-control select2 select2-hidden-accessible valid" required aria-required="true" aria-invalid="false" data-placeholder="Choose one (with optgroup)"
+																		<select class="form-control select2 select2-hidden-accessible" data-placeholder="Choose one (with optgroup)"
 																		 tabindex="-1" aria-hidden="true">
 																			<optgroup label="Type">
 																				<option value="#">Event</option>
@@ -559,7 +567,7 @@
 																		<label class="control-label">Address
 																			<small>(required)</small>
 																		</label>
-																		<input name="address" type="text" class="form-control valid" aria-required="true" aria-invalid="false">
+																		<input name="address" type="text" class="form-control" >
 																		<span class="material-input"></span>
 																		<button type="button" class="btn btn-primary btn-block">Validate</button>
 																	</div>
@@ -567,7 +575,7 @@
 																<div class="input-group">
 																	<div class="form-group label-floating">
 																		<label class="control-label">Latitude</label>
-																		<input name="latitude" type="text" class="form-control valid" aria-required="true" aria-invalid="false">
+																		<input name="latitude" type="text" class="form-control" >
 																		<span class="material-input"></span>
 																	</div>
 																</div>
@@ -683,7 +691,7 @@
 																	<div class="form-group label-floating">
 																		<label class="control-label">Activity HR
 																		</label>
-																		<input name="activity_hr" type="text" class="form-control valid" aria-required="true" aria-invalid="false" required>
+																		<input name="activity_hr" type="text" class="form-control">
 																		<span class="material-input"></span>
 																	</div>
 																</div>
@@ -709,31 +717,186 @@
 														<div class="row">
 															<div class="col-sm-12">
 																<div class="row">
-																	<div class="col-sm-12">
-																		<div class="row">
-																			<div class="col-9">
-																				<h3>Faq Elements &nbsp; <button class="btn btn-primary">Add</button></h3>
-																				<h3><label class="form-label">Faq 1</label></h3>
-																				<div class="form-group">
-																					<label class="form-label">NAME</label>
-																					<input type="text" class="form-control" name="example-text-input" placeholder="What is the minimum age for rafting?">
-																				</div>
-																			</div>
-																		</div>
+																	<div class="col-12 col-xl-9">
+																		<h3>Faq Elements &nbsp; <button type="button" class="btn btn-primary" id="add-faq">Add</button></h3>
+																		<div class="new-faq-wrap">
+																			
+																			<!-- end card -->
+																		</div>	
 																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
 													
-
 													<!-- ========================ICON================================= -->
 													<div class="tab-pane" id="icon">
+															<div class="row">
+																	<div class="col-sm-12">
+																			<h3 class="text-muted mb-5"><strong>Icons</strong></h3>
+																			<div class="row row-cards">
+																				<div class="dd dd-icon">
+																					<ol class="dd-list">
+																						<li class="dd-item list-item justify-content-between" data-id="1">
+																							<div class="dd-handle drag-handle">
+																								<i class="fa fa-bars"></i>
+																							</div>
+																							<div class="img-contain">
+																								<img src="assets/images/icon/time.png" alt="">
+																								<br>
+																								Duration
+																							</div>
+																							<div class="enabled">
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+																									<span class="custom-control-label">Enabled</span>
+																								</label>
+																							</div>
+																							<div class="icon-text">
+																								Text <br>
+																								<input type="text" class="form-control" name="example-text-input" placeholder="Text">
+																							</div>
+																							<div class="icon-helper">
+																								Helper Text 
+																								<input type="text" class="form-control" name="example-text-input" placeholder="Helper Text..">
+																							</div>
+																						</li>
+																						<li class="dd-item list-item justify-content-between" data-id="1">
+																							<div class="dd-handle drag-handle">
+																								<i class="fa fa-bars"></i>
+																							</div>
+																							<div class="img-contain">
+																								<img src="assets/images/icon/time.png" alt="">
+																								<br>
+																								
+																									Start & End Time
+																							</div>
+																							<div class="enabled">
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+																									<span class="custom-control-label">Enabled</span>
+																								</label>
+																							</div>
+																							<div class="icon-text">
+																								Text <br>
+																								<input type="text" class="form-control" name="example-text-input" placeholder="Text">
+																							</div>
+																							<div class="icon-helper">
+																								Helper Text 
+																								<input type="text" class="form-control" name="example-text-input" placeholder="Helper Text..">
+																							</div>
+																						</li>
+																					</ol>
+																				</div>
+																			</div>	
+																	</div>
+															</div>
+														</div>
+
+													<!-- ========================GALLERY================================= -->
+													<div class="tab-pane" id="gallery">
 														<div class="row">
 															<div class="col-sm-12">
 																<div class="row">
-																	<div class="col-sm-12">
-																		<h3>Faq Elements &nbsp; <button class="btn btn-primary">Add</button></h3>
+																	<div class="col-sm-8">
+																		<h3 class="text-muted mb-5"><strong>Gallery</strong></h3>
+																		<div class="row row-cards">
+																			<div class="dd dd-icon dd-gallery">
+																				<ol class="dd-list">
+																					<li class="dd-item list-item" data-id="1">
+																						<div class="dd-handle drag-handle">
+																							<i class="fa fa-bars"></i>
+																						</div>
+																						<div class="img-contain">
+																							<img src="assets/images/thumbnails/thumb1.jpg" alt="">
+																						</div>
+																						<div class="icon-text">
+																							<input type="text" class="form-control" name="example-text-input" placeholder="Text">
+																						</div>
+																						<div class="enabled">
+																							<label class="custom-control custom-checkbox">
+																								<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="isMain" checked="">
+																								<span class="custom-control-label">Is Main</span>
+																							</label>
+																						</div>
+																						<div class="enabled">
+																							<label class="custom-control custom-checkbox">
+																								<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="Active" checked="">
+																								<span class="custom-control-label">Active</span>
+																							</label>
+																						</div>
+																					</li>
+																					<li class="dd-item list-item" data-id="2">
+																						<div class="dd-handle drag-handle">
+																							<i class="fa fa-bars"></i>
+																						</div>
+																						<div class="img-contain">
+																							<img src="assets/images/thumbnails/thumb1.jpg" alt="">
+																						</div>
+																						<div class="icon-text">
+																							<input type="text" class="form-control" name="example-text-input" placeholder="Text">
+																						</div>
+																						<div class="enabled">
+																							<label class="custom-control custom-checkbox">
+																								<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="isMain" checked="">
+																								<span class="custom-control-label">Is Main</span>
+																							</label>
+																						</div>
+																						<div class="enabled">
+																							<label class="custom-control custom-checkbox">
+																								<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="Active" checked="">
+																								<span class="custom-control-label">Active</span>
+																							</label>
+																						</div>
+																					</li>	
+																					<li class="dd-item list-item" data-id="3">
+																						<div class="dd-handle drag-handle">
+																							<i class="fa fa-bars"></i>
+																						</div>
+																						<div class="img-contain">
+																							<img src="assets/images/thumbnails/thumb1.jpg" alt="">
+																						</div>
+																						<div class="icon-text">
+																							<input type="text" class="form-control" name="example-text-input" placeholder="Text">
+																						</div>
+																						<div class="enabled">
+																							<label class="custom-control custom-checkbox">
+																								<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="isMain">
+																								<span class="custom-control-label">Is Main</span>
+																							</label>
+																						</div>
+																						<div class="enabled">
+																							<label class="custom-control custom-checkbox">
+																								<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="Active">
+																								<span class="custom-control-label">Active</span>
+																							</label>
+																						</div>
+																					</li>																							</li>
+
+																				</ol>
+																			</div>
+																		</div>	
+																	</div>
+																	<div class="col-sm-4">
+																		<div class="dropify-wrapper p-0" style="height: 194px;">
+																			<div class="dropify-loader"></div>
+																				<input type="file" class="dropify" data-height="180">
+																				<button type="button" class="dropify-clear">Remove</button>
+																				<div class="dropify-preview"><span class="dropify-render">
+
+																				</span>
+																				<div class="dropify-infos">
+																					<div class="dropify-infos-inner">
+																						<p class="dropify-filename">
+																							<span class="file-icon"></span> 
+																							<span class="dropify-filename-inner"></span>
+																						</p>
+																						<p class="dropify-infos-message">Drag and drop or click to replace</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		
 																	</div>
 																</div>
 															</div>
@@ -745,7 +908,7 @@
 														<div class="row">
 															<div class="col-sm-12">
 																<div class="row">
-																	<div class="col-8">
+																	<div class="col-12 col-md-8">
 																		<div class="form-group">
 																			<label class="form-label">START DATE</label>
 																			<input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">	
@@ -847,19 +1010,14 @@
 																		</div>
 																	</div>
 																</div>
-																	<div class="col-4">
-																			<label >OPERATING START TIME</label>
-																		<div class="wd-100 mg-b-30 for">
-																			<div class="input-group">
-																				<div class="input-group-prepend">
-																					<div class="input-group-text">
-																						<i class="fa fa-clock-o tx-16 lh-0 op-6"></i>
+																	<div class="col-12 col-md-4">
+																			<div class="form-group">
+																					<label class="form-label">OPERATING START TIME</label>
+																					<div id="backpackerdeals_corebundle_deal_operatingStartTime" class="widget-event form-inline">
+																						<select id="backpackerdeals_corebundle_deal_operatingStartTime_hour" name="backpackerdeals_corebundle_deal[operatingStartTime][hour]" class="form-control"><option value="0" selected="selected">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option></select>:<select id="backpackerdeals_corebundle_deal_operatingStartTime_minute" name="backpackerdeals_corebundle_deal[operatingStartTime][minute]" class="form-control"><option value="0" selected="selected">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option></select>        
 																					</div>
-																				</div>
-																				<input class="form-control" id="tpBasic" placeholder="Set time" type="text">
+		
 																			</div>
-																		
-																		</div>
 																		<div class="form-group">
 																			<label class="form-label">OPERATING END TIME</label>
 																			<div id="backpackerdeals_corebundle_deal_operatingStartTime" class="widget-event form-inline">
@@ -874,7 +1032,7 @@
 																	<hr>					
 																	<div class="custom-controls-stacked">
 																		<label class="custom-control custom-checkbox">
-																			<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" >
+																			<input type="checkbox" id="booking-require" class="custom-control-input" name="example-checkbox1" value="option1" checked>
 																			<span class="custom-control-label">Booking required</span>
 																		</label>
 																		<label class="custom-control custom-checkbox">
@@ -890,7 +1048,7 @@
 																			<span class="custom-control-label">Pickup required Checked</span>
 																		</label>
 																	</div>
-																	<div class="form-group">		
+																	<div class="form-group" id="close-booking-field">		
 																	<label class="form-label">CLOSE BOOKING</label>
 																		<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
 																				<option value="0" selected="selected">No restrictions</option>
@@ -981,254 +1139,251 @@
 													<div class="tab-pane" id="lastmnt">
 														<div class="row">
 															<div class="col-sm-12">
+																<div class="btn-list text-center">
+																	<a href="#" class="btn btn-success">Create new last minute offer</a>
+																</div>
+																<br>
 																<div class="row">
 																	<div class="col-sm-12">
-																		<div class="btn-list text-center">
-																			<a href="#" class="btn btn-success">Create new last minute offer</a>
-																		</div>
-																		<br>
 																		<div class="row">
-																			<div class="col-sm-12">
-																				<div class="row">
-																					<div class="col-4">
-																						<h1>Offer Configuration</h1>
-																						<div class="form-group">
-																							<label class="form-label"> TYPE</label>
-																							<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
-																								<optgroup label="Mountain Time Zone">
-																									<option value="AZ">LAST MINUTE</option>
-																									<option value="CO">TOP DEAL</option>
-																								</optgroup>
-																							</select>
-																						</div>
-																						<h5>Deal start & end dates (booking period)</h5>
-																						<div class="form-group">
-																							<label class="form-label">Visibility start</label>
-																						</div>
-																						<div class="form-label">Checkboxes</div>
-																							<div class="custom-controls-stacked">
-																								<label class="custom-control custom-checkbox">
-																									<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-																									<span class="custom-control-label">Show countdown timer</span>
-																								</label>
-																								<label class="custom-control custom-checkbox">
-																									<input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option1">
-																									<span class="custom-control-label">Travel date limitation</span>
-																								</label>
-																							</div>	
-																					</div>
-																					<div class="col-sm-8">
-																						<h1>Deal details - Select Slots</h1>
-																						<div class="table-responsive">
-																							<table class="table card-table table-vcenter text-nowrap">
-																				                <thead>
-																				                <tr>
-																				                    <td>Slots</td>
-																				                    <td colspan="3">
-																				                        Current Pricing
-																				                    </td>
-																				                    <td colspan="3">
-																				                        Deal Pricing
-																				                    </td>
-																				                </tr>
-																				                <tr>
-																				                    <td>
-																				                        <div class="checkbox">
-																				                            <input type="checkbox" class="lm_select_all" id="lm_select_all306" >
-																				                            <label for="lm_select_all306">Select all</label>
-																				                        </div>
+																			<div class="col-12 col-xl-4">
+																				<h1>Offer Configuration</h1>
+																				<div class="form-group">
+																					<label class="form-label"> TYPE</label>
+																					<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
+																						<optgroup label="Mountain Time Zone">
+																							<option value="AZ">LAST MINUTE</option>
+																							<option value="CO">TOP DEAL</option>
+																						</optgroup>
+																					</select>
+																				</div>
+																				<h5>Deal start & end dates (booking period)</h5>
+																				<div class="form-group">
+																					<label class="form-label">Visibility start</label>
+																				</div>
+																				<div class="form-label">Checkboxes</div>
+																				<div class="custom-controls-stacked">
+																					<label class="custom-control custom-checkbox">
+																						<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+																						<span class="custom-control-label">Show countdown timer</span>
+																					</label>
+																					<label class="custom-control custom-checkbox">
+																						<input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option1">
+																						<span class="custom-control-label">Travel date limitation</span>
+																					</label>
+																				</div>
+																				<div class="custom-controls-stacked mt-5">
+																						<label class="custom-control custom-checkbox">
+																							<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+																							<span class="custom-control-label">| <input type="text" name=""> from Kaitiaki Adventures confirm the deals as above </span> 
+																						</label>
+																						<a href="#" class="btn btn-danger">Delete</a>
+																					</div>	
+																			</div>
+																			<div class="col-12 col-xl-8">
+																				<h1>Deal details - Select Slots</h1>
+																				<div class="table-responsive">
+																					<table class="table card-table table-vcenter text-nowrap">
+																						<thead>
+																						<tr>
+																							<td>Slots</td>
+																							<td colspan="3">
+																								Current Pricing
+																							</td>
+																							<td colspan="3">
+																								Deal Pricing
+																							</td>
+																						</tr>
+																						<tr>
+																							<td>
+																								<div class="checkbox">
+																									<input type="checkbox" class="lm_select_all" id="lm_select_all306" >
+																									<label for="lm_select_all306">Select all</label>
+																								</div>
 
-																				                    </td>
-																				                    <td>Adult (Adult)</td>
-																				                    <td>Child (Children)</td>
-																				                    <td>Family (Family)</td>
-																				                    <td>Adult (Adult)</td>
-																				                    <td>Child(Children)</td>
-																				                    <td>Family (Family)</td>
-																				                    <td>Spaces</td>
-																				                </tr>
-																				                </thead>
-																				                <tbody>
-																				                                                        <tr>
-																				                        <td style="max-width: 350px;">
-																				                            <div class="checkbox">
-																				                                <input type="checkbox" id="slot_306_134" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][enabled]" value="1" >
-																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_134">09:00AM to 10:00AM</label>
-																				                            </div>
-																				                        </td>
-																				                        <td>75</td>
-																				                        <td>0</td>
-																				                        <td>0</td>
-																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][adult]" value="75" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][child]" value="0" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][family]"  value="0"></td>
-																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][spaces]"  value=""></td>
-																				                    </tr>
-																				                                                        <tr>
-																				                        <td style="max-width: 350px;">
-																				                            <div class="checkbox">
-																				                                <input type="checkbox" id="slot_306_135" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][enabled]" value="1" >
-																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_135">10:30AM to 11:30AM</label>
-																				                            </div>
-																				                        </td>
-																				                        <td>75</td>
-																				                        <td>0</td>
-																				                        <td>0</td>
-																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][adult]" value="75" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][child]" value="0" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][family]"  value="0"></td>
-																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][spaces]"  value=""></td>
-																				                    </tr>
-																				                                                        <tr>
-																				                        <td style="max-width: 350px;">
-																				                            <div class="checkbox">
-																				                                <input type="checkbox" id="slot_306_136" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][enabled]" value="1" >
-																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_136">12:30PM to 01:30PM</label>
-																				                            </div>
-																				                        </td>
-																				                        <td>75</td>
-																				                        <td>0</td>
-																				                        <td>0</td>
-																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][adult]" value="75" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][child]" value="0" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][family]"  value="0"></td>
-																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][spaces]"  value=""></td>
-																				                    </tr>
-																				                                                        <tr>
-																				                        <td style="max-width: 350px;">
-																				                            <div class="checkbox">
-																				                                <input type="checkbox" id="slot_306_137" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][enabled]" value="1" >
-																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_137">02:30PM to 03:30PM</label>
-																				                            </div>
-																				                        </td>
-																				                        <td>75</td>
-																				                        <td>0</td>
-																				                        <td>0</td>
-																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][adult]" value="75" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][child]" value="0" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][family]"  value="0"></td>
-																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][spaces]"  value=""></td>
-																				                    </tr>
-																				                                                        <tr>
-																				                        <td style="max-width: 350px;">
-																				                            <div class="checkbox">
-																				                                <input type="checkbox" id="slot_306_138" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][enabled]" value="1" >
-																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_138">04:30PM to 05:30PM</label>
-																				                            </div>
-																				                        </td>
-																				                        <td>75</td>
-																				                        <td>0</td>
-																				                        <td>0</td>
-																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][adult]" value="75" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][child]" value="0" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][family]"  value="0"></td>
-																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][spaces]"  value=""></td>
-																				                    </tr>
-																				                                                        <tr>
-																				                        <td style="max-width: 350px;">
-																				                            <div class="checkbox">
-																				                                <input type="checkbox" id="slot_306_1929" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][enabled]" value="1" >
-																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1929">08:30AM to 12:00PM</label>
-																				                            </div>
-																				                        </td>
-																				                        <td>75</td>
-																				                        <td>0</td>
-																				                        <td>0</td>
-																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][adult]" value="75" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][child]" value="0" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][family]"  value="0"></td>
-																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][spaces]"  value=""></td>
-																				                    </tr>
-																				                                                        <tr>
-																				                        <td style="max-width: 350px;">
-																				                            <div class="checkbox">
-																				                                <input type="checkbox" id="slot_306_1930" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][enabled]" value="1" >
-																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1930">10:30AM to 02:00PM</label>
-																				                            </div>
-																				                        </td>
-																				                        <td>75</td>
-																				                        <td>0</td>
-																				                        <td>0</td>
-																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][adult]" value="75" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][child]" value="0" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][family]"  value="0"></td>
-																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][spaces]"  value=""></td>
-																				                    </tr>
-																				                                                        <tr>
-																				                        <td style="max-width: 350px;">
-																				                            <div class="checkbox">
-																				                                <input type="checkbox" id="slot_306_1931" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][enabled]" value="1" >
-																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1931">12:30PM to 04:00PM</label>
-																				                            </div>
-																				                        </td>
-																				                        <td>75</td>
-																				                        <td>0</td>
-																				                        <td>0</td>
-																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][adult]" value="75" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][child]" value="0" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][family]"  value="0"></td>
-																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][spaces]"  value=""></td>
-																				                    </tr>
-																				                                                        <tr>
-																				                        <td style="max-width: 350px;">
-																				                            <div class="checkbox">
-																				                                <input type="checkbox" id="slot_306_1932" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][enabled]" value="1" >
-																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1932">02:30PM to 06:00PM</label>
-																				                            </div>
-																				                        </td>
-																				                        <td>75</td>
-																				                        <td>0</td>
-																				                        <td>0</td>
-																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][adult]" value="75" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][child]" value="0" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][family]"  value="0"></td>
-																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][spaces]"  value=""></td>
-																				                    </tr>
-																				                                                        <tr>
-																				                        <td style="max-width: 350px;">
-																				                            <div class="checkbox">
-																				                                <input type="checkbox" id="slot_306_1933" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][enabled]" value="1" >
-																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1933">04:30PM to 08:00PM</label>
-																				                            </div>
-																				                        </td>
-																				                        <td>75</td>
-																				                        <td>0</td>
-																				                        <td>0</td>
-																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][adult]" value="75" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][child]" value="0" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][family]"  value="0"></td>
-																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][spaces]"  value=""></td>
-																				                    </tr>
-																				                                                        <tr>
-																				                        <td style="max-width: 350px;">
-																				                            <div class="checkbox">
-																				                                <input type="checkbox" id="slot_306_1940" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][enabled]" value="1" >
-																				                                <label style="word-wrap: normal; white-space: normal" for="slot_306_1940">04:30PM to 08:00PM</label>
-																				                            </div>
-																				                        </td>
-																				                        <td>75</td>
-																				                        <td>0</td>
-																				                        <td>0</td>
-																				                        <td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][adult]" value="75" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][child]" value="0" ></td>
-																				                        <td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][family]"  value="0"></td>
-																				                        <td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][spaces]"  value=""></td>
-																				                    </tr>
-																				                </tbody>
-																				            </table>
-																				        </div>
-																					</div>
-																				</div>		
+																							</td>
+																							<td>Adult (Adult)</td>
+																							<td>Child (Children)</td>
+																							<td>Family (Family)</td>
+																							<td>Adult (Adult)</td>
+																							<td>Child(Children)</td>
+																							<td>Family (Family)</td>
+																							<td>Spaces</td>
+																						</tr>
+																						</thead>
+																						<tbody>
+																																<tr>
+																								<td style="max-width: 350px;">
+																									<div class="checkbox">
+																										<input type="checkbox" id="slot_306_134" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][enabled]" value="1" >
+																										<label style="word-wrap: normal; white-space: normal" for="slot_306_134">09:00AM to 10:00AM</label>
+																									</div>
+																								</td>
+																								<td>75</td>
+																								<td>0</td>
+																								<td>0</td>
+																								<td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][adult]" value="75" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][child]" value="0" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][family]"  value="0"></td>
+																								<td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][134][spaces]"  value=""></td>
+																							</tr>
+																																<tr>
+																								<td style="max-width: 350px;">
+																									<div class="checkbox">
+																										<input type="checkbox" id="slot_306_135" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][enabled]" value="1" >
+																										<label style="word-wrap: normal; white-space: normal" for="slot_306_135">10:30AM to 11:30AM</label>
+																									</div>
+																								</td>
+																								<td>75</td>
+																								<td>0</td>
+																								<td>0</td>
+																								<td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][adult]" value="75" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][child]" value="0" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][family]"  value="0"></td>
+																								<td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][135][spaces]"  value=""></td>
+																							</tr>
+																																<tr>
+																								<td style="max-width: 350px;">
+																									<div class="checkbox">
+																										<input type="checkbox" id="slot_306_136" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][enabled]" value="1" >
+																										<label style="word-wrap: normal; white-space: normal" for="slot_306_136">12:30PM to 01:30PM</label>
+																									</div>
+																								</td>
+																								<td>75</td>
+																								<td>0</td>
+																								<td>0</td>
+																								<td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][adult]" value="75" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][child]" value="0" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][family]"  value="0"></td>
+																								<td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][136][spaces]"  value=""></td>
+																							</tr>
+																																<tr>
+																								<td style="max-width: 350px;">
+																									<div class="checkbox">
+																										<input type="checkbox" id="slot_306_137" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][enabled]" value="1" >
+																										<label style="word-wrap: normal; white-space: normal" for="slot_306_137">02:30PM to 03:30PM</label>
+																									</div>
+																								</td>
+																								<td>75</td>
+																								<td>0</td>
+																								<td>0</td>
+																								<td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][adult]" value="75" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][child]" value="0" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][family]"  value="0"></td>
+																								<td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][137][spaces]"  value=""></td>
+																							</tr>
+																																<tr>
+																								<td style="max-width: 350px;">
+																									<div class="checkbox">
+																										<input type="checkbox" id="slot_306_138" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][enabled]" value="1" >
+																										<label style="word-wrap: normal; white-space: normal" for="slot_306_138">04:30PM to 05:30PM</label>
+																									</div>
+																								</td>
+																								<td>75</td>
+																								<td>0</td>
+																								<td>0</td>
+																								<td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][adult]" value="75" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][child]" value="0" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][family]"  value="0"></td>
+																								<td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][138][spaces]"  value=""></td>
+																							</tr>
+																																<tr>
+																								<td style="max-width: 350px;">
+																									<div class="checkbox">
+																										<input type="checkbox" id="slot_306_1929" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][enabled]" value="1" >
+																										<label style="word-wrap: normal; white-space: normal" for="slot_306_1929">08:30AM to 12:00PM</label>
+																									</div>
+																								</td>
+																								<td>75</td>
+																								<td>0</td>
+																								<td>0</td>
+																								<td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][adult]" value="75" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][child]" value="0" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][family]"  value="0"></td>
+																								<td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1929][spaces]"  value=""></td>
+																							</tr>
+																																<tr>
+																								<td style="max-width: 350px;">
+																									<div class="checkbox">
+																										<input type="checkbox" id="slot_306_1930" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][enabled]" value="1" >
+																										<label style="word-wrap: normal; white-space: normal" for="slot_306_1930">10:30AM to 02:00PM</label>
+																									</div>
+																								</td>
+																								<td>75</td>
+																								<td>0</td>
+																								<td>0</td>
+																								<td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][adult]" value="75" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][child]" value="0" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][family]"  value="0"></td>
+																								<td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1930][spaces]"  value=""></td>
+																							</tr>
+																																<tr>
+																								<td style="max-width: 350px;">
+																									<div class="checkbox">
+																										<input type="checkbox" id="slot_306_1931" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][enabled]" value="1" >
+																										<label style="word-wrap: normal; white-space: normal" for="slot_306_1931">12:30PM to 04:00PM</label>
+																									</div>
+																								</td>
+																								<td>75</td>
+																								<td>0</td>
+																								<td>0</td>
+																								<td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][adult]" value="75" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][child]" value="0" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][family]"  value="0"></td>
+																								<td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1931][spaces]"  value=""></td>
+																							</tr>
+																																<tr>
+																								<td style="max-width: 350px;">
+																									<div class="checkbox">
+																										<input type="checkbox" id="slot_306_1932" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][enabled]" value="1" >
+																										<label style="word-wrap: normal; white-space: normal" for="slot_306_1932">02:30PM to 06:00PM</label>
+																									</div>
+																								</td>
+																								<td>75</td>
+																								<td>0</td>
+																								<td>0</td>
+																								<td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][adult]" value="75" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][child]" value="0" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][family]"  value="0"></td>
+																								<td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1932][spaces]"  value=""></td>
+																							</tr>
+																																<tr>
+																								<td style="max-width: 350px;">
+																									<div class="checkbox">
+																										<input type="checkbox" id="slot_306_1933" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][enabled]" value="1" >
+																										<label style="word-wrap: normal; white-space: normal" for="slot_306_1933">04:30PM to 08:00PM</label>
+																									</div>
+																								</td>
+																								<td>75</td>
+																								<td>0</td>
+																								<td>0</td>
+																								<td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][adult]" value="75" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][child]" value="0" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][family]"  value="0"></td>
+																								<td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1933][spaces]"  value=""></td>
+																							</tr>
+																																<tr>
+																								<td style="max-width: 350px;">
+																									<div class="checkbox">
+																										<input type="checkbox" id="slot_306_1940" class="lm_row_checkbox" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][enabled]" value="1" >
+																										<label style="word-wrap: normal; white-space: normal" for="slot_306_1940">04:30PM to 08:00PM</label>
+																									</div>
+																								</td>
+																								<td>75</td>
+																								<td>0</td>
+																								<td>0</td>
+																								<td><input type="number" step="0.01" requiredrequired class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][adult]" value="75" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][child]" value="0" ></td>
+																								<td><input type="number" step="0.01"  class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][family]"  value="0"></td>
+																								<td><input type="number" step="1" class="form-control" name="backpackerdeals_corebundle_deal[lastMinuteConfigurations][0][priceSlotConfiguration][1940][spaces]"  value=""></td>
+																							</tr>
+																						</tbody>
+																					</table>
+																				</div>
 																			</div>
-																			<div class="custom-controls-stacked mt-5">
-																				<label class="custom-control custom-checkbox">
-																					<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-																					<span class="custom-control-label">| <input type="text" name=""> from Kaitiaki Adventures confirm the deals as above </span> 
-																				</label>
-																				<a href="#" class="btn btn-danger">Delete</a>
-																			</div>
-																		</div>
+																		</div>		
 																	</div>
+																	
 																</div>
 															</div>
 														</div>
@@ -1238,7 +1393,7 @@
 														<div class="row">
 															<div class="col-sm-12">
 																<div class="row">
-																	<div class="col-5">
+																	<div class="col-12 col-md-6">
 																		<hr>
 																		<br>
 																		<table class="table card-table table-vcenter text-nowrap table-primary" id="tabTimeSlot" role="grid">
@@ -1294,10 +1449,9 @@
 																			</tbody>
 																		</table>
 																		<br>
-																		<a href="#" class="btn btn-primary">Primary</a>
+																		<a href="#" class="btn btn-primary">Add new Time Slot</a>
 																	</div>
-																	<div class="col-7">
-																		7
+																	<div class="col-12 col-md-7">
 																	</div>
 																</div>
 																<div class="row">
@@ -1405,80 +1559,26 @@
 														</div>
 													</div>
 													<!-- ========================BOOKING FIELDS================================= -->
-													<div class="tab-pane" id="booking">
+													<div class="tab-pane active show" id="booking">
 														<div class="row">
-															<div class="col-sm-12">
-																<div class="row">
-																	<div class="col-sm-6">
-																		<div class="form-group">
-																			<label class="form-label">Booking Field &nbsp;&nbsp; <a href="#" class="btn btn-primary">Add</a></label>
-																			<form action="">
+															<div class="col-12 col-lg-10 col-xl-6">
+																	<div class="form-group">
+																			<label class="form-label">Booking Field &nbsp;&nbsp; <a href="#" class="btn btn-primary" id="add-booking">Add</a></label>
 																				<div class="row">
-																					<div class="col-sm-12">
-																						<div class="row">
-																							<div class="col-6">
-																								<label class="form-label">Field 1 </label>
-																								
-																							</div>
-																							<div class="col-6">
-																								<a href="#" class="btn btn-danger">DELETE</a>
-																							</div>
-																							
-																						</div>
-																						<div class="form-group">
-																							<label class="form-label">FORM KEY</label>
-																							<input type="text" class="form-control" name="example-text-input">
-																						</div>
-																						<div class="form-group">
-																							<label class="form-label">LABEL</label>
-																							<input type="text" class="form-control" name="example-text-input">
-																						</div>
-																						<div class="form-group">
-																							<div class="form-group m-0">
-																								<div class="form-label">Checkboxes</div>
-																								<div class="custom-controls-stacked">
-																									<label class="custom-control custom-checkbox">
-																										<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-																										<span class="custom-control-label">PUBLISHED PER PARTICIPANT</span>
-																									</label>
-																									<label class="custom-control custom-checkbox">
-																										<input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option2">
-																										<span class="custom-control-label">REQUIRED PER PARTICIPANT</span>
-																									</label>
-																									<label class="custom-control custom-checkbox">
-																										<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-																										<span class="custom-control-label">PUBLISHED PER BOOKING</span>
-																									</label>
-																									<label class="custom-control custom-checkbox">
-																										<input type="checkbox" class="custom-control-input" name="example-checkbox2" value="option2">
-																										<span class="custom-control-label">REQUIRED PER BOOKING</span>
-																									</label>
-																								</div>
-																							</div>
-																						</div>
-																						<div class="form-group">
-																							<div class="form-group mb-0">
-																								<label class="form-label">OPTIONS</label>
-																								<textarea rows="5" class="form-control" placeholder="Enter About your description"></textarea>
-																							</div>
-																						</div>
+																					<div class="col-sm-12 booking-field-wrap">
+																						
 																					</div>
 																					
-																					
 																				</div>
-																			</form>
-																			<!-- <input type="text" class="form-control" name="example-text-input" placeholder="Name"> -->
+																			
 																		</div>
-																	</div>
-																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-												</div>
 												<div class="wizard-footer">
 													<div class="pull-right">
-														<input type="button" class="btn btn-next btn-fill btn-primary btn-wd m-0" name="next" value="Save & Continue" style="">
+														<input type="button" class="btn btn-next btn-fill btn-primary btn-wd m-0" name="next" value="Next">
 														<input type="button" class="btn btn-finish btn-fill btn-success btn-wd m-0" name="finish" value="Finish" style="display: none;">
 													</div>
 
@@ -1527,6 +1627,10 @@
 	<!--Select2 js -->
 	<script src="assets/plugins/select2/select2.full.min.js"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/nestable2/1.6.0/jquery.nestable.min.js"></script>
+	<script>
+		$('.dd-icon').nestable({ /* config options */ })
+	</script>
 
 	<!--Morris.js Charts Plugin -->
 	<script src="assets/plugins/am-chart/amcharts.js"></script>
@@ -1537,12 +1641,15 @@
 
 	<!-- Inline js -->
 	<script src="assets/js/select2.js"></script>
+
 	<!-- file uploads js -->
         <script src="assets/plugins/fileuploads/js/dropify.min.js"></script>
 
 	<!-- WYSIWYG Editor js -->
 	<script src="./assets/plugins/wysiwyag/jquery.richtext.js"></script>
-
+	
+	<!-- file uploads js -->
+	<script src="assets/plugins/fileuploads/js/dropify.min.js"></script>
 	<!-- Datepicker js -->
 	<script src="assets/plugins/date-picker/spectrum.js"></script>  
 	<script src="assets/plugins/date-picker/jquery-ui.js"></script>
@@ -1556,6 +1663,11 @@
 
 	<!-- Custom Js-->
 	<script src="assets/js/custom.js"></script>
+
+
+
+	<!-- Custom Js-->
+	<script src="assets/js/bpd.js"></script>
 
 	<!-- WYSIWYG Editor js -->
 	<script>

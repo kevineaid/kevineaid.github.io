@@ -191,7 +191,7 @@ function refreshAnimation($wizard, index){
     index_temp = index;
     vertical_level = 0;
 
-    mobile_device = $(document).width() < 600 && $total > 3;
+    mobile_device = $(document).width() < 768 && $total > 3;
 
     if(mobile_device){
         move_distance = $wizard.width() / 2;
