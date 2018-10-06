@@ -79,13 +79,14 @@ function getAQI(){
 }
 
 function getAQIN(){
+	console.log(document.URL);
 	city = $("#city option:selected").val();
 	var z = 'https://aqicn.org/?city=Delhi/' + city + '&widgetscript&size=xxl';
 	$('#aqi-wrapper').remove('.aqi-js');
-	$('#aqi-wrapper').append('<div class="aqi-js">'+
+	/*$('#aqi-wrapper').append('<div class="aqi-js">'+
 		' <script type="text/javascript" src="' + z + '"></script> ' +
-		'</div>');
-	$('#aqi-wrapper').load(document.URL +  ' #aqi-wrapper');
+		'</div>');*/
+	$('#aqi-wrapper').load('https://aqicn.org/?city=Delhi/' + city + '&widgetscript&size=xxl');
 }
 
 function colorize(aqi) {
