@@ -256,44 +256,6 @@
                                   </div>
                                 </div>                            
                             </div>
-                        </div>
-                        <div class="col-lg-5 col-md-12">
-                            <div class="pollution-meter">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div id="aqi-wrapper">
-                                            <div class="aqi-js">
-                                                <script type="text/javascript" src="http://aqicn.org/?city=Delhi/MandirMarg&widgetscript&size=xxl"></script>
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-5">
-                                        <select name="city" id="city">
-                                            <option value="3715">Delhi</option>
-                                            <option value="6972">Lucknow</option>
-                                            <option value="3758">Bangalore</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-3 text-center">
-                                        <button class="btn btn--checkaqi" onclick="getAQI()">Check AQI</button>
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                  <div class="progress-bar" role="progressbar" id="meter" style="width: 80%; background: red;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="row pt-2">
-                                    <div class="col-6">
-                                        <h5>AQI : <span id="aqiv">-</span></h5>        
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <h5 class="label-aqi" id="l-aqi">Danger</h5>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <h3 class="mb-2">AQI Level Indicator</h3>
                             <ul class="aqi-level">
                                 <li>
                                     <span class="aqi-color aqi-good"></span> 
@@ -356,6 +318,44 @@
                                      
                                  </li>
                             </ul>
+                        </div>
+                        <div class="col-lg-5 col-md-12">
+                            <div class="pollution-meter">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="aqi-wrapper" class="mb-5">
+                                            <div class="aqi-js">
+                                                <script type="text/javascript" src="http://aqicn.org/?city=Delhi/MandirMarg&widgetscript&size=xxl"></script>
+                                            </div>                                            
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-5">
+                                        <select name="city" id="city">
+                                            <option value="none">Choose City</option>
+                                            <option value="R.K.Puram">R.K.Puram</option>
+                                            <option value="AnandVihar">Anand Vihar</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <button class="btn btn--checkaqi" onclick="getAQIN()">Check AQI</button>
+                                    </div>
+                                </div>
+                                <!-- <div class="progress">
+                                  <div class="progress-bar" role="progressbar" id="meter" style="width: 80%; background: red;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="row pt-2">
+                                    <div class="col-6">
+                                        <h5>AQI : <span id="aqiv">-</span></h5>        
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <h5 class="label-aqi" id="l-aqi">Danger</h5>
+                                    </div>
+                                </div> -->
+                                
+                            </div>
+                            
 
                             <!-- <h4>Air Pollution Level</h4>
                             <p class="type--bold">Air Quality Index scale as defined by the US-EPA 2016 standard</p> -->

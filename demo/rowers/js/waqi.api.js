@@ -83,6 +83,15 @@ function getAQI(){
 	});
 }
 
+function getAQIN(){
+	city = $("#city option:selected").val();
+	var z = 'http://aqicn.org/?city=Delhi/' + city + '&widgetscript&size=xxl';
+	$('#aqi-wrapper').remove('.aqi-js');
+	$('#aqi-wrapper').append('<div class="aqi-js">'+
+		' <script type="text/javascript" src="' + z + '"></script> ' +
+		'</div>');
+	$('#aqi-wrapper').load(document.URL +  ' #aqi-wrapper');
+}
 
 function colorize(aqi) {
 	var x;
