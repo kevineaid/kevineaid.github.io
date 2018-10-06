@@ -86,7 +86,14 @@ function getAQIN(){
 	/*$('#aqi-wrapper').append('<div class="aqi-js">'+
 		' <script type="text/javascript" src="' + z + '"></script> ' +
 		'</div>');*/
-	$('#aqi-wrapper').load('https://aqicn.org/?city=Delhi/' + city + '&widgetscript&size=xxl');
+	/*$('#aqi-wrapper').load('https://aqicn.org/?city=Delhi/' + city + '&widgetscript&size=xxl');*/
+		$('#aqi-wrapper').getScript( "https://aqicn.org/?city=Delhi/' + city + '&widgetscript&size=xxl" )
+	  .done(function( script, textStatus ) {
+	    console.log( textStatus );
+	  })
+	  .fail(function( jqxhr, settings, exception ) {
+	    $( "div.log" ).text( "Triggered ajaxError handler." );
+	});
 }
 
 function colorize(aqi) {
