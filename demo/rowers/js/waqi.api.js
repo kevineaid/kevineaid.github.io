@@ -1,21 +1,53 @@
 
 var cities = [
-	3715,
-	6972,
-	3758,
-	7021,
-	8191,
-	8190,
-	8188
+	2553, //ananc VIhar #1
+	10708, //Mundka #1
+	3760, //Shivajinagar Pune #1
+	8673, //lalbagh lucknow #2
+	8188, //Talkatora #3
+	7021, //Kolkata #4
+	6971, //Sector 16A, Faridaba #4
+	9290, //DTU, Delhi #4
+	8181, //Dwarka, Delhi #4
+	8186, //Sanjay Plc, Agra #4
+	7021
 ]
+
 
 var cityName = [];
 var cityAqi = [];
 
 $( document ).ready(function() {
-	setTimeout(function(){
-		fetchAqi()
-	}, 2000);
+	setTimeout(function() {
+		getAQI('Mundka, Delhi', 10708);
+	}, 100);
+	setTimeout(function() {
+		getAQI('Anand Vihar, Delhi', 3760);
+	}, 300);
+	setTimeout(function() {
+		getAQI('Lalbagh, Lucknow', 8673);
+	}, 600);
+	setTimeout(function() {
+		getAQI('Shivajinagar, Pune', 2553);
+	}, 300);
+	setTimeout(function() {
+		getAQI('Talkatora, Lucknow', 8188);
+	}, 900);
+	setTimeout(function() {
+		getAQI('Kolkata', 7021);
+	}, 900);
+	setTimeout(function() {
+		getAQI('Faridaba', 6971);
+	}, 900);
+	setTimeout(function() {
+		getAQI('DTU, Delhi', 9290);
+	}, 900);
+	setTimeout(function() {
+		getAQI('Dwarka, Delhi', 8181);
+	}, 900);
+	setTimeout(function() {
+		getAQI('Sanjay Plc, Agra', 8186);
+	}, 900);
 });
 
 function fetchAqi(){
@@ -43,38 +75,69 @@ $("#city").change(function(){
     city = $("#city option:selected").val();
     scity = city;
 });
-function getAQI(){
-	$.getJSON("https://api.waqi.info/feed/@"+scity+"/?token=1b394c2768e78fcad42f4845dc3180f97dc19812",function(result){
+function getAQI(name, xcity){
+	$.getJSON("https://api.waqi.info/feed/@"+xcity+"/?token=1b394c2768e78fcad42f4845dc3180f97dc19812",function(result){
 		
 		
 		console.log(result.data.city.name);
 		console.log(result.data.aqi);
+		var aqi = result.data.aqi;
+		var per = (aqi / 400) * 100;
+		var percent = 'calc('+per+'%' + ' + 30px)';
+		var colorz = "#fff";
+		var affect = '';
+		var colorfont = '#fff';
 
-		var percent = (result.data.aqi / 500) * 100;
-		$("#meter").css('width', percent+'%');
-		
-		$("#aqiv").html(result.data.aqi);
-		var color = "#fff";
-		if (result.data.aqi >= 200) {
-			$("#l-aqi").html("Very Unhealthy");
-			color = "#660099";
+		if (result.data.aqi <= 50) {
+			affect = 'Good';
+			//green
+			colorz = "#00b150";
 		}
-		else if (result.data.aqi >= 101) {
-			$("#l-aqi").html("partially unhealthy");
+		else if (result.data.aqi <=  100) {
+			affect = 'Satisfactory';
+			//light green
+			colorz = "#8fd153";
 		}
-		else if (result.data.aqi >= 0) {
-			color = "#ffde33";
-			$("#l-aqi").html("Moderate");
+		else if (result.data.aqi <= 200) {
+			affect = 'Moderate';
+			//yellow
+			colorz = "#fffd03";
+			colorfont = '#000';
+		}
+		else if (result.data.aqi <= 300) {
+			affect = 'Poor';
+			//yellow
+			colorz = "#fdc100";
+			colorfont = '#000';
+		}
+		else if (result.data.aqi <= 400) {
+			affect = 'Very Poor';
+			//yellow
+			colorz = "#fe000a";
 		}
 		else {
-			$("#l-aqi").html(" ");
+			affect = 'Severe';
+			//yellow
+			colorz = "#fe000a";
 		}
-		$("#meter").css('background', color);
+
+
 		if (result.data.aqi == null || result.data.aqi == '-') {
-			$("#aqiv").html("currently unavailable");
-			$("#meter").css('width', '0%');
-			$("#meter").css('background', 'white');
+			$('#top10').append('<div class="progress list-city"> '+
+	  		' <div class="progress-bar" role="progressbar" style="width: '+ 50% +'; background: '+ colorz +'; color: '+ colorfont +';max-width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> ' +
+	        ' <p><span style="float:left ;">'+ name +'</span> ' +
+			' <span style="float:right ;">'+ aqi +', '+ affect +'</span> ' +
+			' </p></div></div> ');
 		}
+		else {
+			$('#top10').append('<div class="progress list-city"> '+
+	  		' <div class="progress-bar" role="progressbar" style="width: '+ percent +'; background: '+ colorz +'; color: '+ colorfont +';max-width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> ' +
+	        ' <p><span style="float:left ;">'+ name +'</span> ' +
+			' <span style="float:right ;">'+ aqi +', '+ affect +'</span> ' +
+			' </p></div></div> ');
+		}
+
+		
 	});
 }
 

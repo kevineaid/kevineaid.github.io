@@ -27,8 +27,8 @@ section#headline {
   margin-bottom: 5px;
 }
 .list-city p {
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 13px;
   padding: 5px 15px;
 }
 .list-city p span:last-child {
@@ -1029,23 +1029,28 @@ span.vacancy-title {
   margin-right: 10px;
 }
 
+.color-code {
+  width: 100px;
+  height: 30px;
+
+}
 .aqi-good {
-  background: #009966;
+  background: #00b150;
 }
-.aqi-moder {
-  background: #ffde33;
+.aqi-satis {
+  background: #8fd153;
 }
-.aqi-p-unh {
-  background: #ff9933;
+.aqi-moderate {
+  background: #fffd03;
 }
-.aqi-unhea {
-  background: #cc0033;
+.aqi-poor {
+  background: #fdc100;
 }
-.aqi-v-unh {
-  background: #660099;
+.aqi-v-poor {
+  background: #fe000a;
 }
-.aqi-hazar {
-  background: #7e0023;
+.aqi-severe {
+  background: #fe000a;
 }
 
 .aqi-capt.aqi-good {
@@ -1071,6 +1076,15 @@ span.vacancy-title {
 .aqi-capt.aqi-hazar {
   border: 2px solid #7e0023;
   background: #fff;
+}
+
+.aqi-table {
+}
+.aqi-table th,
+.aqi-table td {
+  padding: 5px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 @media screen and (max-width: 991.9px){

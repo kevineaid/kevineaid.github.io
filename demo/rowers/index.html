@@ -204,120 +204,19 @@
                        </div>
                    </div>
                     <div class="row">
-                        <div class="col-lg-7 col-md-12">
-                            <!-- <div class="progress-horizontal progress-horizontal--sm">
-                                <h2>example bar meter</h2>
-                                <p class="progress-horizontal__label h5" style="margin-bottom:10px;">ITO, Delhi<span style="margin-left: 10px;font-size: 12px;background: #cc0033;color: #fff;padding: 0px 6px;font-weight: 700;border-radius: 2px;float:right;">Unhealthy</span></p>
-                                <div class="progress-horizontal__bar" data-value="0" ><div class="progress-horizontal__progress" style="width:65%;background:#cc0033;"></div></div>
-                                <p class="progress-horizontal__label h5">Air Pollution Index : <span style="margin-left: 10px;font-size: 13px;background: #cc0033;color: #fff;padding: 3px 6px;font-weight: 700;border-radius: 2px;">191</span> </p>
-                                                    
-                            </div>
-                                                    
-                            <div class="progress-horizontal progress-horizontal--sm">
-                                <p class="progress-horizontal__label h5" style="margin-bottom:10px;">Talkatora, Lucknow <span style="margin-left: 10px;font-size: 12px;background: #009966;color: #fff;padding: 0px 6px;font-weight: 700;border-radius: 2px;float:right;">Good</span></p>
-                                <div class="progress-horizontal__bar" data-value="0" ><div class="progress-horizontal__progress" style="width:10%;background:#009966;"></div></div>
-                                <p class="progress-horizontal__label h5">Air Pollution Index : <span style="margin-left: 10px;font-size: 13px;background: #009966;color: #fff;padding: 3px 6px;font-weight: 700;border-radius: 2px;">40</span> </p>
-                                                    
-                            </div> -->
-                             <!-- <table class="border--round table--alternate-row">
-                                <thead>
-                                    <tr >
-                                        <th style="background: #f26824;color: #fff; border-top-left-radius: 5px;"> <i class="fa fa-map-marked-alt"></i> &nbsp;CITY</th>
-                                        <th style="background: #f26824;color: #fff; max-width: 240px; border-top-right-radius: 5px;"><i class="fa fa-chart-bar"></i> &nbsp;AIR POLLUTION INDEX</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="aqi" class="type--bold">
-                                                         
-                                </tbody>
-                                                         </table> -->
-                            <div class="pollution-meter">
-                                <div class="progress list-city">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="pollution-meter" id="top10">
+                                <!-- <div class="progress list-city">
                                   <div class="progress-bar" role="progressbar" id="meter" style="width: 80%; background: red;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                        <p>
-                                            <span style="float:left ;">ITO, Delhi</span>
-                                            <span style="float:right ;">162, Very Unhealthy</span>
-                                        </p>
+                                        
                                   </div>
-                                </div> 
-                                <div class="progress list-city">
-                                  <div class="progress-bar" role="progressbar" id="meter" style="width: 60%; background: #ff9933;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                        <p>
-                                            <span style="float:left ;">Lucknow</span>
-                                            <span style="float:right ;">102, Moderate</span>
-                                        </p>
-                                  </div>
-                                </div>    
-                                <div class="progress list-city">
-                                  <div class="progress-bar" role="progressbar" id="meter" style="width: 30%; background: #009966;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                        <p>
-                                            <span style="float:left ;">Bangalore</span>
-                                            <span style="float:right ;">40, Good</span>
-                                        </p>
-                                  </div>
-                                </div>                            
+                                    <p style="width: 95%;position: absolute; color: #fff;">
+                                        <span style="float:left ;">ITO, Delhi</span>
+                                        <span style="float:right ;">162, Very Unhealthy</span>
+                                    </p>
+                                </div> -->
+                                                       
                             </div>
-                            <ul class="aqi-level">
-                                <li>
-                                    <span class="aqi-color aqi-good"></span> 
-                                    <div class="aqi-text">
-                                        0-50 Good
-                                        <div class="aqi-capt aqi-good">
-                                            Air quality is considered satisfactory, and air pollution poses little or no risk.
-                                        </div> 
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="aqi-color aqi-moder"></span> 
-                                    <div class="aqi-text">
-                                        51-100 Moderate
-                                        <div class="aqi-capt aqi-moder">
-                                            Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.
-                                        </div> 
-                                    </div> 
-                                </li>
-                                <li>
-                                    <span class="aqi-color aqi-p-unh"></span>
-                                    <div class="aqi-text">
-                                        101-150 Partially Unhealthy
-                                        <div class="aqi-capt aqi-p-unh">
-                                            Unhealthy for Sensitive Groups, Members of sensitive groups may experience health effects. The general public is not likely to be affected.
-                                        </div> 
-                                    </div>  
-                                    
-                                </li>
-                                <li>&nbsp;</li>
-                                <li>
-                                    <span class="aqi-color aqi-unhea"></span>
-                                    <div class="aqi-text">
-                                        151-200 Unhealthy
-                                        <div class="aqi-capt aqi-unhea">
-                                            Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects.
-                                        </div> 
-                                    </div> 
-                                     
-                                 </li>
-
-                                <li>
-                                    <span class="aqi-color aqi-v-unh"></span>
-                                    <div class="aqi-text">
-                                        201-300 Very Unhealthy
-                                        <div class="aqi-capt aqi-v-unh">
-                                            Health warnings of emergency conditions. The entire population is more likely to be affected.
-                                        </div> 
-                                    </div>  
-                                    
-                                </li>
-                                <li>
-                                    <span class="aqi-color aqi-hazar"></span>
-                                    <div class="aqi-text">
-                                        301 & above Hazardous
-                                        <div class="aqi-capt aqi-hazar">
-                                            Health alert: everyone may experience more serious health effects
-                                        </div> 
-                                    </div> 
-                                     
-                                 </li>
-                            </ul>
                         </div>
                         <div class="col-lg-5 col-md-12">
                             <div class="pollution-meter">
@@ -325,7 +224,7 @@
                                     <div class="col-12">
                                         <div id="aqi-wrapper" class="mb-5">
                                             <div class="aqi-js">
-                                                <script type="text/javascript" src="https://aqicn.org/?city=Delhi/MandirMarg&widgetscript&size=xxl"></script>
+                                                <script type="text/javascript" src="https://aqicn.org/?city=Delhi/Mundka&widgetscript&size=xxl"></script>
                                             </div>                                            
                                         </div>                                        
                                     </div>
@@ -355,54 +254,75 @@
                                 </div> -->
                                 
                             </div>
-                            
-
-                            <!-- <h4>Air Pollution Level</h4>
-                            <p class="type--bold">Air Quality Index scale as defined by the US-EPA 2016 standard</p> -->
-                            <!-- <table class="index-class">
-                                <tbody>
-                                    <tr >
-                                        <td>
-                                            <span style="background: #009966">Good</span>
-                                            Air quality is considered satisfactory, and air pollution poses little or no risk
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span style="background:#ffde33;color:#222;">Moderate</span>
-                                             Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td >
-                                            <span style="background:#ff9933;width: 170px;color:#222;">Partly Unhealthy</span>
-                                            Unhealthy for Sensitive Groups, Members of sensitive groups may experience health effects. The general public is not likely to be affected.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span style="background:#cc0033;">Unhealthy</span>
-                                            Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span style="background:#660099;">Very Unhealthy</span>
-                                            Health warnings of emergency conditions. The entire population is more likely to be affected.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span style="background:#7e0023;">Hazardous</span>
-                                             Health alert: everyone may experience more serious health effects
-                                        </td>
-                                        
-                                    </tr>
-                                </tbody>
-                            </table> -->
                         </div>
                     </div>
                     <!--end of row-->
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <table class="border--round aqi-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 80px;text-align: center;">Aqi</th>
+                                        <th style="text-align: center;">Remark</th>
+                                        <th width="100px">Color Code</th>
+                                        <th>Possible Health Impact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="center">0-50</td>
+                                        <td align="center">Good</td>
+                                        <td><div class="color-code aqi-good"></div></td>
+                                        <td>Minimal impact</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">51-100</td>
+                                        <td align="center">Satisfactory</td>
+                                        <td><div class="color-code aqi-satis"></div></td>
+                                        <td>Minor breathing discomfort to sensitive people</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">101-200</td>
+                                        <td align="center">Moderate</td>
+                                        <td><div class="color-code aqi-moderate"></div></td>
+                                        <td>Breathing discomfort to people with lung, heart disease, children and older adults</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <table class="border--round aqi-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 80px;text-align: center;">Aqi</th>
+                                        <th style="text-align: center;">Remark</th>
+                                        <th width="100px">Color Code</th>
+                                        <th>Possible Health Impact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="center">201-300</td>
+                                        <td align="center">Poor</td>
+                                        <td><div class="color-code aqi-poor"></div></td>
+                                        <td>Breathing discomfort to people on prolonged exposure</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">301-400</td>
+                                        <td align="center">Very Poor</td>
+                                        <td><div class="color-code aqi-v-poor"></div></td>
+                                        <td>Respiratory illness to the people on prolonged exposure</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">>400</td>
+                                        <td align="center">Severe</td>
+                                        <td><div class="color-code aqi-severe"></div></td>
+                                        <td>Respiratory effect even on healthy people</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
                 <!--end of container-->
             </section>
