@@ -39,13 +39,19 @@ $(document).ready(function(){
 
     //monitor
     $("#mon_01").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+    zoomWindowWidth: 100,
+    zoomWindowHeight: 300
 });
     $("#mon_02").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+    zoomWindowWidth: 100,
+    zoomWindowHeight: 300
 });
     $("#mon_03").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+    zoomWindowWidth: 100,
+    zoomWindowHeight: 300
 });
 
     //gavi 
@@ -97,7 +103,15 @@ $(document).ready(function(){
     $(".nav-container").css("min-height", "initial");
 
 
+    // If the pressed keyboard button is "a" or "A" (using caps lock or shift), alert some text.
+       
+    $( document ).on('keydown', function() {
+        var key = event.keyCode || event.charCode;
 
+        if( key == 8 || key == 46 ){
+            history.go(-1);
+        }
+      });
 
 
     $('.hide-toggle').hide();
