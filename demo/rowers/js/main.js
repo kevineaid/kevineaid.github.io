@@ -40,62 +40,87 @@ $(document).ready(function(){
     //monitor
     $("#mon_01").ezPlus({
     scrollZoom: true,
-    zoomWindowWidth: 100,
-    zoomWindowHeight: 300
+    zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
     $("#mon_02").ezPlus({
     scrollZoom: true,
-    zoomWindowWidth: 100,
-    zoomWindowHeight: 300
+    zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
     $("#mon_03").ezPlus({
     scrollZoom: true,
-    zoomWindowWidth: 100,
-    zoomWindowHeight: 300
+    zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
 
     //gavi 
     $("#gavi_01").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
     $("#gavi_02").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
+
 });
     $("#gavi_03").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
 
     //car
     $("#car_01").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
     $("#car_02").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
     $("#car_03").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
 
     //kinnaur
     $("#kin_01").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
     $("#kin_02").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
     $("#kin_03").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
 
     //mask
     $("#mask_01").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
     $("#mask_02").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
     $("#mask_03").ezPlus({
-    scrollZoom: true
+    scrollZoom: true,
+     zoomWindowWidth: 500,
+    zoomWindowHeight: 500
 });
 
 
