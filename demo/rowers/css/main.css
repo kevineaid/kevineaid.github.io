@@ -934,6 +934,14 @@ ul.ctm-accordion {
   }
 }
 
+@media screen and (max-width: 576px){
+  .download-section p.lead {
+    font-size: 14px;   
+    text-align: right;
+    margin-right: -5px;
+  }
+}
+
 .r-hide {
   display: block;
 }
@@ -1278,5 +1286,11 @@ span.vacancy-title {
   }
   .btn-about-tab {
     padding: 5px 10px !important;
+  }
+  .section-btn-download {
+    text-align: left !important; 
+  }
+  .section-btn-download a {
+    margin-left: 0;
   }
 }
