@@ -1095,6 +1095,14 @@ span.vacancy-title {
   line-height: 16px;
 }
 
+
+
+a.readmore {
+  color: #f26824;
+}
+.more-content {display:none;}
+.cg-visible {display:block;}
+
 @media screen and (max-width: 991.9px){
   .section-btn-download a {
     display: inline-block;
@@ -1292,5 +1300,16 @@ span.vacancy-title {
   }
   .section-btn-download a {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .blogpage {
+    padding-top: 0 !important;
+    margin-top: -100px;
+  }
+  .no-top-xs {
+    top: -200px !important;
+    left: -120px;
   }
 }

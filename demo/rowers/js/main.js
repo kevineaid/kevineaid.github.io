@@ -161,6 +161,14 @@ $(document).ready(function(){
                 window.location.hash = hash;
             }, 300);
         }
+
+
+      $(".readmore").on('click touchstart', function(event) {
+          var txt = $(".more-content").is(':visible') ? 'Show more (+)' : 'Less (–)';
+          $(this).prev(".more-content").toggleClass("cg-visible");
+          $(this).html(txt);
+          event.preventDefault();
+      });
 });
 
 $(window).scroll(function (event) {
