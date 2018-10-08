@@ -88,14 +88,19 @@ $( document ).ready(function() {
 		  return 0;
 		}
 
-		$('#loading-aqi').fadeOut(300);
+		$('.loading-aqi').fadeOut(300);
    		cityObj.sort(compare);
 		
 		console.log(cityObj);
 		console.log(cityObj[0].city);
 
 		for (var i = 0; i <= cityObj.length; i++) {
-			getAQI(cityObj[i].city, cityObj[i].aqi);	
+			if (i<=6) {
+				getAQI(cityObj[i].city, cityObj[i].aqi, 'left');	
+			}
+			else {
+				getAQI(cityObj[i].city, cityObj[i].aqi, 'right');	
+			}
 		}
 		
 	}, 3000);
@@ -119,7 +124,7 @@ function showStation(city, station) {
 
 
 
-function getAQI(name, aqi){
+function getAQI(name, aqi, pos){
 		var aqi = aqi;
 		var per = (aqi / 400) * 100;
 		var percent = 'calc('+per+'%' + ' + 30px)';
@@ -160,21 +165,39 @@ function getAQI(name, aqi){
 			colorz = "#fe000a";
 		}
 
-
-		if (aqi == null || aqi == '-') {
-			$('#top10').append('<div class="progress list-city"> '+
-	  		' <div class="progress-bar" role="progressbar" style="width: '+ 50% +'; background: '+ colorz +'; color: '+ colorfont +';max-width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> ' +
-	        ' <p><span style="float:left ;">'+ name +'</span> ' +
-			' <span style="float:right ;">'+ aqi +', '+ affect +'</span> ' +
-			' </p></div></div> ');
+		if (pos == 'left') {
+			if (aqi == null || aqi == '-') {
+				$('#top10').append('<div class="progress list-city"> '+
+		  		' <div class="progress-bar" role="progressbar" style="width: '+ 50% +'; background: '+ colorz +'; color: '+ colorfont +';max-width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> ' +
+		        ' <p><span style="float:left ;">'+ name +'</span> ' +
+				' <span style="float:right ;">'+ aqi +', '+ affect +'</span> ' +
+				' </p></div></div> ');
+			}
+			else {
+				$('#top10').append('<div class="progress list-city"> '+
+		  		' <div class="progress-bar" role="progressbar" style="width: '+ percent +'; background: '+ colorz +'; color: '+ colorfont +';max-width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> ' +
+		        ' <p><span style="float:left ;">'+ name +'</span> ' +
+				' <span style="float:right ;">'+ aqi +', '+ affect +'</span> ' +
+				' </p></div></div> ');
+			}
 		}
 		else {
-			$('#top10').append('<div class="progress list-city"> '+
-	  		' <div class="progress-bar" role="progressbar" style="width: '+ percent +'; background: '+ colorz +'; color: '+ colorfont +';max-width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> ' +
-	        ' <p><span style="float:left ;">'+ name +'</span> ' +
-			' <span style="float:right ;">'+ aqi +', '+ affect +'</span> ' +
-			' </p></div></div> ');
+			if (aqi == null || aqi == '-') {
+				$('#top102').append('<div class="progress list-city"> '+
+		  		' <div class="progress-bar" role="progressbar" style="width: '+ 50% +'; background: '+ colorz +'; color: '+ colorfont +';max-width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> ' +
+		        ' <p><span style="float:left ;">'+ name +'</span> ' +
+				' <span style="float:right ;">'+ aqi +', '+ affect +'</span> ' +
+				' </p></div></div> ');
+			}
+			else {
+				$('#top102').append('<div class="progress list-city"> '+
+		  		' <div class="progress-bar" role="progressbar" style="width: '+ percent +'; background: '+ colorz +'; color: '+ colorfont +';max-width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> ' +
+		        ' <p><span style="float:left ;">'+ name +'</span> ' +
+				' <span style="float:right ;">'+ aqi +', '+ affect +'</span> ' +
+				' </p></div></div> ');
+			}
 		}
+		
 
 		
 }
