@@ -1107,8 +1107,11 @@ a.readmore {
   overflow-y: hidden;
 }
 
+.accordion-2 li {
+  height: auto;
+}
 .accordion-2 li.active {
-  /* height: 700px; */
+  height: 700px;
 }
 
 @media screen and (max-width: 991.9px){
@@ -1308,6 +1311,9 @@ a.readmore {
   }
   .section-btn-download a {
     margin-left: 0;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 

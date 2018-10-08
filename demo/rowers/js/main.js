@@ -126,6 +126,7 @@ $(document).ready(function(){
 
 
     $(".nav-container").css("min-height", "initial");
+    $(".accordion-2").css("min-height", "initial");
 
 
     // If the pressed keyboard button is "a" or "A" (using caps lock or shift), alert some text.
