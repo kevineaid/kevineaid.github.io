@@ -252,7 +252,7 @@ function getAQIS(){
 		else {
 			affect = 'Severe';
 			//yellow
-			colorz = "#fe000a";
+			colorz = "rgb(192, 0, 0)";
 		}
 
 
