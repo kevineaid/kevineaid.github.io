@@ -1103,6 +1103,14 @@ a.readmore {
 .more-content {display:none;}
 .cg-visible {display:block;}
 
+.tabs-container.tabs--vertical{
+  overflow-y: hidden;
+}
+
+.accordion-2 li.active {
+  /* height: 700px; */
+}
+
 @media screen and (max-width: 991.9px){
   .section-btn-download a {
     display: inline-block;
@@ -1302,6 +1310,7 @@ a.readmore {
     margin-left: 0;
   }
 }
+
 
 @media screen and (max-width: 480px){
   .blogpage {
