@@ -1040,7 +1040,15 @@ span.vacancy-title {
 .color-code {
   width: 100px;
   height: 30px;
-
+  text-align: center;
+  padding-top: 5px;
+  font-weight: 600;
+}
+.color-code.white {
+  color: #fff !important;
+}
+.color-code.dark {
+  color: #333 !important;
 }
 .aqi-good {
   background: #00b150;
@@ -1058,7 +1066,7 @@ span.vacancy-title {
   background: #fe000a;
 }
 .aqi-severe {
-  background: #fe000a;
+  background: rgb(192, 0, 0);
 }
 
 .aqi-capt.aqi-good {

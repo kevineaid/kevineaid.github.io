@@ -13,7 +13,8 @@ var cities = [
 	8674, //IGSC patna india
 	8185, //Manali, Chennai
 	3763, //Katra, Pune
-	10114 //ikhlasa.
+	10114, //ikhlasa.
+	8682 //Chandrapur.
 ]
 
 
@@ -63,6 +64,7 @@ $( document ).ready(function() {
 		showStation('Manali, Chennai', 8185);
 
 		showStation('Katraj, Pune', 3763);
+		showStation('Chandrapur', 8682);
 
 	/*for (var i = 0 ; i <= cityObj.length; i++) {
 		console.log(cityObj[i].city);
@@ -162,7 +164,7 @@ function getAQI(name, aqi, pos){
 		else {
 			affect = 'Severe';
 			//yellow
-			colorz = "#fe000a";
+			colorz = "rgb(192, 0, 0)";
 		}
 
 		if (pos == 'left') {
