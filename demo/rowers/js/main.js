@@ -125,8 +125,7 @@ $(document).ready(function(){
 
 
 
-    $(".nav-container").css("min-height", "initial");
-    $(".accordion-2").css("min-height", "initial");
+   
 
 
     // If the pressed keyboard button is "a" or "A" (using caps lock or shift), alert some text.
@@ -170,6 +169,17 @@ $(document).ready(function(){
           $(this).html(txt);
           event.preventDefault();
       });
+
+
+    $(".nav-container").css("min-height", "initial");
+    $(".accordion-2").css("min-height", "initial");
+    $(".aqi-js").css("overflow-x", "hidden");
+    $("#aqi-wrapper").css("overflow-x", "hidden");
+    /*$("#aqiwgtvalue").css("font-size", "45px");
+    $(".aqiwgt-table-aqicell").css("width", "100px");
+    $("#aqiwgtvalue").css("width", "100px");
+    $("#aqiwgtvalue").css("margin-right", "0");
+    $("#aqiwgtinfo").css("font-size", "30px");*/
 });
 
 $(window).scroll(function (event) {

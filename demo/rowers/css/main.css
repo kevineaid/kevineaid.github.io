@@ -1114,6 +1114,10 @@ a.readmore {
   height: 700px;
 }
 
+.aqi-js {
+  overflow-x: hidden !important;
+}
+
 @media screen and (max-width: 991.9px){
   .section-btn-download a {
     display: inline-block;
