@@ -1115,10 +1115,10 @@ a.readmore {
   overflow-y: hidden;
 }
 
-.accordion-2 li {
+.home-accor li {
   height: auto;
 }
-.accordion-2 li.active {
+.home-accor li.active {
   height: 700px;
 }
 
