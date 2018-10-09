@@ -24,6 +24,9 @@
 		
 		<!-- Dashboard Css -->
 		<link href="assets/css/dashboard.css" rel="stylesheet" />
+
+		<!-- Data table css -->
+	<link href="assets/plugins/datatable/dataTables.bootstrap4.min.css" rel="stylesheet" />
 		
 
 		<!-- c3.js Charts Plugin -->
@@ -284,19 +287,19 @@
 											<div class="col-6">
 												<div class="form-group">
 													<label class="form-label">DEAL NAME</label>
-													<input type="text" class="form-control" placeholder="DEAL NAME">
+													<input type="text" class="form-control" >
 												</div>
 											</div>
 											<div class="col-6">
 												<div class="form-group">
 													<label class="form-label">VOUCHER CODE</label>
-													<input type="text" class="form-control" placeholder="VOUCHER CODE">
+													<input type="text" class="form-control" >
 												</div>
 											</div>
 											<div class="col-6">
 												<div class="form-group">
 													<label class="form-label">CUSTOMER EMAIL</label>
-													<input type="text" class="form-control" placeholder="VOUCHER CODE">
+													<input type="text" class="form-control" >
 												</div>
 											</div>
 											<div class="col-6">
@@ -395,72 +398,128 @@
 												<div class="col-md-12 col-lg-12">
 													<div class="card">
 														<div class="card-body">
-						                                	<div class="table-responsive">
-															<table id="example" class="table table-striped table-bordered" style="width:100%">
-																<thead>
-																	<tr>
-																		<th class="wd-15p">ID</th>
-																		<th class="wd-15p">VOUCHER CODE</th>
-																		<th class="wd-20p">DEAL</th>
-																		<th class="wd-15p">ORDER DATA</th>
-																		<th class="wd-10p">PARTICIPANT</th>
-																		<th class="wd-25p">VALID TILL</th>
-																		<th class="wd-25p">BOOKING DATE</th>
-																		<th class="wd-25p">STATUS</th>
-																		<th class="wd-25p">ACTION</th>
-																	</tr>
-																</thead>
-																<tbody>
-																	<tr>
-																		<td>18066</td>
-																		<td>50C8F43CF7C5</td>
-																		<td>New Zealand White Water Rafting Experience</td>
-																		<td>dinesh.kaku@gmail.comDinesh Kaku </td>
-																		<td>Dinesh Kaku</td>
-																		<td>2017/10/06</td>
-																		<td>2017/09/13</td>
-																		<td><BUTTON class="btn btn-success">ORDER PLACED</BUTTON></td>
-																		<td>
-																				<button href="#" class="btn btn-info btn-sm mb-10" data-toggle="modal" data-target="#myModal">DETAIL</button> 
-																				<button type="button" class="btn btn-icon btn-sm btn-primary btn-success mb-10"><i class="fa fa-pencil"></i></button>
-																				<button type="button" class="btn btn-icon btn-sm btn-primary btn-danger"><i class="fe fe-trash"></i></button>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td>18066</td>
-																		<td>50C8F43CF7C5</td>
-																		<td>New Zealand White Water Rafting Experience</td>
-																		<td>dinesh.kaku@gmail.comDinesh Kaku </td>
-																		<td>Dinesh Kaku</td>
-																		<td>2017/10/06</td>
-																		<td>2017/09/13</td>
-																		<td><BUTTON class="btn btn-success">ORDER PLACED</BUTTON></td>
-																		<td>
-																				<button href="#" class="btn btn-info btn-sm mb-10" data-toggle="modal" data-target="#myModal">DETAIL</button> 
-																				<button type="button" class="btn btn-icon btn-sm btn-primary btn-success mb-10"><i class="fa fa-pencil"></i></button>
-																				<button type="button" class="btn btn-icon btn-sm btn-primary btn-danger"><i class="fe fe-trash"></i></button>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td>18066</td>
-																		<td>50C8F43CF7C5</td>
-																		<td>New Zealand White Water Rafting Experience</td>
-																		<td>dinesh.kaku@gmail.comDinesh Kaku </td>
-																		<td>Dinesh Kaku</td>
-																		<td>2017/10/06</td>
-																		<td>2017/09/13</td>
-																		<td><BUTTON class="btn btn-success">ORDER PLACED</BUTTON></td>
-																		<td>
-																				<button href="#" class="btn btn-info btn-sm mb-10" data-toggle="modal" data-target="#myModal">DETAIL</button> 
-																				<button type="button" class="btn btn-icon btn-sm btn-primary btn-success mb-10"><i class="fa fa-pencil"></i></button>
-																				<button type="button" class="btn btn-icon btn-sm btn-primary btn-danger"><i class="fe fe-trash"></i></button>
-																		</td>
-																	</tr>
-																</tbody>
-															</table>
+															<div class="table-responsive">
+																<div id="example_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+																	<div class="row">
+																		<div class="col-sm-12 col-md-6">
+																			<div class="dataTables_length" id="example_length">
+																				<label>Show
+																					<select name="example_length" aria-controls="example" class="custom-select custom-select-sm form-control form-control-sm">
+																						<option value="10">10</option>
+																						<option value="25">25</option>
+																						<option value="50">50</option>
+																						<option value="100">100</option>
+																					</select> entries</label>
+																			</div>
+																		</div>
+																		<div class="col-sm-12 col-md-6">
+																			<div id="example_filter" class="dataTables_filter">
+																				<label>Search:
+																					<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example">
+																				</label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="row">
+																		<div class="col-sm-12">
+																			<table id="example" class="table table-striped table-bordered dataTable no-footer" style="width:100%" role="grid"
+																			 aria-describedby="example_info">
+																				<thead>
+																					<tr role="row">
+																						<th class="wd-15p sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending"
+																						 aria-label="First name: activate to sort column descending" style="width: 94.6px;"></th>
+																						<th class="wd-15p sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Last name: activate to sort column ascending"
+																						 style="width: 91.4px;">ID</th>
+																						<th class="wd-20p sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending"
+																						 style="width: 213px;">VOUCHER CODE</th>
+																						<th class="wd-10p sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending"
+																						 style="width: 71.4px;">DEAL</th>
+											
+																						<th class="wd-20p sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending"
+																						 aria-label="First name: activate to sort column descending" style="width: 94.6px;">ORDER DATA</th>
+																						<th class="wd-20p " tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending"
+																						 aria-label="First name: activate to sort column descending" style="width: 94.6px;">PARTICIPANT</th>
+																						<th class="wd-15p sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending"
+																						 aria-label="First name: activate to sort column descending" style="width: 94.6px;">VALID TILL</th>
+																						<th class="wd-10p sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending"
+																						 aria-label="First name: activate to sort column descending" style="width: 94.6px;">STATUS</th>
+																						<th class="wd-25p " style="width: 94.6px;">ACTIONS</th>
+																						<!-- <th class="wd-25p">DETAIL</th> -->
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr role="row" class="odd">
+																						<td>2235</td>
+																						<td>ZY9QG7UP51FN</td>
+																						<td>New Zealand White Water Rafting Experience</td>
+																						<td>phillpots4970@hotmail.com Lucy Phillpots</td>
+																						<td>Adult2</td>
+																						<td>2015/03/21</td>
+																						<td>2015/01/01</td>
+																						<td> <a href="#" class="btn btn-info" data-toggle="modal" data-target="#scheduled">scheduled</a></td>
+																						<td>
+																							<button href="#" class="btn btn-info btn-sm mb-10" data-toggle="modal" data-target="#myModal">DETAIL</button>
+																							<button type="button" class="btn btn-icon btn-sm btn-primary btn-success mb-10"><i class="fa fa-pencil"></i></button>
+																							<button type="button" class="btn btn-icon btn-sm btn-primary btn-danger"><i class="fe fe-trash"></i></button>
+																						</td>
+																					</tr>
+																					<tr role="row" class="odd">
+																						<td>2235</td>
+																						<td>ZY9QG7UP51FN</td>
+																						<td>New Zealand White Water Rafting Experience</td>
+																						<td>phillpots4970@hotmail.com Lucy Phillpots</td>
+																						<td>Adult2</td>
+																						<td>2015/03/21</td>
+																						<td>2015/01/01</td>
+																						<td> <a href="#" class="btn btn-info" data-toggle="modal" data-target="#scheduled">scheduled</a></td>
+																						<td>
+																							<button href="#" class="btn btn-info btn-sm mb-10" data-toggle="modal" data-target="#myModal">DETAIL</button>
+																							<button type="button" class="btn btn-icon btn-sm btn-primary btn-success mb-10"><i class="fa fa-pencil"></i></button>
+																							<button type="button" class="btn btn-icon btn-sm btn-primary btn-danger"><i class="fe fe-trash"></i></button>
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</div>
+																	<div class="row">
+																		<div class="col-sm-12 col-md-5">
+																			<div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 10 of 50 entries</div>
+																		</div>
+																		<div class="col-sm-12 col-md-7">
+																			<div class="dataTables_paginate paging_simple_numbers" id="example_paginate">
+																				<ul class="pagination">
+																					<li class="paginate_button page-item previous disabled" id="example_previous">
+																						<a href="#" aria-controls="example" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+																					</li>
+																					<li class="paginate_button page-item active">
+																						<a href="#" aria-controls="example" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+																					</li>
+																					<li class="paginate_button page-item ">
+																						<a href="#" aria-controls="example" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+																					</li>
+																					<li class="paginate_button page-item ">
+																						<a href="#" aria-controls="example" data-dt-idx="3" tabindex="0" class="page-link">3</a>
+																					</li>
+																					<li class="paginate_button page-item ">
+																						<a href="#" aria-controls="example" data-dt-idx="4" tabindex="0" class="page-link">4</a>
+																					</li>
+																					<li class="paginate_button page-item ">
+																						<a href="#" aria-controls="example" data-dt-idx="5" tabindex="0" class="page-link">5</a>
+																					</li>
+																					<li class="paginate_button page-item next" id="example_next">
+																						<a href="#" aria-controls="example" data-dt-idx="6" tabindex="0" class="page-link">Next</a>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
 														</div>
-					                                </div>
-													<!-- table-wrapper -->
+											
+													</div>
+												</div>
 												</div>
 												<!-- section-wrapper -->
 
@@ -474,6 +533,38 @@
 				</div>	
 			</div>
 		</div>
+	</div>
+
+	<div class="modal fade" id="scheduled" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content ">
+			<div class="modal-header pd-x-20">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body pd-20">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="expanel expanel-default">
+							<div class="expanel-heading"><strong>Redeem voucher</strong></div>
+							<div class="expanel-body">
+								<div class="form-group">
+									<label class="form-label">SECURITY CODE</label>
+									<input type="text" class="form-control" name="example-text-input">
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn btn-primary">Confirm</a>
+						<a href="#" class="btn btn-link">Cancel</a>
+					</div>
+				</div>
+	
+			</div><!-- modal-body -->
+		
+		</div>
+	</div>
+	<!-- table-wrapper -->
 	</div>
 		
 		<!-- Back to top -->
@@ -490,6 +581,10 @@
 		
 		<!-- Fullside-menu Js-->
 		<script src="assets/plugins/toggle-sidebar/js/sidemenu.js"></script>
+
+		<!-- Timepicker js -->
+	<script src="assets/plugins/time-picker/jquery.timepicker.js"></script>
+	<script src="assets/plugins/time-picker/toggles.min.js"></script>
 		
 		
 		<!--Morris.js Charts Plugin -->
