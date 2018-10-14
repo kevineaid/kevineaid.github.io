@@ -35,6 +35,18 @@ section#headline {
   font-weight: 500;
 }
 
+.breadcrumb {
+
+}
+.breadcrumb ul li {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+}
+.breadcrumb ul li a {
+  font-weight: 600;
+}
+
 .bar.bar-1,
 .bar.bar--md {
   padding: 10px 0;
@@ -395,11 +407,14 @@ header:after {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.1s;
+  transition: all 0.3s ease;
+  font-weight: 600;
 }
 #btn-demo:hover{
   opacity: 0.8;
-  margin-top: -2px;
+}
+#btn-demo:disabled{
+  background: #aaa;
 }
 .popup-form p{
   font-size: 10px;

@@ -131,14 +131,16 @@
                 <div class="pop-up-wrap">
                     <div class="popup-form">
                       <h3>FREE DEMO REQUEST</h3>
-                      <form class="" action="index.html" method="post">
+                      <form id="leadform" action="mailer.php" method="post">
                         <input type="text" name="name" placeholder="Your name" value="">
                         <input type="text" name="number" placeholder="Mobile Number" value="">
                         <input type="email" name="email" placeholder="Email Address" value="">
                         <input type="text" name="city" placeholder="Your City" value="">
                         <input type="number" name="pin" placeholder="PIN Number" value="">
-                        <input id="btn-demo" type="submit" name="" value="Request Demo">
+
+                        <input id="btn-demo" type="submit" name="" value="Request Demo" >
                       </form>
+                      <p id="demo-notif" class="mb-0 mt-1" style="font-size: 11px;line-height: 14px;">Request Sent! Thank you for Requesting</p>
                       <p>By signing up, you agree to the <a href="#"> Terms of Service</a></p>
                     </div>
                 </div>

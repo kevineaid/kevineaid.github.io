@@ -1,4 +1,32 @@
 $(document).ready(function(){
+    $('#demo-notif').hide();
+    $('#leadform').on('submit', function (e) {
+
+      e.preventDefault();
+        var form = $(this);
+        var url = form.attr('action');
+
+      $.ajax({
+        type: 'post',
+        url: url,
+        data: form.serialize(),
+        beforeSend: function(){
+            $('#demo-btn').attr('disabled');
+            $('#demo-btn').html('Sending..!');
+            
+            setTimeout($('#demo-btn').removeAttr('disabled'), 2000);
+        },
+        success: function () {
+          alert('form was submitted');
+          $('#demo-notif').fadeIn(300);
+          $('#demo-btn').removeAttr('disabled');
+          $('#demo-btn').html('Request Demo');
+        }
+      });
+
+    });
+
+
     var $container = $('.portfolioContainer');
     $container.isotope({
         filter: '*',

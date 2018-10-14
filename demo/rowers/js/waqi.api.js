@@ -45,7 +45,7 @@ $( document ).ready(function() {
 		showStation('Talkatora, Lucknow', 8188);
 	
 	
-		showStation('Kolkata', 7021);
+		//showStation('Kolkata', 7021);
 	
 	
 		showStation('Faridaba', 6971);
@@ -57,14 +57,14 @@ $( document ).ready(function() {
 		showStation('Dwarka, Delhi', 8181);
 	
 	
-		showStation('Sanjay Plc, Agra', 8186);
+		//showStation('Sanjay Plc, Agra', 8186);
 	
 		showStation('IGSC, Patna', 8674);
 
 		showStation('Manali, Chennai', 8185);
 
-		showStation('Katraj, Pune', 3763);
-		showStation('Chandrapur', 8682);
+		//showStation('Katraj, Pune', 3763);
+		//showStation('Chandrapur', 8682);
 
 	/*for (var i = 0 ; i <= cityObj.length; i++) {
 		console.log(cityObj[i].city);
@@ -97,7 +97,7 @@ $( document ).ready(function() {
 		console.log(cityObj[0].city);
 
 		for (var i = 0; i <= cityObj.length; i++) {
-			if (i<=6) {
+			if (i<=4) {
 				getAQI(cityObj[i].city, cityObj[i].aqi, 'left');	
 			}
 			else {
