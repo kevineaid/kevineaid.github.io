@@ -191,7 +191,14 @@ function refreshAnimation($wizard, index){
     index_temp = index;
     vertical_level = 0;
 
+    tablet_device = $(document).width() < 1200 && $total > 3;
     mobile_device = $(document).width() < 768 && $total > 3;
+
+    if(tablet_device){
+        move_distance = $wizard.width() / 3;
+        index_temp = index % 3;
+        $li_width = 33;
+    }
 
     if(mobile_device){
         move_distance = $wizard.width() / 2;
@@ -206,15 +213,26 @@ function refreshAnimation($wizard, index){
 
     $current = index + 1;
 
+    if($current == 1 || (tablet_device == true && (index % 2 == 0) )){
+        move_distance -= 8;
+    } else if($current == total_steps || (tablet_device == true && (index % 2 == 1))){
+        move_distance += 8;
+    }
+
     if($current == 1 || (mobile_device == true && (index % 2 == 0) )){
         move_distance -= 8;
     } else if($current == total_steps || (mobile_device == true && (index % 2 == 1))){
         move_distance += 8;
     }
 
+    if(tablet_device){
+        vertical_level = parseInt(index / 3);
+        vertical_level = vertical_level * 44;
+    }
+
     if(mobile_device){
         vertical_level = parseInt(index / 2);
-        vertical_level = vertical_level * 38;
+        vertical_level = vertical_level * 44;
     }
 
     $wizard.find('.moving-tab').css('width', step_width);

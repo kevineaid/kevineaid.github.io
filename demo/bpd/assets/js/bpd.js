@@ -34,11 +34,22 @@ $( document ).ready(function() {
     });
 
 
+    $('#limitation').hide();
+    $("#limitation-check").change(function() {
+        if(this.checked) {
+            $('#limitation').show();
+        }
+        else {
+            $('#limitation').hide();
+        }
+    });
+
+
     var bookingCount = 1;
     $('#add-booking').click(function(){
         var booking = '<div class="card"><div class="card-body"><div class="row"><div class="col-6"> ' +
             ' <h4>Field ' + bookingCount + '</h4></div><div class="col-6 text-right">' +
-            ' <a href="#" class="btn btn-danger">DELETE</a></div></div> ' +
+            ' <a href="#" class="btn btn-danger delete-booking">DELETE</a></div></div> ' +
         ' <div class="form-group"><label class="form-label">FORM KEY</label> ' +
         ' <input type="text" class="form-control" name="form-key-'+ bookingCount +'"> </div>'+
         ' <div class="form-group"><label class="form-label">LABEL</label> ' +
@@ -64,9 +75,33 @@ $( document ).ready(function() {
         bookingCount++;
     });
 
+    $('.close-faq').click(function(){
+        console.log("remove");
+        //$(this).closest(".card").remove();
+    });
+    $('.card').on('click', '.close-faq', function(e) {
+        
+        $(this).closest('.card').remove();
+        // do whatever
+    });
+    $('.card').on('click', '.delete-booking', function(e) {
+        $(this).closest('.card').remove();
+        // do whatever
+    });
+    $('tr').on('click', '.delete-timeslot', function(e) {
+        $(this).closest('tr').remove();
+        // do whatever
+    });
+
+    $('.moving-tab').hide();
+    
+    $('.wizard-card .nav-pills > li > a').click(function(){
+        $('.wizard-card .nav-pills > li > a').closest('li').removeClass('active');
+        
+            $(this).closest('li').addClass('active');
+    });
+    
+        
+
 });
 
-$('.close-faq').click(function(){
-    console.log("remove");
-    $(this).closest(".card").remove();
-});

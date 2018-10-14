@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="msapplication-TileColor" content="#0061da">
+	<meta name="theme-color" content="#1643a3">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<!-- Title -->
+	<title>Backpacker Deals</title>
+	<link rel="stylesheet" href="assets/fonts/fonts/font-awesome.min.css">
+
+	<!-- Font Family-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
+
+	<!-- Dashboard Css -->
+	<link href="assets/css/dashboard.css" rel="stylesheet" />
+
+	<!-- forn-wizard css-->
+	<link href="./assets/plugins/forn-wizard/css/material-bootstrap-wizard.css" rel="stylesheet" />
+	<link href="./assets/plugins/forn-wizard/css/demo.css" rel="stylesheet" />
+
+	<!-- select2 Plugin -->
+	<link href="assets/plugins/select2/select2.min.css" rel="stylesheet" />
+
+
+
+	<!-- c3.js Charts Plugin -->
+	<link href="assets/plugins/charts-c3/c3-chart.css" rel="stylesheet" />
+
+	<!-- Morris.js Charts Plugin -->
+	<link href="./assets/plugins/morris/morris.css" rel="stylesheet" />
+
+	<!-- Custom scroll bar css-->
+	<link href="assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+	<!-- Sidemenu Css -->
+	<link href="./assets/plugins/toggle-sidebar/css/sidemenu.css" rel="stylesheet">
+
+	<!---Font icons-->
+	<link href="assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
+
+	<!-- BPD Css -->
+	<link href="assets/css/bpd.css" rel="stylesheet" />
+</head>
+
+<body class="app sidebar-mini rtl">
+	<div id="global-loader"></div>
+	<div class="page">
+		<div class="page-main">
+			<!-- Navbar-->
+			<header class="app-header header">
+
+				<!-- Sidebar toggle button-->
+				<!-- Navbar Right Menu-->
+				<div class="container-fluid">
+					<div class="d-flex">
+						<a class="header-brand" href="index.html">
+							<img alt="vobilet logo" class="header-brand-img" src="assets/images/logo.svg">
+						</a>
+
+						<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar" href="#"></a>
+						<div class=" ">
+							<form class="input-icon mt-1 ">
+								<div class="input-icon-addon">
+									<i class="fe fe-search"></i>
+								</div>
+								<input type="search" class="form-control header-search" placeholder="Search&hellip;" tabindex="1">
+							</form>
+						</div>
+						<div class="d-flex order-lg-2 ml-auto">
+
+							<div class="dropdown d-none d-md-flex">
+								<a class="nav-link icon" data-toggle="dropdown">
+									<i class="fa fa-user-o"></i>
+									<span class="nav-unread bg-green"></span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/male/4.jpg)"></span>
+										<div>
+											<strong>Madeleine Scott</strong> Sent you add request
+											<div class="small text-muted">
+												view profile
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/female/14.jpg)"></span>
+										<div>
+											<strong>rebica</strong> Suggestions for you
+											<div class="small text-muted">
+												view profile
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/male/1.jpg)"></span>
+										<div>
+											<strong>Devid robott</strong> sent you add request
+											<div class="small text-muted">
+												view profile
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-center text-muted-dark" href="#">View all contact list</a>
+								</div>
+							</div>
+							<div class="dropdown d-none d-md-flex">
+								<a class="nav-link icon" data-toggle="dropdown">
+									<i class="fa fa-bell-o"></i>
+									<span class="nav-unread bg-danger"></span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<div class="notifyimg">
+											<i class="fa fa-thumbs-o-up"></i>
+										</div>
+										<div>
+											<strong>Someone likes our posts.</strong>
+											<div class="small text-muted">
+												3 hours ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<div class="notifyimg">
+											<i class="fa fa-commenting-o"></i>
+										</div>
+										<div>
+											<strong>3 New Comments</strong>
+											<div class="small text-muted">
+												5 hour ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<div class="notifyimg">
+											<i class="fa fa-cogs"></i>
+										</div>
+										<div>
+											<strong>Server Rebooted.</strong>
+											<div class="small text-muted">
+												45 mintues ago
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-center text-muted-dark" href="#">View all Notification</a>
+								</div>
+							</div>
+							<div class="dropdown d-none d-md-flex">
+								<a class="nav-link icon" data-toggle="dropdown">
+									<i class="fa fa-envelope-o"></i>
+									<span class=" nav-unread badge badge-info badge-pill">2</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item text-center text-dark" href="#">2 New Messages</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/male/41.jpg)"></span>
+										<div>
+											<strong>Madeleine</strong> Hey! there I' am available....
+											<div class="small text-muted">
+												3 hours ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/female/1.jpg)"></span>
+										<div>
+											<strong>Anthony</strong> New product Launching...
+											<div class="small text-muted">
+												5 hour ago
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item d-flex pb-3" href="#">
+										<span class="avatar brround mr-3 align-self-center" style="background-image: url(assets/images/faces/female/18.jpg)"></span>
+										<div>
+											<strong>Olivia</strong> New Schedule Realease......
+											<div class="small text-muted">
+												45 mintues ago
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-center text-muted-dark" href="#">See all Messages</a>
+								</div>
+							</div>
+							<div class="dropdown">
+								<a class="nav-link pr-0 leading-none d-flex" data-toggle="dropdown" href="#">
+									<span class="avatar avatar-md brround" style="background-image: url(assets/images/faces/female/25.jpg)"></span>
+									<span class="ml-2 d-none d-lg-block">
+										<span class="text-white">info@kaitiaki.co.nz</span>
+									</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+									<a class="dropdown-item" href="#">
+										<i class="dropdown-icon mdi mdi-account-outline"></i> Profile</a>
+									<a class="dropdown-item" href="#">
+										<i class="dropdown-icon mdi mdi-settings"></i> Settings</a>
+									<a class="dropdown-item" href="#">
+										<span class="float-right">
+											<span class="badge badge-primary">6</span>
+										</span>
+										<i class="dropdown-icon mdi mdi-message-outline"></i> Inbox</a>
+									<a class="dropdown-item" href="#">
+										<i class="dropdown-icon mdi mdi-comment-check-outline"></i> Message</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">
+										<i class="dropdown-icon mdi mdi-compass-outline"></i> Need help?</a>
+									<a class="dropdown-item" href="login.html">
+										<i class="dropdown-icon mdi mdi-logout-variant"></i> Sign out</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Sidebar menu-->
+			<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+			<aside class="app-sidebar ">
+				<div class="app-sidebar__user">
+					<div class="dropdown">
+						<a class="nav-link p-0 leading-none d-flex" data-toggle="dropdown" href="#">
+							<span class="avatar avatar-md brround" style="background-image: url(assets/images/faces/female/25.jpg)"></span>
+							<span class="ml-2 ">
+								<span class="text-dark app-sidebar__user-name font-weight-semibold">info@kaitiaki.co.nz</span>
+								<br>
+								<span class="text-muted app-sidebar__user-name text-sm"> Admin</span>
+							</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+							<a class="dropdown-item" href="#">
+								<i class="dropdown-icon mdi mdi-account-outline"></i> Profile</a>
+							<a class="dropdown-item" href="#">
+								<i class="dropdown-icon mdi mdi-settings"></i> Settings</a>
+							<a class="dropdown-item" href="#">
+								<span class="float-right">
+									<span class="badge badge-primary">6</span>
+								</span>
+								<i class="dropdown-icon mdi mdi-message-outline"></i> Inbox</a>
+							<a class="dropdown-item" href="#">
+								<i class="dropdown-icon mdi mdi-comment-check-outline"></i> Message</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<i class="dropdown-icon mdi mdi-compass-outline"></i> Need help?</a>
+							<a class="dropdown-item" href="login.html">
+								<i class="dropdown-icon mdi mdi-logout-variant"></i> Sign out</a>
+						</div>
+					</div>
+				</div>
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item" href="dashboard.html">
+							<i class="side-menu__icon fa fa-home"></i>Dashboard</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="#">
+							<i class="side-menu__icon fa fa-calendar"></i>
+							<span class="side-menu__label">DEALS</span>
+							<i class="angle fa fa-angle-right"></i>
+						</a>
+						<ul class="slide-menu">
+							<li>
+								<a class="slide-item" href="deals.html">Deals</a>
+							</li>
+							<li>
+								<a class="slide-item" href="add-deals.html">Add new deal</a>
+							</li>
+						</ul>
+					</li>
+					<li class="slide is-expanded">
+						<a class="side-menu__item active" data-toggle="slide" href="#">
+							<i class="side-menu__icon fa fa-user"></i>
+							<span class="side-menu__label">PROFILE</span>
+							<i class="angle fa fa-angle-right"></i>
+						</a>
+						<ul class="slide-menu">
+							<li>
+								<a class="slide-item active" href="profile.html">Profile</a>
+							</li>
+							<li>
+								<a class="slide-item" href="password-update.html">Password Update</a>
+							</li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="#">
+							<i class="side-menu__icon fa fa-gear"></i>
+							<span class="side-menu__label">TERMS</span>
+							<i class="angle fa fa-angle-right"></i>
+						</a>
+						<ul class="slide-menu">
+							<li>
+								<a class="slide-item" href="#" data-toggle="modal" data-target="#terms-modal">Terms and Condition</a>
+							</li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="#">
+							<i class="side-menu__icon fa fa-calendar"></i>
+							<span class="side-menu__label">ORDERS</span>
+							<i class="angle fa fa-angle-right"></i>
+						</a>
+						<ul class="slide-menu">
+							<li>
+								<a class="slide-item" href="orders.html">Orders</a>
+							</li>
+							<li>
+								<a class="slide-item" href="vouchers.html">Vouchers</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</aside>
+			<div class="app-content my-3 my-md-5">
+				<div class="side-app">
+					<div class="page-header">
+						<h4 class="page-title">Profile</h4>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<a href="#">Home</a>
+							</li>
+							<li class="breadcrumb-item active" aria-current="page">Profile</li>
+						</ol>
+					</div>
+					<div class="row row-cards">
+						<div class="col-sm-12 col-md-12 col-lg-12">
+							<div class="card">
+								<div class="card-body p-6">
+									<div class="wizard-container">
+										<div class="wizard-card m-0" data-color="red" id="wizardProfile">
+											<form>
+												<div class="wizard-navigation">
+													<ul class="nav nav-pills">
+														<li style="width: 33.3333%;">
+															<a href="#deal-type" data-toggle="tab" class="active show">Select Deal Type &amp; Offer Dates</a>
+														</li>
+														<li style="width: 33.3333%;">
+															<a href="#deal-days" data-toggle="tab">Select Deal Availability Days & Dates</a>
+														</li>
+														<li style="width: 33.3333%;">
+															<a href="#pricing" data-toggle="tab">Pricing & Spaces</a>
+														</li>
+														<li style="width: 33.3333%;">
+															<a href="#confirm" data-toggle="tab">Confirmation</a>
+														</li>
+													</ul>
+													<div class="moving-tab" style="width: 388.4px; transform: translate3d(-8px, 0px, 0px); transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;">About</div>
+												</div>
+
+												<div class="tab-content">
+													<div class="tab-pane active show" id="deal-type">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="card">
+																	<div class="card-body">
+																		<h3>Select Deal Type &amp; Offer Dates</h3>
+																		<br>
+																		<div class="form-group">
+																			<div class="form-label"> TYPE</div>
+																			<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
+																				<optgroup>
+																					<option value="AZ">LAST MINUTE</option>
+																					<option value="CO">TOP DEAL</option>
+																				</optgroup>
+																			</select>
+																		</div>
+																		<br>
+																		<h4>Deal start & end dates (booking period)</h4>
+																		<div class="form-group m-0">
+																			<div class="form-label">VISIBILITY START</div>
+																			<div class="row gutters-xs">
+																				<div class="col-6">
+																					<input type="date" name="" class="form-control custom-select">
+																				</div>
+																				<div class="col-3">
+																					<select id="" name="" class="form-control valid" aria-invalid="false">
+																						<option value="0" selected="selected">00</option>
+																						<option value="1">01</option>
+																						<option value="2">02</option>
+																						<option value="3">03</option>
+																						<option value="4">04</option>
+																						<option value="5">05</option>
+																						<option value="6">06</option>
+																						<option value="7">07</option>
+																						<option value="8">08</option>
+																						<option value="9">09</option>
+																						<option value="10">10</option>
+																						<option value="11">11</option>
+																						<option value="12">12</option>
+																						<option value="13">13</option>
+																						<option value="14">14</option>
+																						<option value="15">15</option>
+																						<option value="16">16</option>
+																						<option value="17">17</option>
+																						<option value="18">18</option>
+																						<option value="19">19</option>
+																						<option value="20">20</option>
+																						<option value="21">21</option>
+																						<option value="22">22</option>
+																						<option value="23">23</option>
+																					</select>
+																				</div>
+																				<div class="col-3">
+																					<select id="" name="" class="form-control valid" aria-invalid="false">
+																						<option value="0" selected="selected">00</option>
+																						<option value="1">01</option>
+																						<option value="2">02</option>
+																						<option value="3">03</option>
+																						<option value="4">04</option>
+																						<option value="5">05</option>
+																						<option value="6">06</option>
+																						<option value="7">07</option>
+																						<option value="8">08</option>
+																						<option value="9">09</option>
+																						<option value="10">10</option>
+																						<option value="11">11</option>
+																						<option value="12">12</option>
+																						<option value="13">13</option>
+																						<option value="14">14</option>
+																						<option value="15">15</option>
+																						<option value="16">16</option>
+																						<option value="17">17</option>
+																						<option value="18">18</option>
+																						<option value="19">19</option>
+																						<option value="20">20</option>
+																						<option value="21">21</option>
+																						<option value="22">22</option>
+																						<option value="23">23</option>
+																					</select>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="form-group m-0">
+																			<div class="form-label">VISIBILITY END</div>
+																			<div class="row gutters-xs">
+																				<div class="col-6">
+																					<input type="date" name="" class="form-control custom-select">
+																				</div>
+																				<div class="col-3">
+																					<select id="" name="" class="form-control valid" aria-invalid="false">
+																						<option value="0" selected="selected">00</option>
+																						<option value="1">01</option>
+																						<option value="2">02</option>
+																						<option value="3">03</option>
+																						<option value="4">04</option>
+																						<option value="5">05</option>
+																						<option value="6">06</option>
+																						<option value="7">07</option>
+																						<option value="8">08</option>
+																						<option value="9">09</option>
+																						<option value="10">10</option>
+																						<option value="11">11</option>
+																						<option value="12">12</option>
+																						<option value="13">13</option>
+																						<option value="14">14</option>
+																						<option value="15">15</option>
+																						<option value="16">16</option>
+																						<option value="17">17</option>
+																						<option value="18">18</option>
+																						<option value="19">19</option>
+																						<option value="20">20</option>
+																						<option value="21">21</option>
+																						<option value="22">22</option>
+																						<option value="23">23</option>
+																					</select>
+																				</div>
+																				<div class="col-3">
+																					<select id="" name="" class="form-control valid" aria-invalid="false">
+																						<option value="0" selected="selected">00</option>
+																						<option value="1">01</option>
+																						<option value="2">02</option>
+																						<option value="3">03</option>
+																						<option value="4">04</option>
+																						<option value="5">05</option>
+																						<option value="6">06</option>
+																						<option value="7">07</option>
+																						<option value="8">08</option>
+																						<option value="9">09</option>
+																						<option value="10">10</option>
+																						<option value="11">11</option>
+																						<option value="12">12</option>
+																						<option value="13">13</option>
+																						<option value="14">14</option>
+																						<option value="15">15</option>
+																						<option value="16">16</option>
+																						<option value="17">17</option>
+																						<option value="18">18</option>
+																						<option value="19">19</option>
+																						<option value="20">20</option>
+																						<option value="21">21</option>
+																						<option value="22">22</option>
+																						<option value="23">23</option>
+																					</select>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="form-label">Checkboxes</div>
+																		<div class="custom-controls-stacked">
+																			<label class="custom-control custom-checkbox">
+																				<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+																				<span class="custom-control-label">Show countdown timer</span>
+																			</label>
+																			<label class="custom-control custom-checkbox">
+																				<input type="checkbox" class="custom-control-input" name="example-checkbox2" id="limitation-check" value="option1">
+																				<span class="custom-control-label">Travel date limitation</span>
+																			</label>
+																		</div>
+																	</div>
+
+																</div>
+															</div>
+
+														</div>
+													</div>
+													<div class="tab-pane" id="deal-days">
+														<div class="row">
+															<div class="col-12">
+																<div class="card">
+																	<div class="card-body">
+																		<h3>Select Deal Availability Days & Dates</h3>
+																		<br>
+																		<div class="row">
+																			<div class="col-5">
+																				<div id="limitation" style="">
+																					<div class="form-group m-0 is-empty">
+																						<div class="form-label">TRAVEL DATE FROM</div>
+																						<div class="row gutters-xs">
+																							<div class="col-12">
+																								<input type="date" name="" class="form-control custom-select">
+																							</div>
+																						</div>
+																						<span class="material-input"></span>
+																					</div>
+																					<div class="form-group m-0 is-empty">
+																						<div class="form-label">TRAVEL DATE TO</div>
+																						<div class="row gutters-xs">
+																							<div class="col-12">
+																								<input type="date" name="" class="form-control custom-select">
+																							</div>
+																						</div>
+																						<span class="material-input"></span>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-7">
+																				<h4>Select days you want to offer last minute deals</h4>
+																				<br>
+																				<div class="row">
+																					<div class="col-4">
+																						<div class="form-group">
+																							<label class="custom-control custom-checkbox">
+																								<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+																								<span class="custom-control-label">ALL</span>
+																							</label>
+																						</div>
+																					</div>
+																				</div>
+																				<div class you want to offer last minute deals="col-4">
+																					<div class="row">
+																						<div class="col-4">
+																							<div class="form-group">
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+																									<span class="custom-control-label">MONDAY</span>
+																								</label>
+																							</div>
+																						</div>
+																						<div class="col-4">
+																							<div class="form-group">
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+																									<span class="custom-control-label">TUESDAY</span>
+																								</label>
+																							</div>
+																						</div>
+																						<div class="col-4">
+																							<div class="form-group">
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+																									<span class="custom-control-label">WEDNESDAY</span>
+																								</label>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="row">
+																						<div class="col-4">
+																							<div class="form-group">
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+																									<span class="custom-control-label">THURSDAY</span>
+																								</label>
+																							</div>
+																						</div>
+																						<div class="col-4">
+																							<div class="form-group">
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+																									<span class="custom-control-label">FRIDAY</span>
+																								</label>
+																							</div>
+																						</div>
+																						<div class="col-4">
+																							<div class="form-group">
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+																									<span class="custom-control-label">SATURDAY</span>
+																								</label>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="row">
+																						<div class="col-4">
+																							<div class="form-group">
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+																									<span class="custom-control-label">SUNDAY</span>
+																								</label>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane" id="pricing">
+														<div class="row">
+															<div class="col-12">
+																<div class="card">
+																	<div class="card-body">
+																		<div class="row">
+																			<div class="card">
+																				<div class="card-body">
+																					<div class="row">
+																						<div class="col text-center">
+																							<p class="font-weight-semibold pt-5">Current Pricing</p>
+																						</div>
+																						<div class="col  border-left text-center">
+																							<label class="tx-12">Adult (Adult)</label>
+																							<p class="font-weight-semibold">75</p>
+																						</div>
+																						<!-- col -->
+																						<div class="col border-left text-center">
+																							<label class="tx-12">Child (Children)</label>
+																							<p class="font-weight-semibold">0</p>
+																						</div>
+																						<!-- col -->
+																						<div class="col border-left text-center">
+																							<label class="tx-12">Family (Family)</label>
+																							<p class="font-weight-semibold">0</p>
+																						</div>
+																						<!-- col -->
+																					</div>
+																					<div class="row mt-2">
+																							<div class="col text-center">
+																									<p class="font-weight-semibold pt-5">Deal Pricing</p>
+																								</div>
+																								<div class="col  border-left text-center">
+																										<label class="tx-12">Adult (Adult)</label>
+																										<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
+																									</div>
+																									<!-- col -->
+																									<div class="col border-left text-center">
+																										<label class="tx-12">Child (Children)</label>
+																										<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
+																									</div>
+																									<!-- col -->
+																									<div class="col border-left text-center">
+																										<label class="tx-12">Family (Family)</label>
+																										<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
+																									</div>
+																							<!-- col -->
+																						</div>
+
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tab-pane" id="confirm">
+														<div class="row">
+															<div class="col-12">
+																<div class="card">
+																	<div class="card-body">
+																			<div class="custom-controls-stacked mt-5">
+																					<label class="custom-control custom-checkbox">
+																						<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+																						<span class="custom-control-label">|
+																							<input type="text" name=""> from Kaitiaki Adventures confirm the deals as above </span>
+																					</label>
+																					<a href="#" class="btn btn-danger">Delete</a>
+																				</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="wizard-footer">
+													<div class="pull-right">
+														<input type="button" class="btn btn-next btn-fill btn-primary btn-wd m-0" name="next" value="Next">
+														<input type="button" class="btn btn-finish btn-fill btn-success btn-wd m-0" name="finish" value="Finish" style="display: none;">
+													</div>
+
+													<div class="pull-left">
+														<input type="button" class="btn btn-previous btn-fill btn-default btn-wd m-0 disabled" name="previous" value="Previous">
+													</div>
+													<div class="clearfix"></div>
+												</div>
+												<div class="card-footer text-left">
+													<button type="submit" class="btn btn-primary">Save Deals</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<!-- wizard container -->
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="terms-modal" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content ">
+				<div class="modal-header pd-x-20">
+					<h6 class="modal-title">Terms and Condition</h6>
+					<a href="dashboard.html">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+
+					</a>
+				</div>
+				<div class="modal-body pd-20">
+					<iframe src="https://www.backpackerdeals.com/terms-and-conditions" frameborder="0" style="width: 100%; min-height: 70vh;"></iframe>
+				</div>
+				<!-- modal-body -->
+				<div class="modal-footer">
+					<a href="dashboard.html">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- table-wrapper -->
+	</div>
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top" style="display: inline;">
+		<i class="fa fa-angle-up"></i>
+	</a>
+
+	<!-- Dashboard Js -->
+	<script src="assets/js/vendors/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/vendors/jquery.sparkline.min.js"></script>
+	<script src="assets/js/vendors/selectize.min.js"></script>
+	<script src="assets/js/vendors/jquery.tablesorter.min.js"></script>
+	<script src="assets/js/vendors/circle-progress.min.js"></script>
+	<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!-- Fullside-menu Js-->
+	<script src="assets/plugins/toggle-sidebar/js/sidemenu.js"></script>
+
+	<script src="./assets/plugins/forn-wizard/js/material-bootstrap-wizard.js"></script>
+	<script src="./assets/plugins/forn-wizard/js/jquery.validate.min.js"></script>
+	<script src="./assets/plugins/forn-wizard/js/jquery.bootstrap.js"></script>
+
+	<!--Select2 js -->
+	<script src="assets/plugins/select2/select2.full.min.js"></script>
+
+
+	<!--Morris.js Charts Plugin -->
+	<script src="assets/plugins/am-chart/amcharts.js"></script>
+	<script src="assets/plugins/am-chart/serial.js"></script>
+
+	<!-- Index Scripts -->
+	<script src="assets/js/amcharts.js"></script>
+
+	<!-- Inline js -->
+	<script src="assets/js/select2.js"></script>
+
+
+	<!-- Custom scroll bar Js-->
+	<script src="assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!-- Custom Js-->
+	<script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
