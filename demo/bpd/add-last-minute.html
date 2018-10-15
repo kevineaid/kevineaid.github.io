@@ -349,25 +349,25 @@
 												<div class="wizard-navigation">
 													<ul class="nav nav-pills">
 														<li style="width: 33.3333%;">
-															<a href="#deal-type" data-toggle="tab" class="active show">Select Deal Type &amp; Offer Dates</a>
+															<a href="#deal-type" data-toggle="tab" class="active show">Step 1</a>
 														</li>
 														<li style="width: 33.3333%;">
-															<a href="#deal-days" data-toggle="tab">Select Deal Availability Days & Dates</a>
+															<a href="#deal-days" data-toggle="tab">Step 2</a>
 														</li>
 														<li style="width: 33.3333%;">
-															<a href="#pricing" data-toggle="tab">Pricing & Spaces</a>
+															<a href="#pricing" data-toggle="tab">Step 3</a>
 														</li>
 														<li style="width: 33.3333%;">
-															<a href="#confirm" data-toggle="tab">Confirmation</a>
+															<a href="#confirm" data-toggle="tab">Step 4</a>
 														</li>
 													</ul>
-													<div class="moving-tab" style="width: 388.4px; transform: translate3d(-8px, 0px, 0px); transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;">About</div>
+													
 												</div>
 
 												<div class="tab-content">
 													<div class="tab-pane active show" id="deal-type">
 														<div class="row">
-															<div class="col-sm-12">
+															<div class="col-sm-12 col-md-11 col-lg-9 col-xl-7">
 																<div class="card">
 																	<div class="card-body">
 																		<h3>Select Deal Type &amp; Offer Dates</h3>
@@ -531,14 +531,14 @@
 													</div>
 													<div class="tab-pane" id="deal-days">
 														<div class="row">
-															<div class="col-12">
+															<div class="col-sm-12 col-md-11 col-lg-9 col-xl-7">
 																<div class="card">
 																	<div class="card-body">
 																		<h3>Select Deal Availability Days & Dates</h3>
 																		<br>
 																		<div class="row">
 																			<div class="col-5">
-																				<div id="limitation" style="">
+																				<div id="" style="">
 																					<div class="form-group m-0 is-empty">
 																						<div class="form-label">TRAVEL DATE FROM</div>
 																						<div class="row gutters-xs">
@@ -645,56 +645,121 @@
 													</div>
 													<div class="tab-pane" id="pricing">
 														<div class="row">
-															<div class="col-12">
+															<div class="col-sm-12 col-md-11 col-lg-10 col-xl-8">
 																<div class="card">
 																	<div class="card-body">
+																		<h3>Pricing & Spaces</h3>
+																		<br>
 																		<div class="row">
 																			<div class="card">
-																				<div class="card-body">
+																				<div class="card-body slot-panel">
 																					<div class="row">
 																						<div class="col text-center">
+																							<p class="font-weight-semibold pt-5">Slot</p>
+																							<label class="custom-control custom-checkbox">
+																								<input type="checkbox" id="booking-require" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+																								<span class="custom-control-label">09:00 AM to 10:00 AM</span>
+																							</label>
+																						</div>
+																						<div class="col text-center border-bottom">
 																							<p class="font-weight-semibold pt-5">Current Pricing</p>
 																						</div>
-																						<div class="col  border-left text-center">
+																						<div class="col  border-bottom text-center">
 																							<label class="tx-12">Adult (Adult)</label>
 																							<p class="font-weight-semibold">75</p>
 																						</div>
 																						<!-- col -->
-																						<div class="col border-left text-center">
+																						<div class="col border-bottom text-center">
 																							<label class="tx-12">Child (Children)</label>
 																							<p class="font-weight-semibold">0</p>
 																						</div>
 																						<!-- col -->
-																						<div class="col border-left text-center">
+																						<div class="col border-bottom text-center">
 																							<label class="tx-12">Family (Family)</label>
 																							<p class="font-weight-semibold">0</p>
 																						</div>
 																						<!-- col -->
 																					</div>
 																					<div class="row mt-2">
-																							<div class="col text-center">
-																									<p class="font-weight-semibold pt-5">Deal Pricing</p>
-																								</div>
-																								<div class="col  border-left text-center">
-																										<label class="tx-12">Adult (Adult)</label>
-																										<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
-																									</div>
-																									<!-- col -->
-																									<div class="col border-left text-center">
-																										<label class="tx-12">Child (Children)</label>
-																										<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
-																									</div>
-																									<!-- col -->
-																									<div class="col border-left text-center">
-																										<label class="tx-12">Family (Family)</label>
-																										<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
-																									</div>
-																							<!-- col -->
+																						<div class="col"></div>
+																						<div class="col text-center  ">
+																							<p class="font-weight-semibold pt-5">Deal Pricing</p>
 																						</div>
+																						<div class="col   text-center">
+																							<label class="tx-12">Adult (Adult)</label>
+																							<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
+																						</div>
+																						<!-- col -->
+																						<div class="col  text-center">
+																							<label class="tx-12">Child (Children)</label>
+																							<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
+																						</div>
+																						<!-- col -->
+																						<div class="col  text-center">
+																							<label class="tx-12">Family (Family)</label>
+																							<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
+																						</div>
+																						<!-- col -->
+																					</div>
 
 																				</div>
 																			</div>
 																		</div>
+																		<div class="row">
+																				<div class="card">
+																					<div class="card-body slot-panel">
+																						<div class="row">
+																							<div class="col text-center">
+																								<p class="font-weight-semibold pt-5">Slot</p>
+																								<label class="custom-control custom-checkbox">
+																									<input type="checkbox" id="booking-require" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+																									<span class="custom-control-label">11:00 AM to 12:00 AM</span>
+																								</label>
+																							</div>
+																							<div class="col text-center border-bottom">
+																								<p class="font-weight-semibold pt-5">Current Pricing</p>
+																							</div>
+																							<div class="col  border-bottom text-center">
+																								<label class="tx-12">Adult (Adult)</label>
+																								<p class="font-weight-semibold">75</p>
+																							</div>
+																							<!-- col -->
+																							<div class="col border-bottom text-center">
+																								<label class="tx-12">Child (Children)</label>
+																								<p class="font-weight-semibold">0</p>
+																							</div>
+																							<!-- col -->
+																							<div class="col border-bottom text-center">
+																								<label class="tx-12">Family (Family)</label>
+																								<p class="font-weight-semibold">0</p>
+																							</div>
+																							<!-- col -->
+																						</div>
+																						<div class="row mt-2">
+																							<div class="col"></div>
+																							<div class="col text-center  ">
+																								<p class="font-weight-semibold pt-5">Deal Pricing</p>
+																							</div>
+																							<div class="col   text-center">
+																								<label class="tx-12">Adult (Adult)</label>
+																								<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
+																							</div>
+																							<!-- col -->
+																							<div class="col  text-center">
+																								<label class="tx-12">Child (Children)</label>
+																								<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
+																							</div>
+																							<!-- col -->
+																							<div class="col  text-center">
+																								<label class="tx-12">Family (Family)</label>
+																								<input type="text" class="form-control" style="max-width: 200px;margin: 0 auto;">
+																							</div>
+																							<!-- col -->
+																						</div>
+	
+																					</div>
+																				</div>
+																			</div>
 																	</div>
 																</div>
 															</div>
@@ -702,17 +767,23 @@
 													</div>
 													<div class="tab-pane" id="confirm">
 														<div class="row">
-															<div class="col-12">
+															<div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
 																<div class="card">
 																	<div class="card-body">
-																			<div class="custom-controls-stacked mt-5">
-																					<label class="custom-control custom-checkbox">
-																						<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
-																						<span class="custom-control-label">|
-																							<input type="text" name=""> from Kaitiaki Adventures confirm the deals as above </span>
-																					</label>
-																					<a href="#" class="btn btn-danger">Delete</a>
-																				</div>
+																		<h3>Confirmation</h3>
+																		<br>
+																		<div class="custom-controls-stacked mt-5">
+																			<label class="custom-control custom-checkbox">
+																				<input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+																				<span class="custom-control-label">|
+																					<input type="text" name=""> from Kaitiaki Adventures confirm the deals as above </span>
+																			</label>
+																			<a href="#" class="btn btn-danger">Delete</a>
+																		</div>
+																		<div class="form-group">
+																			<div class="form-label"> NOTES</div>
+																			<textarea name="" id="" class="form-control" rows="10"></textarea>
+																		<span class="material-input"></span></div>
 																	</div>
 																</div>
 															</div>
@@ -817,6 +888,9 @@
 
 	<!-- Custom Js-->
 	<script src="assets/js/custom.js"></script>
+
+	<!-- Custom Js-->
+	<script src="assets/js/bpd.js"></script>
 
 </body>
 
