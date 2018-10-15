@@ -94,11 +94,12 @@ $( document ).ready(function() {
     });
 
     $('.moving-tab').hide();
+    $('.wizard-card .nav-pills > li > a.active').closest('li').addClass('active');
     
     $('.wizard-card .nav-pills > li > a').click(function(){
         $('.wizard-card .nav-pills > li > a').closest('li').removeClass('active');
         
-            $(this).closest('li').addClass('active');
+        $(this).closest('li').addClass('active');
     });
     
         

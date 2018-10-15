@@ -14,6 +14,14 @@
     color: #fff;
 }
 
+.slot-panel .tx-12 {
+    margin-top: 10px;
+}
+
+.wizard-container textarea.form-control {
+    height: auto;
+}
+
 
 @media (max-width: 991.9px){
     .app .app-sidebar {
