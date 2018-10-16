@@ -22,6 +22,16 @@
     height: auto;
 }
 
+.wizard-container .form-condensed-250 {
+    max-width: 250px;
+}
+.wizard-container .form-condensed-300 {
+    max-width: 300px;
+}
+.wizard-container .form-condensed-350 {
+    max-width: 350px;
+}
+
 
 @media (max-width: 991.9px){
     .app .app-sidebar {
