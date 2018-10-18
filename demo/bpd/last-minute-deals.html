@@ -234,10 +234,10 @@
 					</div>
 					<ul class="side-menu">
 						<li class="slide">
-							<a class="side-menu__item active" href="dashboard.html"><i class="side-menu__icon fa fa-home"></i>Dashboard</a>
+							<a class="side-menu__item" href="dashboard.html"><i class="side-menu__icon fa fa-home"></i>Dashboard</a>
 						</li>
 						<li class="slide">
-							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon fa fa-calendar"></i><span class="side-menu__label">DEALS</span><i class="angle fa fa-angle-right"></i></a>
+							<a class="side-menu__item active" data-toggle="slide" href="#"><i class="side-menu__icon fa fa-calendar"></i><span class="side-menu__label">DEALS</span><i class="angle fa fa-angle-right"></i></a>
 							<ul class="slide-menu">
 								<li><a class="slide-item" href="deals.html">Deals</a></li>
 								<li><a class="slide-item" href="add-deals.html">Add new deal</a></li>
@@ -269,7 +269,7 @@
 					</ul>
 				</aside>
 				<div class="app-content my-3 my-md-5">
-					<div class="side-app">
+					<div class="side-app no-pad-xs-h">
 						<div class="page-header">
 							<h4 class="page-title">DEALS</h4>
 							<ol class="breadcrumb">
@@ -280,20 +280,22 @@
 						<div class="row row-cards">
 							<div class="col-sm-12">
 								<div class="card ">
-									<div class="card-body sales-relative">	
+									<div class="card-body sales-relative no-pad-xs">	
 										<h2 class="text-muted mb-5">DEAL</h2>
 										<div class="row row-cards">
 											<div class="col-12">
 												<h5>Filtering</h5>
 											</div>
-											<div class="col-6">
-												<div class="form-group">
+										</div>
+										<div class="row">
+											<div class="col-6 col-lg-4 col-xl-3">
+												<div class="form-group form-condensed-400">
 													<label class="form-label">TITLE</label>
 													<input type="text" class="form-control" >
 												</div>
 											</div>
-											<div class="col-6">
-												<div class="form-group">		
+											<div class="col-6 col-lg-4 col-xl-3">
+												<div class="form-group form-condensed-400">		
 													<label class="form-label">CATEGORY</label>
 														<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
 															<optgroup>
@@ -324,8 +326,10 @@
 														</select>
 												</div>
 											</div>
-											<div class="col-6">
-												<div class="form-group">		
+										</div>
+										<div class="row">
+											<div class="col-6 col-lg-4 col-xl-3">
+												<div class="form-group form-condensed-400">		
 													<label class="form-label"> COUNTRY</label>
 														<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
 															<optgroup>
@@ -356,8 +360,8 @@
 														</select>
 												</div>
 											</div>
-											<div class="col-6">
-												<div class="form-group">		
+											<div class="col-6 col-lg-4 col-xl-3">
+												<div class="form-group form-condensed-400">		
 													<label class="form-label"> CITY</label>
 														<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
 															<optgroup>
@@ -388,21 +392,23 @@
 														</select>
 												</div>
 											</div>
-											<div class="col-6">
-												<div class="form-group">		
+										</div>
+										<div class="row">
+											<div class="col-6 col-lg-4 col-xl-3">
+												<div class="form-group form-condensed-400">		
 													<label class="form-label">LAST MINUTE</label>
-														<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
-															<optgroup>
-																<option value="AZ">All</option>
-																<option value="CO">Active</option>
-																<option value="ID">Future</option>
-																<option value="MT">Past</option>
-															</optgroup>
-														</select>
+													<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
+														<optgroup>
+															<option value="AZ">All</option>
+															<option value="CO">Active</option>
+															<option value="ID">Future</option>
+															<option value="MT">Past</option>
+														</optgroup>
+													</select>
 												</div>
 											</div>																		
-											<div class="col-6">
-												<div class="form-group">		
+											<div class="col-6 col-lg-4 col-xl-3">
+												<div class="form-group form-condensed-400">		
 													<label class="form-label"> STATUS</label>
 														<select class="form-control select2-show-search" data-placeholder="Choose one (with searchbox)">
 															<optgroup>
