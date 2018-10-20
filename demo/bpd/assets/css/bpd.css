@@ -1,6 +1,14 @@
 
 
-
+@media screen and (max-width: 575.8px){
+    .no-pad-xs {
+        padding: 7.5px !important;
+    }
+    .no-pad-xs-h {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
 
 .wizard-card .nav-pills>li {
     display: table;
@@ -17,19 +25,41 @@
 .slot-panel .tx-12 {
     margin-top: 10px;
 }
+.slot-panel p.font-weight-semibold {
+    margin-bottom: 0px;
+}
 
 .wizard-container textarea.form-control {
     height: auto;
 }
 
-.wizard-container .form-condensed-250 {
+
+.form-condensed-100 {
+    max-width: 100px;
+}
+.form-condensed-150 {
+    max-width: 150px;
+}
+.form-condensed-200 {
+    max-width: 200px;
+}
+.form-condensed-250 {
     max-width: 250px;
 }
-.wizard-container .form-condensed-300 {
+.form-condensed-300 {
     max-width: 300px;
 }
-.wizard-container .form-condensed-350 {
+.form-condensed-350 {
     max-width: 350px;
+}
+.form-condensed-400 {
+    max-width: 400px;
+}
+.form-condensed-450 {
+    max-width: 450px;
+}
+.form-condensed-500 {
+    max-width: 500px;
 }
 
 
