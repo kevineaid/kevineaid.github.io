@@ -1,8 +1,37 @@
+/* bg pattern */
+.bg-pattern-1-sky {
+	background: url('images/bg/pattern/bg-summer-pattern.png') repeat;
+}
+
 .mega-menu li p {
 	font-size: 14px;
 	line-height: 20px;
 }
 
+/* animation */
+.add-scale {
+	transition: all .3s ease;
+}
+.add-scale:hover {
+	transform: scale(1.05) translateX(20px);
+}
+.feature-item:hover .features-content h4 {
+	color: #24c1dd;
+}
+
+
+/* why  */
+.accordion-title-why {
+	line-height: 20px; 
+	padding-left: 60px !important;
+}
+.accordion-icon-why {
+	position:absolute;
+	left:20px;
+	top:0px;
+	font-size: 26px !important;
+	margin-top: 20px;
+}
 
 /* footer */
 .copyrights a {
