@@ -3,6 +3,12 @@
 	background: url('images/bg/pattern/bg-summer-pattern.png') repeat;
 }
 
+/* particle  */
+.particle-pos-absolute {
+	position: absolute !important; 
+	height: 150px !important;
+	top: 0px;
+}
 .mega-menu li p {
 	font-size: 14px;
 	line-height: 20px;
@@ -13,7 +19,7 @@
 	transition: all .3s ease;
 }
 .add-scale:hover {
-	transform: scale(1.05) translateX(20px);
+	transform: scale(1.05) translateX(10px);
 }
 .feature-item:hover .features-content h4 {
 	color: #24c1dd;
