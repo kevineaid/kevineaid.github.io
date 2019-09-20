@@ -2,6 +2,9 @@
 .bg-pattern-1-sky {
 	background: url('images/bg/pattern/bg-summer-pattern.png') repeat;
 }
+.bg-semi-white {
+	background: #fafafa;
+}
 
 /* particle  */
 .particle-pos-absolute {
@@ -30,7 +33,7 @@
 	transform: scale(1.05) translateX(10px);
 }
 .feature-item:hover .features-content h4 {
-	color: #643094;
+	color: #24c1dd;
 }
 
 
@@ -49,5 +52,5 @@
 
 /* footer */
 .copyrights a {
-	color: #643094;
+	color: #24c1dd;
 }
