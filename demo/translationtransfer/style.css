@@ -22,7 +22,7 @@
 	transform: scale(1.05) translateX(10px);
 }
 .feature-item:hover .features-content h4 {
-	color: #24c1dd;
+	color: #643094;
 }
 
 
@@ -41,5 +41,5 @@
 
 /* footer */
 .copyrights a {
-	color: #24c1dd;
+	color: #643094;
 }
