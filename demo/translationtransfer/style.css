@@ -74,6 +74,12 @@
 .app-form-label span {
 	color: tomato;
 }
+
+.f-h-50 {
+	padding: .375rem .75rem;
+	height: 50px;
+}
+
 /* footer */
 .copyrights a {
 	color: #24c1dd;
