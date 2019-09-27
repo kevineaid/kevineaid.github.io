@@ -23,7 +23,7 @@
 /* particle  */
 .particle-pos-absolute {
 	position: absolute !important; 
-	height: 150px !important;
+	height: 200px !important;
 	top: 0px;
 }
 .mega-menu li p {
@@ -80,6 +80,11 @@
 	height: 50px;
 }
 
+
+/* faq page */
+.faq-headline {
+	line-height: initial;
+}
 /* footer */
 .copyrights a {
 	color: #24c1dd;
