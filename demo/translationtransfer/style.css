@@ -12,12 +12,25 @@
 	color: #bbb !important;
   }
 
+
+/* height */
+.h-80vh {
+	min-height: 80vh !important;
+}
 /* bg pattern */
 .bg-pattern-1-sky {
 	background: url('images/bg/pattern/bg-summer-pattern.png') repeat;
 }
 .bg-semi-white {
 	background: #fafafa;
+}
+
+/* service page */
+.service-side {
+	border: 1px solid #eee;
+	padding: 2rem;
+	padding-bottom: 1rem;
+	border-radius: 10px;
 }
 
 /* particle  */
@@ -62,6 +75,16 @@
 	top:0px;
 	font-size: 26px !important;
 	margin-top: 20px;
+}
+
+/* timeline home */
+@media (min-width: 768px){
+	.mt-200-md {
+		margin-top: -175px;
+	}
+	.mt-100-md {
+		margin-top: -100px;
+	}
 }
 
 
