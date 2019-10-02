@@ -80,13 +80,39 @@
 /* timeline home */
 @media (min-width: 768px){
 	.mt-200-md {
+		margin-top: -200px;
+	}
+	.mt-175-md {
 		margin-top: -175px;
+	}
+	.mt-150-md {
+		margin-top: -150px;
+	}
+	.mt-125-md {
+		margin-top: -125px;
 	}
 	.mt-100-md {
 		margin-top: -100px;
 	}
+	.mt-75-md {
+		margin-top: -75px;
+	}
+	.mt-50-md {
+		margin-top: -50px;
+	}
 }
 
+
+/* quality control  */
+.timeline li div {
+	transition: all .3s ease;
+}
+.timeline-panel:hover {
+	transform: scale(1.05);
+}
+.timeline-panel:hover ~ .timeline-bullet-main .timeline-bullet {
+	transform: scale(1.5);
+}
 
 /* application form */
 .app-form-label {
