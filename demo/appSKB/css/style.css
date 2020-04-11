@@ -6,3 +6,32 @@ p.soal {
     font-size: 17px;
     line-height: 25px;
 }
+
+.question-map {
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-right: -15px;
+}
+.question-map .btn-success {
+    color: #fff;
+}
+.btn-question-map {
+    text-align: center;
+    width: 31.5px;
+    height: 31.5px;
+    padding: 0;
+    margin: 0 5px;
+    margin-bottom: 10px;
+}
+
+.submit-quiz button {
+    letter-spacing: 1px;
+}
+
+/* Options */
+.options label {
+    font-size: 16px !important;
+}
+.form-check-secondary.form-check label input[type="checkbox"]:checked + .input-helper:before, .form-check-secondary.form-check label input[type="radio"]:checked + .input-helper:before {
+    background: #4d7cff;
+}
