@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,14 +7,9 @@
     <title>Serein Admin</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
-    <!-- <link rel="stylesheet" href="vendors/css/vendor.bundle.addons.css"> -->
-    <!-- endinject -->
-    <!-- plugin css for this page -->
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
+    
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <link rel="stylesheet" href="css/vertical-layout-light/style-old.css">
     <link rel="stylesheet" href="css/style.css" >
     <!-- endinject -->
     <link rel="shortcut icon" href="images/favicon.png" />
@@ -26,7 +20,7 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo" /></a>
+                <a class="navbar-brand brand-logo" href="index.html"><img src="images/logolightayocpns.png" alt="logo" style="width: 115px;"/></a>
                 <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo" /></a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -41,11 +35,11 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                             <a class="dropdown-item">
-                                <i class="mdi mdi-settings text-primary"></i> Settings
+                                <i class="mdi mdi-settings text-info"></i> Settings
                             </a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item">
-                                <i class="mdi mdi-logout text-primary"></i> Logout
+                                <i class="mdi mdi-logout text-info"></i> Logout
                             </a>
                         </div>
                     </li>
@@ -108,19 +102,19 @@
                                     <hr>
                                     <div class="row">
                                         <div class="col-lg-8 order-2 order-md-1">
-                                            <ul class="nav nav-pills nav-pills-primary" id="pills-tab-custom" role="tablist">
+                                            <ul class="nav nav-pills nav-pills-info" id="pills-tab-custom" role="tablist">
                                                 <li class="nav-item ">
-                                                    <a class="nav-link rounded-pill px-4 border border-primary active show" id="pills-home-tab-custom" data-toggle="pill" href="#pills-aktif" role="tab" aria-controls="pills-home" aria-selected="true">
+                                                    <a class="nav-link rounded-pill px-4 border border-info active show" id="pills-home-tab-custom" data-toggle="pill" href="#pills-aktif" role="tab" aria-controls="pills-home" aria-selected="true">
                                                     Aktif
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link px-3 rounded-pill border border-primary" id="pills-profile-tab-custom" data-toggle="pill" href="#pills-batal" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                                    <a class="nav-link px-3 rounded-pill border border-info" id="pills-profile-tab-custom" data-toggle="pill" href="#pills-batal" role="tab" aria-controls="pills-profile" aria-selected="false">
                                                     Expired (Batal)
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link px-3 rounded-pill border border-primary" id="pills-profile-tab-custom" data-toggle="pill" href="#pills-sukses" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                                    <a class="nav-link px-3 rounded-pill border border-info" id="pills-profile-tab-custom" data-toggle="pill" href="#pills-sukses" role="tab" aria-controls="pills-profile" aria-selected="false">
                                                     Sukses
                                                     </a>
                                                 </li>
@@ -143,7 +137,7 @@
                                                             <div class="d-flex justify-content-between flex-column flex-sm-row">
                                                                 <div class="mb-2 mb-sm-0">
                                                                     <h6 class="">Total Pembayaran</h6>
-                                                                    <h4 class="text-primary"><strong>Rp. 25.922</strong></h4>
+                                                                    <h4 class="text-info"><strong>Rp. 25.922</strong></h4>
                                                                 </div>
                                                                 <div class="text-sm-right">
                                                                     <h6 class="">Batas Pembayaran</h6>
@@ -172,7 +166,7 @@
                                                                 </div>
                                                                 <div class="text-right">
                                                                     <h6 class="mb-1">Total Pembayaran</h6>
-                                                                    <h5 class="text-primary mb-0"><strong>Rp. 25.922</strong></h5>
+                                                                    <h5 class="text-info mb-0"><strong>Rp. 25.922</strong></h5>
                                                                 </div>
                                                             </div>
         
@@ -187,7 +181,7 @@
                                                                     <p class="mb-0">Tanggal invoice : 2 Januari 2020</p>
                                                                 </div>
                                                                 <div>
-                                                                    <p class="mb-0">status : <span class="badge badge-primary badge-pill">sukses</span></p>
+                                                                    <p class="mb-0">status : <span class="badge badge-info badge-pill">sukses</span></p>
                                                                 </div>
                                                             </div>
                                                             <h4 class="mt-1 mb-0">Paket : SKB Keguruan 1</h4>
@@ -195,11 +189,11 @@
                                                             <div class="d-flex justify-content-between flex-column flex-sm-row">
                                                                 <div class="mb-2 mb-sm-0">
                                                                     <h6 class="">Total Pembayaran</h6>
-                                                                    <h4 class="text-primary"><strong>Rp. 25.922</strong></h4>
+                                                                    <h4 class="text-info"><strong>Rp. 25.922</strong></h4>
                                                                 </div>
                                                                 <div class="text-sm-right">
                                                                     <h6 class="">Dibayar tanggal</h6>
-                                                                    <h5 class="text-primary"><strong>5 Januari 2020 - 14:40</strong></h5>
+                                                                    <h5 class="text-info"><strong>5 Januari 2020 - 14:40</strong></h5>
                                                                 </div>
                                                             </div>
         
@@ -252,20 +246,8 @@
 
     <!-- plugins:js -->
     <script src="vendors/js/vendor.bundle.base.js"></script>
-    <script src="vendors/js/vendor.bundle.addons.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page-->
-    <!-- End plugin js for this page-->
-    <!-- inject:js -->
-    <script src="js/off-canvas.js"></script>
-    <script src="js/hoverable-collapse.js"></script>
     <script src="js/template.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/todolist.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page-->
-    <script src="js/dashboard.js"></script>
-    <!-- End custom js for this page-->
+
 </body>
 
 </html>

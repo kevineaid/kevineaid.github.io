@@ -1,3 +1,8 @@
 .accordion .card .card-header a:before {
     display: none;
 }
+
+p.soal {
+    font-size: 17px;
+    line-height: 25px;
+}
